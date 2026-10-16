@@ -3,7 +3,6 @@
 #include "gfx.h"
 #include "hud.h"
 #include "log.h"
-#include "timescale.h"
 
 #include <Windows.h>
 #include <atomic>
@@ -16,8 +15,6 @@ namespace panels {
 
     void HideRecords();
     static std::atomic<bool> g_results_up = false;
-    static std::atomic<bool> g_results_frozen = false;
-    static DWORD g_results_shown = 0;
     static int g_last_score = -1, g_last_rank = -1;
     static DWORD g_last_sent = 0;
 
@@ -46,10 +43,9 @@ namespace panels {
         Node tiers = Node::Arr();
         Node tier_rewards = Node::Arr();
         const char* const names[3] = { "Amazing", "Spectacular", "Superior" };
-        const int camp_tiers[3] = { 2000, 5000, 10000 };   // Campaign score
         Node awarded = Node::Arr();
         for (int i = 0; i < 3; i++) {
-            int threshold = r.campaign ? camp_tiers[i] : score::kTierScores[i];
+            int threshold = score::kTierScores[i];   // same tiers in both modes (user 2026-10-16)
             // Tier thresholds as numbers (double), like the game's own floats; the tiers the player reached are also listed as
             // awarded (user, 2026-10-16: with a tier reached the buttons were missing and the tier labels said 500).
             tiers.Push(Node::Of((double)threshold));
@@ -77,7 +73,6 @@ namespace panels {
             return;
         }
         g_results_up = true;
-        g_results_shown = GetTickCount();   // frozen by Tick() once the panel has finished animating in
         LOG("panels: results shown (%d points, %s)", r.total, RankLabel(r.final_rank).c_str());
     }
 
@@ -123,20 +118,13 @@ namespace panels {
         g_last_score = g_last_rank = -1; g_last_sent = 0;
         gfx::Invoke(kEl, kObj, "HideActivity", { Wrap(was ? 2 : 1, Node::Obj()) });
         if (was) {
-            if (g_results_frozen.exchange(false)) timescale::Unfreeze();
             LOG("panels: results dismissed");
         }
     }
 
     bool ResultsUp() { return g_results_up; }
 
-    // The summary freezes the game until the player presses Continue, but only once it has animated in (the panel runs on
-    // game time; freezing at once left it translucent). 3 s (user, 2026-10-16).
-    void Tick() {
-        if (g_results_up && !g_results_frozen && GetTickCount() - g_results_shown > 3000) {
-            g_results_frozen = true;
-            timescale::Freeze();
-        }
-    }
+    // (The results panel used to freeze the game once it had animated in; dropped again, user 2026-10-16.)
+    void Tick() {}
 
 }

@@ -35,7 +35,7 @@
 namespace director {
     constexpr DWORD kIntermissionMs = 7000;
     constexpr DWORD kChapterIntermissionMs = 10000;
-    constexpr DWORD kCorpseLingerMs = 6000;     // end of run: let the dropped crowd lie a moment before cleanup
+    constexpr DWORD kCorpseLingerMs = 1500;     // end of run: let the dropped crowd lie a moment before cleanup (was 6 s; user 2026-10-16: too slow)
     // Bodies stay on the ground (user, 2026-10-14). Live enemies and bodies share one pool (Options::body_pool, kept
     // under the ~160-actor hang from the stress test). Bodies are cleared oldest first, only once the pool is within
     // kPoolHeadroom of full, and only while the camera can't see them (spawns never happen in view either).
@@ -844,12 +844,14 @@ namespace director {
         LOG("director: run start (%s, seed %u, first wave %d)", info.mode.c_str(), seed, opt.first_wave);
         if (opt.roguelike && (g_cfg.mode == plan::Mode::Campaign || g_cfg.mode == plan::Mode::Faction))
             boons::Begin(seed);   // zero-start: power and mods cleared and locked; earned wave by wave
+        TopUpHero();   // every run starts at full health (user, 2026-10-16)
 
         // The game's big "Get Ready" countdown (both modes; user, 2026-10-14). The widget is re-sent every second.
         for (int s = opt.countdown_s; s > 0 && !g_stop; s--) {
             hud::Countdown(s);
             Sleep(1000);
         }
+        TopUpHero();   // and again as the fight begins, in case something hit the player during the countdown
         hud::HideCountdown();
 
         if (g_cfg.mode == plan::Mode::Horde) {

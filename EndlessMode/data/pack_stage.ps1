@@ -11,7 +11,7 @@ Pop-Location
 
 $config = Join-Path $PSScriptRoot 'prox_prison.json.config'
 $info = Join-Path $root 'build\stage_info.json'
-[ordered]@{ game = 'MSMR'; name = 'Endless Mode - Spawner Config'; author = 'moham'; format_version = 2 } |
+[ordered]@{ game = 'MSMR'; name = 'Endless Mode - Spawner Config'; author = 'quailo'; format_version = 2 } |
     ConvertTo-Json | Set-Content $info -Encoding UTF8
 
 # Zip entries with forward slashes and no directory entries (Compress-Archive on PS 5 writes backslashes).

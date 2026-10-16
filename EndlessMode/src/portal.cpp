@@ -321,7 +321,7 @@ namespace portal {
             b.best_seconds = best ? best->seconds : 0;
             b.best_kills = best ? best->kills : 0;
             // Score tiers: the highest one reached shows as completed, then the next one with progress.
-            std::vector<int> tiers = { 8000, 20000, 40000, 60000, 80000, 100000 };
+            std::vector<int> tiers = { 2000, 5000, 10000, 20000, 40000, 60000, 80000, 100000 };   // the first three are the results panel's tiers
             int done = 0, goal = tiers.back();
             for (int t : tiers) { if (t <= best_total) done = t; else { goal = t; break; } }
             if (best_total >= tiers.back()) { done = tiers.back(); goal = done + 40000 * ((best_total - done) / 40000 + 1); }
