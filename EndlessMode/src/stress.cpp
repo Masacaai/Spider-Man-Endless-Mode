@@ -68,7 +68,7 @@ namespace stress {
         std::vector<uintptr_t> spawned;
         std::vector<float> spawn_y;
         std::vector<int> spawn_point;
-        std::string file = ScriptsDir() + "\\EndlessMode_runs";
+        std::string file = DataDir() + "\\EndlessMode_runs";
         CreateDirectoryA(file.c_str(), nullptr);
         file += "\\stress_" + Stamp() + ".csv";
         std::ofstream csv(file);

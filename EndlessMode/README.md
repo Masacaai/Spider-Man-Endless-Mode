@@ -12,7 +12,7 @@ tests\run_offline.cmd  -> resolves every native against Spider-Man.exe on disk (
 ```
 
 Needs VS 2022 (Desktop C++). MinHook comes from vcpkg (manifest + baseline in this folder).
-The DLL depends only on KERNEL32 (static CRT, static MinHook).
+The DLL has no runtime dependencies beyond Windows system libraries (static CRT, static MinHook).
 
 ## How it loads
 

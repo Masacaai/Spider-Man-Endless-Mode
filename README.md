@@ -41,7 +41,7 @@ never extra enemy health), boons never touch Spider-Man's skills, every curse ha
 4. Launch the game through Steam, load a save, and go to a Manhattan dock circle.
 
 Back up your saves first. The mod changes your suit loadout during Campaign runs and restores it afterwards; if the game
-crashes mid-run it restores on the next launch (`scripts\EndlessMode_loadout.txt`).
+crashes mid-run it restores on the next launch. Your settings and records live in `Documents\Marvel's Spider-Man Remastered\EndlessMode\` (not in `scripts\`, which Overstrike wipes every time you press Install mods), so they survive updates and reinstalls.
 
 ## Build (contributors)
 

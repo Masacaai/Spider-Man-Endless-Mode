@@ -113,7 +113,11 @@ portal thread: after the run, back to the arrival point; results panel until Con
   despawned out of camera view; if the player is looking at bodies due for removal, spawns steer to the other side.
 - Enemies killed by other enemies don't count as kills; Campaign gives the spawn back.
 
-## Files the mod reads and writes (in `<game>\scripts\`)
+## Files the mod reads and writes
+
+**Settings and records** live in `DataDir()` = `Documents\Marvel's Spider-Man Remastered\EndlessMode\` (see `paths.h`). They must not live in the game's `scripts\`: Overstrike wipes and recreates that folder on every Install mods (it reset the ini and deleted every record on 2026-10-16). On first run a version that kept them in `scripts\` is migrated (`MigrateDataFromScripts`). **Dev files** (the command file, logs) stay in `<game>\scripts\`.
+
+In the data folder:
 
 | File | Purpose |
 |---|---|

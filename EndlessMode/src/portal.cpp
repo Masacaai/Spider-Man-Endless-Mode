@@ -51,7 +51,7 @@ namespace portal {
 
     // ---- ini ----
 
-    static std::string Ini() { return ScriptsDir() + "\\EndlessMode.ini"; }
+    static std::string Ini() { return DataDir() + "\\EndlessMode.ini"; }
 
     static std::string ReadStr(const char* sec, const char* key, const char* def) {
         char buf[256];
@@ -75,13 +75,20 @@ namespace portal {
         WriteStr(sec, key, b);
     }
 
+    // The two Manhattan dock circles as shipped. A fresh install has no ini (and Overstrike resets files), so the circles must
+    // exist without anyone running 'portal setdock'. The ini overrides these.
+    static Pad DefaultPad(const std::string& prefix) {
+        if (prefix == "dock") return Pad{ true, 744.51f, 0.85f, -793.08f };        // Campaign
+        if (prefix == "raft_dock") return Pad{ true, 744.56f, 0.85f, -869.35f };   // Horde
+        return Pad{};
+    }
     static Pad ReadPad(const char* prefix) {
-        Pad p;
         std::string k = prefix;
-        p.set = ReadI("portal", (k + "_set").c_str(), 0) != 0;
-        p.x = ReadF("portal", (k + "_x").c_str(), 0);
-        p.y = ReadF("portal", (k + "_y").c_str(), 0);
-        p.z = ReadF("portal", (k + "_z").c_str(), 0);
+        Pad d = DefaultPad(k), p;
+        p.set = ReadI("portal", (k + "_set").c_str(), d.set ? 1 : 0) != 0;
+        p.x = ReadF("portal", (k + "_x").c_str(), d.x);
+        p.y = ReadF("portal", (k + "_y").c_str(), d.y);
+        p.z = ReadF("portal", (k + "_z").c_str(), d.z);
         return p;
     }
     static void WritePad(const char* prefix, const Pad& p) {
@@ -120,7 +127,7 @@ namespace portal {
         if (fopen_s(&f, Ini().c_str(), "w") || !f) return;
         fputs("; Endless Mode settings. Pads are set in game with the 'portal setdock' / 'portal setexit' commands.\n"
               "[portal]\nenabled=1\nradius=2.5\nhold_seconds=3\n; virtual-key codes: 0x77 = F8, 0x78 = F9\nkey_enter=0x77\nkey_leave=0x78\n"
-              "dock_set=0\nexit_set=0\n\n"
+              "dock_set=1\ndock_x=744.51\ndock_y=0.85\ndock_z=-793.08\nraft_dock_set=1\nraft_dock_x=744.56\nraft_dock_y=0.85\nraft_dock_z=-869.35\n\n"
               "[run]\n; mode: campaign | faction | bossrush\nmode=campaign\n; faction mode: street fisk demons prisoners sable hammerhead tombstone taskmaster\n"
               "faction=prisoners\n; shuffle: random faction order after the first (campaign)\nshuffle=0\nriot=0\nriot_max=40\nfirst_wave=1\ncountdown=5\n"
               "allow_unverified_bosses=0\n", f);
@@ -257,7 +264,7 @@ namespace portal {
     // kills,hits_taken,damage_taken,hits_dealt,file
     static std::vector<RunRow> ReadRuns() {
         std::vector<RunRow> rows;
-        std::ifstream in(ScriptsDir() + "\\EndlessMode_runs\\runs.csv");
+        std::ifstream in(DataDir() + "\\EndlessMode_runs\\runs.csv");
         std::string line;
         std::getline(in, line);   // header
         while (std::getline(in, line)) {

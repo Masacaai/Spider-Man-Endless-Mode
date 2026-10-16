@@ -26,7 +26,7 @@ EndlessMode\build.cmd
 
 Output:
 
-- `EndlessMode\build\EndlessMode.dll`: the mod itself (links only KERNEL32; static CRT, static MinHook)
+- `EndlessMode\build\EndlessMode.dll`: the mod itself (static CRT and static MinHook; imports only KERNEL32, USER32, SHELL32 and the HID/SetupAPI libraries)
 - `EndlessMode\build\EndlessMode.script`: the same DLL zipped with an `info.json`, the format Overstrike installs (made by `pack.ps1`)
 
 It prints `BUILD OK` at the end. A full build takes under a minute. If it fails with a compiler error, that is real;
@@ -72,7 +72,7 @@ The game folder is usually `C:\Program Files (x86)\Steam\steamapps\common\Marvel
 3. Go to a Manhattan dock circle (Campaign or Horde). Stand on it: a hideout-style panel shows your best run and goals. Press the
    START button shown (interact) to travel to Ryker's, then walk into the yard to begin.
 
-Player-facing settings live in `<game>\scripts\EndlessMode.ini` (`[portal]` for circles and keys, `[run]` for pool sizes,
+Player-facing settings live in `Documents\Marvel's Spider-Man Remastered\EndlessMode\``EndlessMode.ini` (in your Documents folder; **not** in the game's `scripts\`, because Overstrike wipes `scripts\` on every Install mods) (`[portal]` for circles and keys, `[run]` for pool sizes,
 horde cap, body cap, countdown; written with defaults on first launch).
 
 ## 5. The dev loop: the command file
@@ -115,7 +115,8 @@ before expecting output.
 Goal: make Campaign waves 20% bigger.
 
 1. Open `EndlessMode/src/plan.cpp`, find `GoonCount` and multiply the result by 1.2.
-2. Print the curve without launching the game: `EndlessMode	estsun_plan.cmd 20` (waves 1 to 20). Compare before and after.
+2. Print the curve without launching the game: `EndlessMode	ests
+un_plan.cmd 20` (waves 1 to 20). Compare before and after.
 3. Close the game, run `build.cmd`, copy the DLL (step 3), launch, start a Campaign run from the dock.
 4. Look at `EndlessMode.log`: each wave logs a `plan wN ...` line with its goon count.
 

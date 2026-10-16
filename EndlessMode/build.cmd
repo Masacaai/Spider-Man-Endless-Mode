@@ -15,7 +15,7 @@ if not exist "%ROOT%build" mkdir "%ROOT%build"
 
 cl /nologo /LD /O2 /MT /EHa /std:c++20 /W3 /Zi /DNDEBUG /DNOMINMAX /DWIN32_LEAN_AND_MEAN /I"%INC%" /Fo"%ROOT%build\\" /Fd"%ROOT%build\\" ^
    "%ROOT%src\*.cpp" /Fe"%ROOT%build\EndlessMode.dll" ^
-   /link /LIBPATH:"%LIB_DIR%" minhook.x64.lib user32.lib hid.lib setupapi.lib /DEBUG /MAP /OPT:REF /OPT:ICF || exit /b 1
+   /link /LIBPATH:"%LIB_DIR%" minhook.x64.lib user32.lib shell32.lib hid.lib setupapi.lib /DEBUG /MAP /OPT:REF /OPT:ICF || exit /b 1
 
 powershell -NoProfile -ExecutionPolicy Bypass -File "%ROOT%pack.ps1" || exit /b 1
 echo BUILD OK

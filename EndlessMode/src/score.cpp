@@ -121,8 +121,8 @@ namespace score {
     int Rank() { return RankOf(g_meter); }
     float Meter() { return g_meter; }
 
-    static std::string BestFile() { return ScriptsDir() + "\\EndlessMode_horde_best.txt"; }
-    static std::string HistoryFile() { return ScriptsDir() + "\\EndlessMode_horde_scores.csv"; }
+    static std::string BestFile() { return DataDir() + "\\EndlessMode_horde_best.txt"; }
+    static std::string HistoryFile() { return DataDir() + "\\EndlessMode_horde_scores.csv"; }
 
     std::vector<Past> History() {
         std::vector<Past> out;
@@ -149,7 +149,7 @@ namespace score {
         r.rows = { { "Enemy Score", kills * 10 }, { "Wave Bonus", wave * 100 }, { "Hits Taken", -5 * hits_taken } };
         for (auto& row : r.rows) r.total += row.value;
         if (r.total < 0) r.total = 0;
-        std::string file = ScriptsDir() + "\\EndlessMode_campaign_best.txt";
+        std::string file = DataDir() + "\\EndlessMode_campaign_best.txt";
         std::ifstream in(file);
         int prev = 0;
         in >> prev;

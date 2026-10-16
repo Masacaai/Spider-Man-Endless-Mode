@@ -28,6 +28,7 @@
 #include "runloadout.h"
 #include "gamethread.h"
 #include "log.h"
+#include "paths.h"
 #include "memory.h"
 #include "natives.h"
 #include "observer.h"
@@ -1271,6 +1272,8 @@ static void Main() {
     g_dir = ModuleDir();
     logging::Init(g_dir + "\\EndlessMode.log");
     LOG("EndlessMode loaded from %s", g_dir.c_str());
+    MigrateDataFromScripts();
+    LOG("settings and records live in %s", DataDir().c_str());
 
     const auto& m = scan::Game();
     LOG("game module base=%llx .text=%llx size=%llx", (unsigned long long)m.base,

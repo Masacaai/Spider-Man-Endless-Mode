@@ -16,7 +16,7 @@
 namespace runloadout {
     static std::atomic<bool> g_active = false;
 
-    static std::string File() { return ScriptsDir() + "\\EndlessMode_loadout.txt"; }
+    static std::string File() { return DataDir() + "\\EndlessMode_loadout.txt"; }
 
     static bool ReadSnapshot(uint64_t out[5]) {
         std::ifstream f(File());

@@ -64,7 +64,7 @@ The roster is generated: `tools/roster/gen_roster.py` -> `src/roster_data.inc`. 
 
 ## Tune settings without code (the ini)
 
-`<game>\scripts\EndlessMode.ini` is written with defaults on first launch.
+`EndlessMode.ini` is in `Documents\Marvel's Spider-Man Remastered\EndlessMode\` (your Documents folder) and is written with defaults on first launch. It is outside the game folder on purpose: Overstrike wipes `scripts\` on every Install mods.
 
 | Key | Meaning |
 |---|---|
@@ -154,7 +154,7 @@ designer placements themselves were read from the level's gameplay `.zone`.
 
 ## Read run telemetry
 
-Each run writes `scripts\EndlessMode_runs\run_<date>_<time>.json` (rewritten every 10 s, so a crash keeps the data). Drag it onto
+Each run writes `EndlessMode_runs\run_<date>_<time>.json` in the data folder (`Documents\Marvel's Spider-Man Remastered\EndlessMode\`) (rewritten every 10 s, so a crash keeps the data). Drag it onto
 `tools/runviewer/index.html` in a browser: health over time with wave bands and hit markers, enemies on the field, a top-down map,
 who hurt Spidey, kills per wave. Fields are listed in [ENDLESS_MODE.md](ENDLESS_MODE.md#telemetry).
 

@@ -307,7 +307,7 @@ namespace stats {
         g_live = {};
         g_end_reason = "running";
         g_started = Stamp("%Y-%m-%dT%H:%M:%S");
-        std::string dir = ScriptsDir() + "\\EndlessMode_runs";
+        std::string dir = DataDir() + "\\EndlessMode_runs";
         CreateDirectoryA(dir.c_str(), nullptr);
         g_file = dir + "\\run_" + Stamp("%Y%m%d_%H%M%S") + ".json";
         g_active = true;
@@ -323,7 +323,7 @@ namespace stats {
         WriteLocked();
         int cleared = 0;
         for (auto& w : g_waves) cleared += w.clear_t >= 0;
-        std::string csv = ScriptsDir() + "\\EndlessMode_runs\\runs.csv";
+        std::string csv = DataDir() + "\\EndlessMode_runs\\runs.csv";
         bool fresh = GetFileAttributesA(csv.c_str()) == INVALID_FILE_ATTRIBUTES;
         std::ofstream f(csv, std::ios::app);
         if (fresh) f << "started,mode,seed,end_reason,duration_s,waves_started,waves_cleared,kills,hits_taken,damage_taken,hits_dealt,file\n";
