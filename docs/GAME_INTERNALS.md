@@ -181,7 +181,14 @@ Full chronology, with every recording: [UI_HUNT.md](UI_HUNT.md). Summary of what
   - activity 1 (challenge): panelType 0 preview; 1 = **live score** `{type 2, label, icon, score, scoreItems}`; 2 = **results** `{label, icon, score, highScore, summaryData[{label,value}], rewards, noRewards, awardedRewards, rewardTiers, taskMaster...}`.
   - A completed subObjective has `currentCount == maxCount`. `HideActivity` must use the same activity as the panel you showed (we hid the wrong one once).
   - The panels animate on game time. Freezing the world mid-animation leaves them translucent; freeze only after they have faded in.
-  - Open puzzle: the results panel's tier labels and the Continue/Retry buttons when a tier has been reached; see [docs/issues](issues/).
+  - **Results panel data shape (found by disassembling the panel's ActionScript, 2026-10-16, `tools/sigtools/abcdump.py`):** `rewards` must be an
+    **array of arrays**, one inner array per tier (`rewards[tier][0].value` is read, `rewards[tier][0].icon` shown). A flat list makes
+    `ActivityChallengeAfterAction.Refresh` throw (`undefined.value`) as soon as `highScore > score` and `highScore >= rewardTiers[0]`.
+    A throw aborts the rest of Refresh silently, so the tier "min score" labels keep their placeholder 500, the `intro` animation never plays
+    (the panel stays on the hidden end frame: invisible from the second time on, flashing only when `HideActivity` plays the outro) and
+    the delayed `ShowBtnHint` (which sets the Continue and Retry hints) is never scheduled. Other fields it reads: `label`, `icon`, `summaryData`,
+    `score`, `highScore`, `rewardTiers` (3 numbers), `rewards`, `noRewards`, `awardedRewards` (flat list shown in the reward list when non-empty).
+    The Taskmaster progress fields are not read by Refresh. `ShowBtnHint` always sets both a Continue (bottom face button) and a Retry (top) hint.
 - Localization strings the HUD uses: `HUD_WAVE`, `HUD_TASK_COMPLETED`, `CHALLENGE_GEN_BTN_CONTINUE`, `CHALLENGE_GEN_BTN_TRYAGAIN`,
   `HUD_TASK_COMPLETE_REWARDS`, `HUD_TASK_COMPLETE_BONUSOBJECTIVES`, `CHALLENGE_GEN_RANK_*`, and more (full list in UI_HUNT).
 

@@ -1160,7 +1160,7 @@ static void RunCommand(const std::string& line) {
                 else if (tiers == "uint") tier_arr.Push(Node::U((unsigned)th[i]));
                 auto entry = [&] { return Node::Obj({ { "label", Node::Of("Challenge Tokens") }, { "icon", Node::Of("resource_challenge_token") },
                                                       { "value", Node::Of(i + 1) }, { "id", Node::U(0) }, { "totalCount", Node::U(12) } }); };
-                if (rewards) reward_arr.Push(entry());
+                if (rewards) reward_arr.Push(Node::Arr({ entry() }));   // array of arrays (see panels.cpp)
                 if (awarded && (int)score >= th[i]) awarded_arr.Push(entry());
             }
             Node rows = Node::Arr();

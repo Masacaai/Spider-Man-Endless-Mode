@@ -52,8 +52,11 @@ namespace panels {
             Node entry = Node::Obj({ { "label", Node::Of(names[i]) }, { "icon", Node::Of("resource_challenge_token") },
                                      { "value", Node::Of(i + 1) }, { "id", Node::U(0) }, { "totalCount", Node::U(0) } });
             if (r.total >= threshold) awarded.Push(std::move(entry));
-            tier_rewards.Push(Node::Obj({ { "label", Node::Of(names[i]) }, { "icon", Node::Of("resource_challenge_token") },
-                                          { "value", Node::Of(i + 1) }, { "id", Node::U(0) }, { "totalCount", Node::U(0) } }));
+            // `rewards` is an array of ARRAYS, one inner array per tier: the panel reads rewards[tier][0].value (found by
+            // disassembling its ActionScript, tools/sigtools/abcdump.py). A flat list made that read throw, which aborted Refresh
+            // before it set the tier labels, played the intro animation and scheduled the Continue/Retry buttons (2026-10-16).
+            tier_rewards.Push(Node::Arr({ Node::Obj({ { "label", Node::Of(names[i]) }, { "icon", Node::Of("resource_challenge_token") },
+                                                      { "value", Node::Of(i + 1) }, { "id", Node::U(0) }, { "totalCount", Node::U(0) } }) }));
         }
         Node rows = Node::Arr();
         for (auto& row : r.rows) rows.Push(Node::Obj({ { "label", Node::Of(row.label) }, { "value", Node::Of(row.value) } }));
