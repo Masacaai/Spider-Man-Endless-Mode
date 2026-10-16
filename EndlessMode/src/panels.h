@@ -1,5 +1,7 @@
 #pragma once
 
+#include "gfx.h"
+
 #include "score.h"
 
 #include <string>
@@ -26,5 +28,7 @@ namespace panels {
     bool RecordsUp();
     void Hide();           // both panels
     void Tick();           // call regularly: freezes the game once the results panel has animated in
+    // Experiments (dev command 'gfx rtest'): show a hand-built results panelData as the results panel.
+    bool ShowRaw(gfx::Node data);
     bool ResultsUp();      // the results panel is showing, waiting for the player
 }

@@ -1131,6 +1131,54 @@ static void RunCommand(const std::string& line) {
         std::string sub;
         in >> sub;
         if (sub == "selftest") { gfx::SelfTest(); return; }
+        if (sub == "rtest") {
+            // gfx rtest [score=N] [tiers=int|dbl|uint|none] [awarded=0|1] [rewards=0|1] [norewards=0|1] [taskmaster=0|1] [rows=N] [label=TEXT]
+            // Experiments for the results panel (Horde/Campaign showed placeholder "500" tiers and no buttons, 2026-10-16):
+            // every field type the panel might care about is switchable from the command line.
+            using gfx::Node;
+            unsigned score = 1500;
+            std::string tiers = "int", label = "TEST PANEL";
+            int awarded = 0, rewards = 1, norewards = 0, taskmaster = 0, nrows = 4;
+            for (std::string tok; in >> tok; ) {
+                size_t eq = tok.find('=');
+                if (eq == std::string::npos) continue;
+                std::string k = tok.substr(0, eq), v = tok.substr(eq + 1);
+                if (k == "score") score = (unsigned)atoi(v.c_str());
+                else if (k == "tiers") tiers = v;
+                else if (k == "awarded") awarded = atoi(v.c_str());
+                else if (k == "rewards") rewards = atoi(v.c_str());
+                else if (k == "norewards") norewards = atoi(v.c_str());
+                else if (k == "taskmaster") taskmaster = atoi(v.c_str());
+                else if (k == "rows") nrows = atoi(v.c_str());
+                else if (k == "label") label = v;
+            }
+            const int th[3] = { 2000, 5000, 10000 };
+            Node tier_arr = Node::Arr(), reward_arr = Node::Arr(), awarded_arr = Node::Arr();
+            for (int i = 0; i < 3; i++) {
+                if (tiers == "int") tier_arr.Push(Node::Of(th[i]));
+                else if (tiers == "dbl") tier_arr.Push(Node::Of((double)th[i]));
+                else if (tiers == "uint") tier_arr.Push(Node::U((unsigned)th[i]));
+                auto entry = [&] { return Node::Obj({ { "label", Node::Of("Challenge Tokens") }, { "icon", Node::Of("resource_challenge_token") },
+                                                      { "value", Node::Of(i + 1) }, { "id", Node::U(0) }, { "totalCount", Node::U(12) } }); };
+                if (rewards) reward_arr.Push(entry());
+                if (awarded && (int)score >= th[i]) awarded_arr.Push(entry());
+            }
+            Node rows = Node::Arr();
+            const char* names[] = { "Enemy Score", "Style Bonus", "Combo Bonus", "Survival Bonus", "Extra" };
+            for (int i = 0; i < nrows && i < 5; i++) rows.Push(Node::Obj({ { "label", Node::Of(names[i]) }, { "value", Node::Of(100 * (i + 1)) } }));
+            Node data = Node::Obj({ { "label", Node::Of(label) }, { "icon", Node::Of("icon_map_combat_challenge") },
+                                    { "score", Node::U(score) }, { "highScore", Node::U(score + 1000) },
+                                    { "summaryData", rows }, { "rewards", reward_arr }, { "noRewards", Node::Of(norewards != 0) },
+                                    { "awardedRewards", awarded_arr }, { "rewardTiers", tier_arr } });
+            if (taskmaster) {   // the real challenge results also send these three
+                data.fields.push_back({ "taskMasterCurrentValue", Node::Of(400) });
+                data.fields.push_back({ "taskMasterMaxValue", Node::Of(1000) });
+                data.fields.push_back({ "taskMasterDelta", Node::Of(50) });
+            }
+            LOG("gfx rtest: score=%u tiers=%s awarded=%d rewards=%d norewards=%d taskmaster=%d rows=%d", score, tiers.c_str(), awarded, rewards, norewards, taskmaster, nrows);
+            panels::ShowRaw(std::move(data));
+            return;
+        }
         if (sub == "results") {   // a fake results panel (stays until you press Continue / Interact)
             score::Results r;
             r.rows = { { "Enemy Score", 9800 }, { "Style Bonus", 4200 }, { "Combo Bonus", 2100 }, { "Level Bonus", 4000 } };

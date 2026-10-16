@@ -124,6 +124,12 @@ namespace panels {
 
     bool ResultsUp() { return g_results_up; }
 
+    bool ShowRaw(Node data) {
+        if (!gfx::Invoke(kEl, kObj, "Refresh", { Wrap(2, std::move(data)) })) return false;
+        g_results_up = true;
+        return true;
+    }
+
     // (The results panel used to freeze the game once it had animated in; dropped again, user 2026-10-16.)
     void Tick() {}
 
