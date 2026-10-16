@@ -37,7 +37,7 @@ namespace runloadout {
             snprintf(buf, sizeof(buf), "%016llX", (unsigned long long)v[i]);
             f << buf << "\n";
         }
-        f << "# Endless Mode: your suit power and mods before the current run (restored at run end).\n";
+        f << "# EndlessArena: your suit power and mods before the current run (restored at run end).\n";
         return (bool)f;
     }
 

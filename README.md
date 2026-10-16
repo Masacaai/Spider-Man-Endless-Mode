@@ -1,4 +1,4 @@
-# Endless Mode for Marvel's Spider-Man Remastered
+# EndlessArena for Marvel's Spider-Man Remastered
 
 An endless-survival mod for the PC version of *Marvel's Spider-Man Remastered*. Take the Manhattan docks to **Ryker's
 Island** and fight wave after wave of enemies from every faction in the game.
@@ -31,14 +31,14 @@ never extra enemy health), boons never touch Spider-Man's skills, every curse ha
 
 ## Install (players)
 
-**Download:** [Releases](https://github.com/Masacaai/Spider-Man-Endless-Mode/releases) (latest: alpha; grab `EndlessMode.script`).
+**Download:** [Releases](https://github.com/Masacaai/Spider-Man-Endless-Mode/releases) (latest: alpha; grab `EndlessArena.script`).
 
 1. Install [Overstrike](https://www.nexusmods.com/marvelsspidermanremastered/mods/4199) 1.8.1 and enable
    **"Enable .script support"** and **"Add '-scripts' to commandline.txt"** in its settings.
 2. Overstrike's scripts proxy has a known issue where it can start game scanning inside helper processes; see
    [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md#2-overstrike-and-the-scripts-proxy) for the options.
-3. Add `EndlessMode.script` (from the Releases page, or built with `build.cmd`) in Overstrike and press **Install mods**.
-4. Launch the game through Steam, load a save, and go to a Manhattan dock circle.
+3. Add `EndlessArena.script` (from the Releases page, or built with `build.cmd`) in Overstrike and press **Install mods**.
+4. Launch the game (tested through Steam; the `-scripts` option in `commandline.txt` is what loads script mods), load a save, and go to a Manhattan dock circle. It is developed and tested on the Steam version; the mod itself only checks the exe version, not the store, but other stores' copies are untested.
 
 Back up your saves first. The mod changes your suit loadout during Campaign runs and restores it afterwards; if the game
 crashes mid-run it restores on the next launch. Your settings and records live in `Documents\Marvel's Spider-Man Remastered\EndlessMode\` (not in `scripts\`, which Overstrike wipes every time you press Install mods), so they survive updates and reinstalls.
@@ -48,7 +48,7 @@ crashes mid-run it restores on the next launch. Your settings and records live i
 Needs Visual Studio 2022 (Desktop C++) and a copy of the game for testing.
 
 ```
-EndlessMode\build.cmd               -> EndlessMode\build\EndlessMode.dll and EndlessMode.script
+EndlessMode\build.cmd               -> EndlessMode\build\EndlessArena.dll and EndlessArena.script
 EndlessMode\tests\run_offline.cmd   -> resolves every game function against Spider-Man.exe on disk (game need not be running)
 ```
 

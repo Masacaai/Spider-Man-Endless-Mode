@@ -1292,7 +1292,7 @@ static void Main() {
         gfx::InstallTextCapture();   // before the HUD loads its texts (panel titles/buttons can then be changed)
         portal::Start(HeroPosNow);
     } else {
-        LOG("game-thread hook failed; Endless Mode is disabled (dev commands still work)");
+        LOG("game-thread hook failed; EndlessArena is disabled (dev commands still work)");
     }
     LOG("ready; write commands to %s\\EndlessMode.cmd", g_dir.c_str());
 

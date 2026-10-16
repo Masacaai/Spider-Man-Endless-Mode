@@ -6,7 +6,7 @@ This is the whole loop for changing the mod yourself. Plan on about 30 minutes t
 
 | Need | Notes |
 |---|---|
-| Marvel's Spider-Man Remastered (Steam) | `Spider-Man.exe` file version **4.0630.0.0** exactly (right-click the exe, Properties, Details). The mod refuses to run on another build. Turn off automatic updates for the game, or an update will shift every address. |
+| Marvel's Spider-Man Remastered (developed on Steam; the mod checks the exe version, not the store, other stores untested) | `Spider-Man.exe` file version **4.0630.0.0** exactly (right-click the exe, Properties, Details). The mod refuses to run on another build. Turn off automatic updates for the game, or an update will shift every address. |
 | Windows 10/11 | The game and all tools are Windows-only |
 | Visual Studio 2022 | Community is fine; install the **Desktop development with C++** workload. `build.cmd` expects it at `C:\Program Files\Microsoft Visual Studio\2022\Community` (edit the `VS=` line in `EndlessMode\build.cmd` if yours differs) |
 | [Overstrike](https://www.nexusmods.com/marvelsspidermanremastered/mods/4199) 1.8.1 | The mod manager that loads `.script` mods. Needs the .NET 7 Desktop Runtime |
@@ -26,8 +26,8 @@ EndlessMode\build.cmd
 
 Output:
 
-- `EndlessMode\build\EndlessMode.dll`: the mod itself (static CRT and static MinHook; imports only KERNEL32, USER32, SHELL32 and the HID/SetupAPI libraries)
-- `EndlessMode\build\EndlessMode.script`: the same DLL zipped with an `info.json`, the format Overstrike installs (made by `pack.ps1`)
+- `EndlessMode\build\EndlessArena.dll`: the mod itself (static CRT and static MinHook; imports only KERNEL32, USER32, SHELL32 and the HID/SetupAPI libraries)
+- `EndlessMode\build\EndlessArena.script`: the same DLL zipped with an `info.json`, the format Overstrike installs (made by `pack.ps1`)
 
 It prints `BUILD OK` at the end. A full build takes under a minute. If it fails with a compiler error, that is real;
 read the message. Don't build while the game is running and you intend to install: the game locks the DLL.
@@ -39,7 +39,7 @@ Overstrike runs script mods through a proxy DLL (`winmm.dll`, copied into the ga
 - **Enable .script support**
 - **Add '-scripts' to commandline.txt**
 
-Then add `EndlessMode.script` and press **Install mods**. Launch the game from **Steam** (the commandline option does the rest).
+Then add `EndlessArena.script` and press **Install mods**. Launch the game from **Steam** (what we test with; the `-scripts` commandline option does the rest, so other launch routes that pass the game's command line should work but are untested).
 
 **Known issue with the stock proxy (as of Overstrike 1.8.0 and 1.8.1):** it can initialize game scanning inside helper
 processes (for example `crs-video.exe`). Options, safest first:
@@ -58,7 +58,7 @@ After the first Overstrike install, you do **not** need Overstrike again for cod
 the new DLL over the installed one:
 
 ```
-copy EndlessMode\build\EndlessMode.dll "<game folder>\scripts\EndlessMode.dll"
+copy EndlessMode\build\EndlessArena.dll "<game folder>\scripts\EndlessArena.dll"
 ```
 
 The game folder is usually `C:\Program Files (x86)\Steam\steamapps\common\Marvel's Spider-Man Remastered`.
@@ -131,4 +131,4 @@ More recipes: [HOW_TO.md](HOW_TO.md). How the code is laid out: [ARCHITECTURE.md
 | Game freezes | [REVERSE_ENGINEERING.md](REVERSE_ENGINEERING.md#5-diagnosing-a-hang). Take two thread snapshots before closing the game |
 | Enemies invisible, white cubes, floating heads | Model memory limit; see [GAME_INTERNALS.md](GAME_INTERNALS.md#model-capacity-and-asset-lifetime). Lower `max_types` in the ini |
 | Nothing happens at the circles | Check `[portal] enabled=1` and that the circle positions in the ini exist (`dock_set=1`) |
-| Mod does nothing at all | The proxy isn't loading it: check Overstrike's settings and that you launched through Steam |
+| Mod does nothing at all | The proxy isn't loading it: check Overstrike's settings and that the game was launched with `-scripts` (we launch through Steam) |

@@ -7,7 +7,7 @@ This file is the original early-development README and its command table is part
 ## Build
 
 ```
-build.cmd              -> build\EndlessMode.dll, build\EndlessMode.script
+build.cmd              -> build\EndlessArena.dll, build\EndlessArena.script
 tests\run_offline.cmd  -> resolves every native against Spider-Man.exe on disk (no game code runs)
 ```
 

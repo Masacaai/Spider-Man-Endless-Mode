@@ -125,7 +125,7 @@ namespace portal {
         if (GetFileAttributesA(Ini().c_str()) != INVALID_FILE_ATTRIBUTES) return;
         FILE* f = nullptr;
         if (fopen_s(&f, Ini().c_str(), "w") || !f) return;
-        fputs("; Endless Mode settings. Pads are set in game with the 'portal setdock' / 'portal setexit' commands.\n"
+        fputs("; EndlessArena settings. Pads are set in game with the 'portal setdock' / 'portal setexit' commands.\n"
               "[portal]\nenabled=1\nradius=2.5\nhold_seconds=3\n; virtual-key codes: 0x77 = F8, 0x78 = F9\nkey_enter=0x77\nkey_leave=0x78\n"
               "dock_set=1\ndock_x=744.51\ndock_y=0.85\ndock_z=-793.08\nraft_dock_set=1\nraft_dock_x=744.56\nraft_dock_y=0.85\nraft_dock_z=-869.35\n\n"
               "[run]\n; mode: campaign | faction | bossrush\nmode=campaign\n; faction mode: street fisk demons prisoners sable hammerhead tombstone taskmaster\n"

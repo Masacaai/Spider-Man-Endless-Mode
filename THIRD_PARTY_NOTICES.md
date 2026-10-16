@@ -1,6 +1,6 @@
 # Third-party notices
 
-The built `EndlessMode.dll` statically links the libraries below. Their licenses require these notices to travel with
+The built `EndlessArena.dll` statically links the libraries below. Their licenses require these notices to travel with
 binaries; they apply to those libraries only. The rest of this repository is under the GNU GPL v3 (see `LICENSE`).
 
 ## MinHook (and the bundled HDE disassembler)

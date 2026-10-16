@@ -17,13 +17,13 @@ A map of the code is in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md); the revers
 ## Commands
 
 ```
-EndlessMode\build.cmd                  build -> EndlessMode\build\EndlessMode.dll / .script   (prints "BUILD OK")
+EndlessMode\build.cmd                  build -> EndlessMode\build\EndlessArena.dll / .script   (prints "BUILD OK")
 EndlessMode\tests\run_plan.cmd 20      print the wave plan offline (no game)
 EndlessMode\tests\run_offline.cmd      resolve every game native against Spider-Man.exe on disk (no game running)
 ```
 
-Installing into the game and testing needs a human with the game: copy `EndlessMode\build\EndlessMode.dll` to `<game>\scripts\` with the game
-closed, launch via Steam, and drive it with the command file (`<game>\scripts\EndlessMode.cmd`, output in `EndlessMode.log`). See
+Installing into the game and testing needs a human with the game: copy `EndlessMode\build\EndlessArena.dll` to `<game>\scripts\` with the game
+closed, launch the game (the maintainer uses Steam), and drive it with the command file (`<game>\scripts\EndlessMode.cmd`, output in `EndlessMode.log`). See
 [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md). If you have shell access to a machine with the game, you can write commands to the
 command file and read the log yourself; a lot of debugging works that way.
 
