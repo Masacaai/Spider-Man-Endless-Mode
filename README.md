@@ -81,4 +81,6 @@ your own. Open issues are drafted in [docs/issues/](docs/issues/).
 - The mod is a script for Overstrike (GPLv3, by Tkachov) and uses MinHook (BSD-2). It does not include code from the MSMR
   Script SDK or from Script Hook; those were read only as references for how the game works (see
   [docs/REVERSE_ENGINEERING.md](docs/REVERSE_ENGINEERING.md#credit-and-prior-art)).
-- **License: not chosen yet.** The owner must add a `LICENSE` file before the repository is public.
+- **License: GNU General Public License v3.0 or later** ([LICENSE](LICENSE)). Anyone may use, study, change and share this software, and
+  changed versions must stay free under the same terms. There is no individual owner: it belongs to everyone who contributes. Notices for
+  the statically linked MinHook library are in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

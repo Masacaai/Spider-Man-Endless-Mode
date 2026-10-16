@@ -21,6 +21,11 @@ more than usual.
 6. **A report is a record; a pattern is an issue.** One-off oddities (a single hang, a stuck enemy) go in
    [docs/BUGS.md](docs/BUGS.md) as records. We start fixing something when it keeps happening.
 
+## License
+
+By contributing you agree your work is released under the project's license, GPL-3.0-or-later (see `LICENSE`). Only submit work you wrote or
+that is under a compatible license, and say where anything else came from.
+
 ## Workflow
 
 1. Fork, branch from `main`.
