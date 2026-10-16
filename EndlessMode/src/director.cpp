@@ -670,7 +670,8 @@ namespace director {
             g_results = score::End(GetTickCount(), l.kills);
             g_results_level = g_plan.wave;
             g_results_ready = true;
-            panels::Hide();   // the live score panel
+            // The live score panel is NOT hidden here: the game's own flow goes live panel -> results panel with no hide in between,
+            // and hiding it first left the results panel without buttons, with placeholder tiers, or invisible (user, 2026-10-16).
         } else {
             // Campaign summary (user, 2026-10-15): the same results panel, shown after the run.
             g_results = score::CampaignEnd(g_plan.wave, l.kills, l.hits_dealt, l.hits_taken);
