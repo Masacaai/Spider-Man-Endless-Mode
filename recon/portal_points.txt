@@ -1,0 +1,6 @@
+rykers_arrival 1133.25, -0.98, -750.67
+rykers_start_line 1208.13, 1.00, -749.54
+rykers_wave1_spawn 1270.73, 1.00, -775.15
+raft_dock 744.91, 0.85, -869.40
+raft_roof_candidate 1360.18, 187.00, -1210.02
+raft_cage_center 1362.77, 187.00, -1211.94

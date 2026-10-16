@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Endless Mode Runs</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781;
+    --grid: #e1e0d9; --axis: #c3c2b7; --ring: rgba(11,11,11,0.10);
+    --s1: #2a78d6; --s2: #eb6834; --s3: #1baf7a; --band: rgba(42,120,214,0.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+      --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,0.10);
+      --s1: #3987e5; --s2: #d95926; --s3: #199e70; --band: rgba(57,135,229,0.10);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --ink: #ffffff; --ink-2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --ring: rgba(255,255,255,0.10);
+    --s1: #3987e5; --s2: #d95926; --s3: #199e70; --band: rgba(57,135,229,0.10);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--page); color: var(--ink); font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 1180px; margin: 0 auto; padding: 24px 16px 64px; }
+  header { display: flex; flex-wrap: wrap; gap: 12px; align-items: baseline; justify-content: space-between; margin-bottom: 16px; }
+  h1 { font-size: 20px; margin: 0; }
+  h2 { font-size: 15px; margin: 0 0 4px; }
+  .sub { color: var(--ink-2); font-size: 13px; }
+  .controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  button, label.btn { font: inherit; padding: 6px 12px; border-radius: 8px; border: 1px solid var(--ring); background: var(--surface); color: var(--ink); cursor: pointer; }
+  input[type=file] { display: none; }
+  .drop { border: 1px dashed var(--axis); border-radius: 12px; padding: 10px 14px; color: var(--ink-2); font-size: 13px; }
+  .drop.over { border-color: var(--s1); color: var(--ink); }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin: 16px 0; }
+  .tile { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 12px 14px; }
+  .tile .v { font-size: 26px; font-weight: 600; }
+  .tile .k { color: var(--ink-2); font-size: 12px; }
+  .card { background: var(--surface); border: 1px solid var(--ring); border-radius: 12px; padding: 14px 16px; margin-bottom: 14px; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 860px) { .grid2 { grid-template-columns: 1fr; } }
+  svg { display: block; width: 100%; height: auto; overflow: visible; }
+  svg text { fill: var(--muted); font-size: 11px; }
+  .legend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--ink-2); margin: 4px 0 6px; }
+  .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
+  th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--grid); }
+  th { color: var(--ink-2); font-weight: 500; }
+  td.n, th.n { text-align: right; }
+  .tip { position: fixed; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--ring);
+         border-radius: 8px; padding: 6px 8px; font-size: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); display: none; z-index: 10; max-width: 260px; }
+  .scroll { overflow-x: auto; }
+  .note { color: var(--muted); font-size: 12px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div>
+      <h1>Endless Mode Runs</h1>
+      <div class="sub" id="runinfo">Load a run file from <code>scripts\EndlessMode_runs\</code></div>
+    </div>
+    <div class="controls">
+      <label class="btn">Open run JSON<input type="file" id="file" accept=".json" multiple></label>
+      <select id="runs" class="btn" style="display:none"></select>
+      <button id="theme" title="Toggle light/dark">Theme</button>
+      <span class="drop" id="drop">or drop files here</span>
+    </div>
+  </header>
+
+  <section class="tiles" id="tiles"></section>
+
+  <section class="card">
+    <h2>Health over the run</h2>
+    <div class="sub">Shaded bands are waves; orange marks are hits taken. Hover for details.</div>
+    <div id="health"></div>
+  </section>
+
+  <section class="card">
+    <h2>Enemies on the field</h2>
+    <div id="alive"></div>
+  </section>
+
+  <div class="grid2">
+    <section class="card">
+      <h2>Map of the run (top-down)</h2>
+      <div class="legend"><span><i style="background:var(--s1)"></i>Spidey's path</span><span><i style="background:var(--s2)"></i>Hit taken</span><span><i style="background:var(--muted)"></i>Enemy spawn</span><span>✕ blacklisted point</span></div>
+      <div id="map"></div>
+    </section>
+    <section class="card">
+      <h2>Who hurt Spidey</h2>
+      <div class="sub">Damage taken by enemy type</div>
+      <div id="who"></div>
+    </section>
+  </div>
+
+  <section class="card">
+    <h2>Kills per wave</h2>
+    <div class="legend"><span><i style="background:var(--s1)"></i>Normal wave</span><span><i style="background:var(--s3)"></i>Boss wave</span></div>
+    <div id="kills"></div>
+  </section>
+
+  <section class="card scroll">
+    <h2>Waves</h2>
+    <table id="waves"></table>
+  </section>
+
+  <section class="card scroll">
+    <h2>Events</h2>
+    <table id="events"></table>
+  </section>
+</main>
+<div class="tip" id="tip"></div>
+<script src="sample_run.js"></script>
+<script>
+"use strict";
+const runs = [];
+const $ = id => document.getElementById(id);
+const NS = "http://www.w3.org/2000/svg";
+const tip = $("tip");
+
+function el(tag, attrs = {}, parent) {
+  const e = document.createElementNS(NS, tag);
+  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  if (parent) parent.appendChild(e);
+  return e;
+}
+function showTip(ev, html) { tip.innerHTML = html; tip.style.display = "block"; moveTip(ev); }
+function moveTip(ev) {
+  const w = tip.offsetWidth, h = tip.offsetHeight;
+  let x = ev.clientX + 14, y = ev.clientY + 14;
+  if (x + w > innerWidth - 8) x = ev.clientX - w - 14;
+  if (y + h > innerHeight - 8) y = ev.clientY - h - 14;
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+}
+function hideTip() { tip.style.display = "none"; }
+const fmtT = s => { s = Math.max(0, Math.round(s)); return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0"); };
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+function niceTicks(max, n = 4) {
+  if (max <= 0) return [0];
+  const raw = max / n, mag = Math.pow(10, Math.floor(Math.log10(raw)));
+  const step = [1, 2, 2.5, 5, 10].map(m => m * mag).find(s => s >= raw);
+  const t = []; for (let v = 0; v <= max + 1e-9; v += step) t.push(+v.toFixed(6)); return t;
+}
+
+// ---- time series with crosshair ----
+function timeChart(container, run, series, yMax, opts = {}) {
+  container.innerHTML = "";
+  const W = 1100, H = opts.height || 220, L = 44, R = 10, T = 10, B = 26;
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": opts.label || "chart" }, container);
+  const tMax = Math.max(1, run.duration_s);
+  const x = t => L + (W - L - R) * t / tMax, y = v => T + (H - T - B) * (1 - v / yMax);
+  for (const w of run.waves) {   // wave bands
+    const end = w.clear_t >= 0 ? w.clear_t : tMax;
+    el("rect", { x: x(w.start_t), y: T, width: Math.max(1, x(end) - x(w.start_t)), height: H - T - B, fill: "var(--band)" }, svg);
+    const lbl = el("text", { x: x(w.start_t) + 4, y: T + 12 }, svg); lbl.textContent = "W" + w.n;
+  }
+  for (const v of niceTicks(yMax)) {
+    el("line", { x1: L, x2: W - R, y1: y(v), y2: y(v), stroke: "var(--grid)", "stroke-width": 1 }, svg);
+    const t = el("text", { x: L - 6, y: y(v) + 4, "text-anchor": "end" }, svg); t.textContent = v;
+  }
+  for (const v of niceTicks(tMax, 8)) {
+    const t = el("text", { x: x(v), y: H - 8, "text-anchor": "middle" }, svg); t.textContent = fmtT(v);
+  }
+  el("line", { x1: L, x2: W - R, y1: y(0), y2: y(0), stroke: "var(--axis)", "stroke-width": 1 }, svg);
+  const pts = series.points;
+  if (pts.length) {
+    const d = pts.map((p, i) => (i ? "L" : "M") + x(p[0]).toFixed(1) + "," + y(p[1]).toFixed(1)).join("");
+    el("path", { d, fill: "none", stroke: series.color, "stroke-width": 2, "stroke-linejoin": "round" }, svg);
+  }
+  if (opts.marks) for (const m of opts.marks) {
+    const c = el("circle", { cx: x(m.t), cy: y(m.v), r: 4, fill: "var(--s2)", stroke: "var(--surface)", "stroke-width": 2 }, svg);
+    c.addEventListener("mousemove", ev => showTip(ev, m.html)); c.addEventListener("mouseleave", hideTip);
+  }
+  // crosshair
+  const cross = el("line", { y1: T, y2: H - B, stroke: "var(--axis)", "stroke-width": 1, visibility: "hidden" }, svg);
+  const dot = el("circle", { r: 4, fill: series.color, stroke: "var(--surface)", "stroke-width": 2, visibility: "hidden" }, svg);
+  const hit = el("rect", { x: L, y: T, width: W - L - R, height: H - T - B, fill: "transparent" }, svg);
+  svg.appendChild(hit);
+  if (opts.marks) for (const c of svg.querySelectorAll("circle[r='4']")) if (c !== dot) svg.appendChild(c);
+  hit.addEventListener("mousemove", ev => {
+    if (!pts.length) return;
+    const r = svg.getBoundingClientRect(), sx = (ev.clientX - r.left) * W / r.width;
+    const t = (sx - L) / (W - L - R) * tMax;
+    let lo = 0, hi = pts.length - 1;
+    while (hi - lo > 1) { const m = (lo + hi) >> 1; if (pts[m][0] < t) lo = m; else hi = m; }
+    const p = Math.abs(pts[lo][0] - t) < Math.abs(pts[hi][0] - t) ? pts[lo] : pts[hi];
+    cross.setAttribute("x1", x(p[0])); cross.setAttribute("x2", x(p[0])); cross.setAttribute("visibility", "visible");
+    dot.setAttribute("cx", x(p[0])); dot.setAttribute("cy", y(p[1])); dot.setAttribute("visibility", "visible");
+    const wave = run.waves.filter(w => w.start_t <= p[0]).pop();
+    showTip(ev, `<b>${fmtT(p[0])}</b>${wave ? " · wave " + wave.n : ""}<br>${series.name}: <b>${Math.round(p[1])}</b>`);
+  });
+  hit.addEventListener("mouseleave", () => { cross.setAttribute("visibility", "hidden"); dot.setAttribute("visibility", "hidden"); hideTip(); });
+}
+
+// ---- horizontal bars (one series, one color) ----
+function hbars(container, rows, unit) {
+  container.innerHTML = "";
+  if (!rows.length) { container.innerHTML = '<div class="note">No data yet.</div>'; return; }
+  const W = 540, rowH = 26, L = 170, R = 60, H = rows.length * rowH + 8;
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "bar chart" }, container);
+  const max = Math.max(...rows.map(r => r.v));
+  rows.forEach((r, i) => {
+    const y0 = 4 + i * rowH, w = Math.max(2, (W - L - R) * r.v / max);
+    const lab = el("text", { x: L - 8, y: y0 + 16, "text-anchor": "end" }, svg); lab.textContent = r.k.length > 26 ? r.k.slice(0, 25) + "…" : r.k;
+    el("rect", { x: L, y: y0 + 4, width: w, height: rowH - 10, rx: 4, fill: "var(--s1)" }, svg);
+    const val = el("text", { x: L + w + 6, y: y0 + 16 }, svg); val.textContent = Math.round(r.v);
+    const hit = el("rect", { x: 0, y: y0, width: W, height: rowH, fill: "transparent" }, svg);
+    hit.addEventListener("mousemove", ev => showTip(ev, `<b>${esc(r.k)}</b><br>${r.tip || Math.round(r.v) + " " + unit}`));
+    hit.addEventListener("mouseleave", hideTip);
+  });
+}
+
+// ---- vertical bars per wave ----
+function vbars(container, rows) {
+  container.innerHTML = "";
+  if (!rows.length) return;
+  const W = 1100, H = 180, L = 40, R = 10, T = 10, B = 24;
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "kills per wave" }, container);
+  const max = Math.max(1, ...rows.map(r => r.v)), ticks = niceTicks(max);
+  const top = ticks[ticks.length - 1] || max;
+  const y = v => T + (H - T - B) * (1 - v / top);
+  for (const v of ticks) {
+    el("line", { x1: L, x2: W - R, y1: y(v), y2: y(v), stroke: "var(--grid)" }, svg);
+    const t = el("text", { x: L - 6, y: y(v) + 4, "text-anchor": "end" }, svg); t.textContent = v;
+  }
+  const slot = (W - L - R) / rows.length, bw = Math.min(36, slot - 2);
+  rows.forEach((r, i) => {
+    const cx = L + slot * i + slot / 2;
+    const h = Math.max(0, y(0) - y(r.v));
+    el("path", { d: `M${cx - bw / 2},${y(0)} v${-Math.max(0, h - 4)} q0,-4 4,-4 h${bw - 8} q4,0 4,4 v${Math.max(0, h - 4)} z`, fill: r.boss ? "var(--s3)" : "var(--s1)" }, svg);
+    const t = el("text", { x: cx, y: H - 8, "text-anchor": "middle" }, svg); t.textContent = r.k;
+    const hit = el("rect", { x: cx - slot / 2, y: T, width: slot, height: H - T - B, fill: "transparent" }, svg);
+    hit.addEventListener("mousemove", ev => showTip(ev, r.tip)); hit.addEventListener("mouseleave", hideTip);
+  });
+}
+
+// ---- top-down map ----
+function map(container, run) {
+  container.innerHTML = "";
+  const xs = [], zs = [];
+  for (const s of run.samples) { xs.push(s[1]); zs.push(s[3]); }
+  for (const e of run.enemies) { xs.push(e.x); zs.push(e.z); }
+  if (!xs.length) { container.innerHTML = '<div class="note">No positions recorded.</div>'; return; }
+  let x0 = Math.min(...xs), x1 = Math.max(...xs), z0 = Math.min(...zs), z1 = Math.max(...zs);
+  const pad = 5; x0 -= pad; x1 += pad; z0 -= pad; z1 += pad;
+  const W = 540, H = Math.max(260, Math.min(520, W * (z1 - z0) / (x1 - x0)));
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "top-down map" }, container);
+  const px = v => (v - x0) / (x1 - x0) * W, pz = v => (v - z0) / (z1 - z0) * H;
+  el("rect", { x: 0, y: 0, width: W, height: H, fill: "none", stroke: "var(--grid)" }, svg);
+  for (const e of run.enemies) {
+    const c = el("circle", { cx: px(e.x), cy: pz(e.z), r: 3, fill: "var(--muted)", opacity: 0.55 }, svg);
+    c.addEventListener("mousemove", ev => showTip(ev, `Spawn: <b>${esc(e.type)}</b><br>wave ${e.wave}, point ${e.point}${e.stuck ? "<br>stuck" : ""}`));
+    c.addEventListener("mouseleave", hideTip);
+  }
+  const d = run.samples.map((s, i) => (i ? "L" : "M") + px(s[1]).toFixed(1) + "," + pz(s[3]).toFixed(1)).join("");
+  if (d) el("path", { d, fill: "none", stroke: "var(--s1)", "stroke-width": 1.5, opacity: 0.7 }, svg);
+  const bl = new Set(run.blacklisted_points || []);
+  for (const e of run.enemies) if (bl.has(e.point)) {
+    const t = el("text", { x: px(e.x), y: pz(e.z) + 4, "text-anchor": "middle", style: "fill:var(--ink);font-size:12px" }, svg); t.textContent = "✕";
+  }
+  for (const h of run.hits_taken) {
+    const c = el("circle", { cx: px(h.x), cy: pz(h.z), r: 4, fill: "var(--s2)", stroke: "var(--surface)", "stroke-width": 2 }, svg);
+    c.addEventListener("mousemove", ev => showTip(ev, `Hit by <b>${esc(h.by)}</b><br>${fmtT(h.t)}, wave ${h.wave}<br>-${Math.round(h.before - h.after)} HP (${Math.round(h.after)} left)`));
+    c.addEventListener("mouseleave", hideTip);
+  }
+}
+
+function render(run) {
+  const s = run.summary || {};
+  $("runinfo").textContent = `${run.started} · ${run.mode.mode} · seed ${run.mode.seed} · ${run.mode.arena} · ended: ${run.end_reason}`;
+  const dmgPerWave = s.waves_started ? (s.damage_taken / s.waves_started) : 0;
+  const tiles = [
+    ["Waves cleared", s.waves_cleared], ["Kills", s.kills], ["Hits taken", s.hits_taken],
+    ["Damage taken", Math.round(s.damage_taken)], ["Hits landed", s.hits_dealt], ["Bosses defeated", s.bosses_defeated],
+    ["Run time", fmtT(run.duration_s)], ["Damage per wave", Math.round(dmgPerWave)],
+  ];
+  $("tiles").innerHTML = tiles.map(([k, v]) => `<div class="tile"><div class="v">${v ?? "-"}</div><div class="k">${k}</div></div>`).join("");
+
+  const maxHp = Math.max(1, ...run.samples.map(p => p[5] || p[4]));
+  timeChart($("health"), run, { name: "Health", color: "var(--s1)", points: run.samples.filter(p => p[4] >= 0).map(p => [p[0], p[4]]) },
+            niceTicks(maxHp).slice(-1)[0] || maxHp, {
+    label: "Health over time",
+    marks: run.hits_taken.map(h => ({ t: h.t, v: h.after, html: `<b>${fmtT(h.t)}</b> hit by <b>${esc(h.by)}</b><br>-${Math.round(h.before - h.after)} HP` })),
+  });
+  const maxAlive = Math.max(1, ...run.samples.map(p => p[6]));
+  timeChart($("alive"), run, { name: "Enemies alive", color: "var(--s1)", points: run.samples.map(p => [p[0], p[6]]) },
+            niceTicks(maxAlive).slice(-1)[0] || maxAlive, { height: 160, label: "Enemies alive over time" });
+  map($("map"), run);
+
+  const by = {};
+  for (const h of run.hits_taken) {
+    const b = by[h.by] || (by[h.by] = { dmg: 0, n: 0 });
+    b.dmg += h.before - h.after; b.n++;
+  }
+  hbars($("who"), Object.entries(by).sort((a, b) => b[1].dmg - a[1].dmg).slice(0, 12)
+    .map(([k, v]) => ({ k, v: v.dmg, tip: `${Math.round(v.dmg)} damage from ${v.n} hits` })), "damage");
+
+  vbars($("kills"), run.waves.map(w => ({
+    k: "W" + w.n, v: w.kills, boss: w.kind.includes("boss"),
+    tip: `<b>Wave ${w.n}</b> · ${esc(w.faction)} · ${esc(w.kind)}${w.bosses.length ? "<br>" + esc(w.bosses.join(", ")) : ""}<br>${w.kills} kills, ${w.hits_taken} hits taken`,
+  })));
+
+  const dur = w => w.clear_t >= 0 ? fmtT(w.clear_t - w.start_t) : "—";
+  $("waves").innerHTML = "<tr><th>Wave</th><th>Faction</th><th>Kind</th><th>Bosses</th><th class=n>Goons</th><th class=n>Max on field</th><th class=n>Health ×</th><th class=n>Kills</th><th class=n>Hits taken</th><th class=n>Damage</th><th class=n>Time</th></tr>" +
+    run.waves.map(w => `<tr><td>${w.n}</td><td>${esc(w.faction)}</td><td>${esc(w.kind)}</td><td>${esc(w.bosses.join(", ")) || "—"}</td><td class=n>${w.count}</td><td class=n>${w.max_alive}</td><td class=n>${w.health_mult.toFixed(2)}</td><td class=n>${w.kills}</td><td class=n>${w.hits_taken}</td><td class=n>${Math.round(w.damage_taken)}</td><td class=n>${dur(w)}</td></tr>`).join("");
+  $("events").innerHTML = "<tr><th>Time</th><th>Event</th><th>Detail</th></tr>" +
+    (run.events.length ? run.events.map(e => `<tr><td>${fmtT(e.t)}</td><td>${esc(e.type)}</td><td>${esc(e.detail)}</td></tr>`).join("") : "<tr><td colspan=3>None</td></tr>");
+}
+
+function addRun(run, name) {
+  runs.push({ run, name });
+  const sel = $("runs");
+  const o = document.createElement("option");
+  o.value = runs.length - 1; o.textContent = name;
+  sel.appendChild(o);
+  sel.style.display = runs.length > 1 ? "" : "none";
+  sel.value = runs.length - 1;
+  render(run);
+}
+function loadFiles(files) {
+  for (const f of files) {
+    const r = new FileReader();
+    r.onload = () => { try { addRun(JSON.parse(r.result), f.name); } catch (e) { alert(f.name + ": not a run file (" + e.message + ")"); } };
+    r.readAsText(f);
+  }
+}
+$("file").addEventListener("change", e => loadFiles(e.target.files));
+$("runs").addEventListener("change", e => render(runs[+e.target.value].run));
+const drop = $("drop");
+addEventListener("dragover", e => { e.preventDefault(); drop.classList.add("over"); });
+addEventListener("dragleave", () => drop.classList.remove("over"));
+addEventListener("drop", e => { e.preventDefault(); drop.classList.remove("over"); loadFiles(e.dataTransfer.files); });
+$("theme").addEventListener("click", () => {
+  const cur = document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.dataset.theme = cur === "dark" ? "light" : "dark";
+  if (runs.length) render(runs[+$("runs").value || runs.length - 1].run);
+});
+if (window.SAMPLE_RUN) addRun(window.SAMPLE_RUN, "sample (synthetic)");
+</script>
+</body>
+</html>

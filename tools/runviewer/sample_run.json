@@ -1,0 +1,10695 @@
+{
+ "version": 1,
+ "started": "2026-10-13T20:00:00",
+ "duration_s": 502.0,
+ "end_reason": "hero_down",
+ "mode": {
+  "arena": "rykers",
+  "mode": "SAMPLE (synthetic data)",
+  "seed": 7,
+  "engaged": true,
+  "faction_order": [
+   "street",
+   "fisk",
+   "demons",
+   "prisoners",
+   "sable",
+   "hammerhead",
+   "tombstone",
+   "taskmaster"
+  ]
+ },
+ "summary": {
+  "waves_started": 7,
+  "waves_cleared": 6,
+  "kills": 85,
+  "hits_taken": 109,
+  "damage_taken": 670.8,
+  "hits_dealt": 510,
+  "bosses_defeated": 1,
+  "enemies_spawned": 85,
+  "stuck_removed": 0
+ },
+ "waves": [
+  {
+   "n": 1,
+   "faction": "street",
+   "kind": "skirmish",
+   "bosses": [],
+   "count": 8,
+   "max_alive": 9,
+   "health_mult": 1.0,
+   "start_t": 5.0,
+   "clear_t": 51.0,
+   "kills": 8,
+   "hits_taken": 7,
+   "damage_taken": 129.0
+  },
+  {
+   "n": 2,
+   "faction": "street",
+   "kind": "assault",
+   "bosses": [],
+   "count": 10,
+   "max_alive": 10,
+   "health_mult": 1.025,
+   "start_t": 58.0,
+   "clear_t": 110.0,
+   "kills": 10,
+   "hits_taken": 11,
+   "damage_taken": 173.4
+  },
+  {
+   "n": 3,
+   "faction": "street",
+   "kind": "full force",
+   "bosses": [],
+   "count": 12,
+   "max_alive": 11,
+   "health_mult": 1.05,
+   "start_t": 117.0,
+   "clear_t": 175.0,
+   "kills": 12,
+   "hits_taken": 16,
+   "damage_taken": 66.6
+  },
+  {
+   "n": 4,
+   "faction": "street",
+   "kind": "boss",
+   "bosses": [
+    "Bounty Hunter"
+   ],
+   "count": 0,
+   "max_alive": 12,
+   "health_mult": 1.075,
+   "start_t": 182.0,
+   "clear_t": 246.0,
+   "kills": 1,
+   "hits_taken": 21,
+   "damage_taken": 66.0
+  },
+  {
+   "n": 5,
+   "faction": "fisk",
+   "kind": "skirmish",
+   "bosses": [],
+   "count": 16,
+   "max_alive": 13,
+   "health_mult": 1.1,
+   "start_t": 253.0,
+   "clear_t": 323.0,
+   "kills": 16,
+   "hits_taken": 15,
+   "damage_taken": 60.2
+  },
+  {
+   "n": 6,
+   "faction": "fisk",
+   "kind": "assault",
+   "bosses": [],
+   "count": 18,
+   "max_alive": 14,
+   "health_mult": 1.125,
+   "start_t": 330.0,
+   "clear_t": 406.0,
+   "kills": 18,
+   "hits_taken": 13,
+   "damage_taken": 95.2
+  },
+  {
+   "n": 7,
+   "faction": "fisk",
+   "kind": "full force",
+   "bosses": [],
+   "count": 20,
+   "max_alive": 15,
+   "health_mult": 1.15,
+   "start_t": 413.0,
+   "clear_t": -1,
+   "kills": 20,
+   "hits_taken": 26,
+   "damage_taken": 80.4
+  }
+ ],
+ "enemies": [
+  {
+   "type": "enm_pistolthug",
+   "wave": 1,
+   "point": 24,
+   "boss": false,
+   "x": 1273.81,
+   "y": 1.0,
+   "z": -821.39,
+   "start_health": 170,
+   "spawn_t": 6.21,
+   "death_t": 40.49,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_pistolthug",
+   "wave": 1,
+   "point": 107,
+   "boss": false,
+   "x": 1226.59,
+   "y": 1.0,
+   "z": -831.27,
+   "start_health": 170,
+   "spawn_t": 10.37,
+   "death_t": 21.12,
+   "stuck": false,
+   "hits_on_hero": 2,
+   "damage_to_hero": 37.63
+  },
+  {
+   "type": "enm_meleethug",
+   "wave": 1,
+   "point": 57,
+   "boss": false,
+   "x": 1256.39,
+   "y": 1.0,
+   "z": -791.26,
+   "start_health": 170,
+   "spawn_t": 6.48,
+   "death_t": 32.57,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_slayer",
+   "wave": 1,
+   "point": 56,
+   "boss": false,
+   "x": 1231.54,
+   "y": 1.0,
+   "z": -839.19,
+   "start_health": 170,
+   "spawn_t": 19.43,
+   "death_t": 40.12,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_meleethug",
+   "wave": 1,
+   "point": 78,
+   "boss": false,
+   "x": 1242.51,
+   "y": 1.0,
+   "z": -819.65,
+   "start_health": 170,
+   "spawn_t": 15.48,
+   "death_t": 40.78,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 19.0
+  },
+  {
+   "type": "enm_rocket_thug",
+   "wave": 1,
+   "point": 95,
+   "boss": false,
+   "x": 1260.86,
+   "y": 1.0,
+   "z": -828.28,
+   "start_health": 170,
+   "spawn_t": 19.54,
+   "death_t": 47.99,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 21.59
+  },
+  {
+   "type": "enm_meleethug",
+   "wave": 1,
+   "point": 136,
+   "boss": false,
+   "x": 1243.95,
+   "y": 1.0,
+   "z": -818.42,
+   "start_health": 170,
+   "spawn_t": 6.49,
+   "death_t": 21.08,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_riflethug",
+   "wave": 1,
+   "point": 63,
+   "boss": false,
+   "x": 1258.68,
+   "y": 1.0,
+   "z": -836.32,
+   "start_health": 170,
+   "spawn_t": 28.09,
+   "death_t": 47.66,
+   "stuck": false,
+   "hits_on_hero": 3,
+   "damage_to_hero": 50.73
+  },
+  {
+   "type": "enm_pistolthug",
+   "wave": 2,
+   "point": 108,
+   "boss": false,
+   "x": 1250.52,
+   "y": 1.0,
+   "z": -782.66,
+   "start_health": 170,
+   "spawn_t": 62.54,
+   "death_t": 94.72,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_slayer",
+   "wave": 2,
+   "point": 126,
+   "boss": false,
+   "x": 1261.91,
+   "y": 1.0,
+   "z": -829.94,
+   "start_health": 170,
+   "spawn_t": 61.73,
+   "death_t": 99.15,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 10.41
+  },
+  {
+   "type": "enm_slayer",
+   "wave": 2,
+   "point": 18,
+   "boss": false,
+   "x": 1247.1,
+   "y": 1.0,
+   "z": -799.97,
+   "start_health": 170,
+   "spawn_t": 77.99,
+   "death_t": 91.86,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_pistolthug",
+   "wave": 2,
+   "point": 56,
+   "boss": false,
+   "x": 1278.94,
+   "y": 1.0,
+   "z": -824.77,
+   "start_health": 170,
+   "spawn_t": 78.04,
+   "death_t": 88.72,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 14.54
+  },
+  {
+   "type": "enm_meleethug",
+   "wave": 2,
+   "point": 106,
+   "boss": false,
+   "x": 1253.82,
+   "y": 1.0,
+   "z": -802.01,
+   "start_health": 170,
+   "spawn_t": 58.29,
+   "death_t": 98.11,
+   "stuck": false,
+   "hits_on_hero": 2,
+   "damage_to_hero": 31.09
+  },
+  {
+   "type": "enm_pistolthug",
+   "wave": 2,
+   "point": 41,
+   "boss": false,
+   "x": 1247.0,
+   "y": 1.0,
+   "z": -822.67,
+   "start_health": 170,
+   "spawn_t": 75.74,
+   "death_t": 113.76,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_pistolthug",
+   "wave": 2,
+   "point": 52,
+   "boss": false,
+   "x": 1269.3,
+   "y": 1.0,
+   "z": -810.32,
+   "start_health": 170,
+   "spawn_t": 65.8,
+   "death_t": 83.56,
+   "stuck": false,
+   "hits_on_hero": 3,
+   "damage_to_hero": 55.29
+  },
+  {
+   "type": "enm_pistolthug",
+   "wave": 2,
+   "point": 64,
+   "boss": false,
+   "x": 1229.74,
+   "y": 1.0,
+   "z": -806.03,
+   "start_health": 170,
+   "spawn_t": 64.76,
+   "death_t": 98.48,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 19.59
+  },
+  {
+   "type": "enm_meleethug",
+   "wave": 2,
+   "point": 121,
+   "boss": false,
+   "x": 1283.2,
+   "y": 1.0,
+   "z": -812.27,
+   "start_health": 170,
+   "spawn_t": 71.78,
+   "death_t": 85.84,
+   "stuck": false,
+   "hits_on_hero": 2,
+   "damage_to_hero": 20.96
+  },
+  {
+   "type": "enm_baton_thug",
+   "wave": 2,
+   "point": 126,
+   "boss": false,
+   "x": 1266.6,
+   "y": 1.0,
+   "z": -820.05,
+   "start_health": 170,
+   "spawn_t": 78.47,
+   "death_t": 100.3,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 21.57
+  },
+  {
+   "type": "enm_meleethug",
+   "wave": 3,
+   "point": 36,
+   "boss": false,
+   "x": 1267.96,
+   "y": 1.0,
+   "z": -819.32,
+   "start_health": 170,
+   "spawn_t": 126.84,
+   "death_t": 141.65,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 0.6
+  },
+  {
+   "type": "enm_riflethug",
+   "wave": 3,
+   "point": 80,
+   "boss": false,
+   "x": 1265.9,
+   "y": 1.0,
+   "z": -811.32,
+   "start_health": 170,
+   "spawn_t": 126.83,
+   "death_t": 163.57,
+   "stuck": false,
+   "hits_on_hero": 3,
+   "damage_to_hero": 19.2
+  },
+  {
+   "type": "enm_slayer",
+   "wave": 3,
+   "point": 134,
+   "boss": false,
+   "x": 1264.08,
+   "y": 1.0,
+   "z": -807.18,
+   "start_health": 170,
+   "spawn_t": 121.14,
+   "death_t": 135.24,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_slayer",
+   "wave": 3,
+   "point": 84,
+   "boss": false,
+   "x": 1237.57,
+   "y": 1.0,
+   "z": -811.4,
+   "start_health": 170,
+   "spawn_t": 135.13,
+   "death_t": 169.99,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 1.2
+  },
+  {
+   "type": "enm_riflethug",
+   "wave": 3,
+   "point": 31,
+   "boss": false,
+   "x": 1259.89,
+   "y": 1.0,
+   "z": -806.2,
+   "start_health": 170,
+   "spawn_t": 124.0,
+   "death_t": 143.24,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 1.2
+  },
+  {
+   "type": "enm_rocket_thug",
+   "wave": 3,
+   "point": 110,
+   "boss": false,
+   "x": 1269.8,
+   "y": 1.0,
+   "z": -818.38,
+   "start_health": 170,
+   "spawn_t": 125.92,
+   "death_t": 160.21,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_meleethug",
+   "wave": 3,
+   "point": 49,
+   "boss": false,
+   "x": 1275.8,
+   "y": 1.0,
+   "z": -808.35,
+   "start_health": 170,
+   "spawn_t": 126.32,
+   "death_t": 163.74,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_pistolthug",
+   "wave": 3,
+   "point": 103,
+   "boss": false,
+   "x": 1233.67,
+   "y": 1.0,
+   "z": -790.58,
+   "start_health": 170,
+   "spawn_t": 117.76,
+   "death_t": 138.9,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_meleethug",
+   "wave": 3,
+   "point": 49,
+   "boss": false,
+   "x": 1239.67,
+   "y": 1.0,
+   "z": -799.78,
+   "start_health": 170,
+   "spawn_t": 137.08,
+   "death_t": 147.07,
+   "stuck": false,
+   "hits_on_hero": 4,
+   "damage_to_hero": 24.0
+  },
+  {
+   "type": "enm_slayer",
+   "wave": 3,
+   "point": 11,
+   "boss": false,
+   "x": 1278.21,
+   "y": 1.0,
+   "z": -805.33,
+   "start_health": 170,
+   "spawn_t": 126.07,
+   "death_t": 144.79,
+   "stuck": false,
+   "hits_on_hero": 3,
+   "damage_to_hero": 8.4
+  },
+  {
+   "type": "enm_pistolthug",
+   "wave": 3,
+   "point": 16,
+   "boss": false,
+   "x": 1254.39,
+   "y": 1.0,
+   "z": -842.23,
+   "start_health": 170,
+   "spawn_t": 140.11,
+   "death_t": 157.62,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 0.6
+  },
+  {
+   "type": "enm_meleethug",
+   "wave": 3,
+   "point": 98,
+   "boss": false,
+   "x": 1260.83,
+   "y": 1.0,
+   "z": -826.26,
+   "start_health": 170,
+   "spawn_t": 134.89,
+   "death_t": 157.79,
+   "stuck": false,
+   "hits_on_hero": 2,
+   "damage_to_hero": 11.4
+  },
+  {
+   "type": "enm_baton_thug_bounty",
+   "wave": 4,
+   "point": 6,
+   "boss": true,
+   "x": 1233.76,
+   "y": 1.0,
+   "z": -819.94,
+   "start_health": 400,
+   "spawn_t": 195.27,
+   "death_t": 203.47,
+   "stuck": false,
+   "hits_on_hero": 21,
+   "damage_to_hero": 66.0
+  },
+  {
+   "type": "enm_thug_kingpin_shield",
+   "wave": 5,
+   "point": 47,
+   "boss": false,
+   "x": 1282.81,
+   "y": 1.0,
+   "z": -811.88,
+   "start_health": 170,
+   "spawn_t": 259.06,
+   "death_t": 290.53,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_thug_kingpin_melee",
+   "wave": 5,
+   "point": 21,
+   "boss": false,
+   "x": 1235.92,
+   "y": 1.0,
+   "z": -793.59,
+   "start_health": 170,
+   "spawn_t": 270.37,
+   "death_t": 283.0,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 4.8
+  },
+  {
+   "type": "enm_thug_kingpin_pistol",
+   "wave": 5,
+   "point": 65,
+   "boss": false,
+   "x": 1235.84,
+   "y": 1.0,
+   "z": -835.05,
+   "start_health": 170,
+   "spawn_t": 264.51,
+   "death_t": 302.35,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_thug_kingpin_melee",
+   "wave": 5,
+   "point": 20,
+   "boss": false,
+   "x": 1252.9,
+   "y": 1.0,
+   "z": -825.07,
+   "start_health": 170,
+   "spawn_t": 253.37,
+   "death_t": 282.19,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 8.07
+  },
+  {
+   "type": "enm_thug_kingpin_shield",
+   "wave": 5,
+   "point": 124,
+   "boss": false,
+   "x": 1244.43,
+   "y": 1.0,
+   "z": -788.82,
+   "start_health": 170,
+   "spawn_t": 257.15,
+   "death_t": 292.7,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 3.6
+  },
+  {
+   "type": "enm_rocket_kingpin",
+   "wave": 5,
+   "point": 42,
+   "boss": false,
+   "x": 1272.85,
+   "y": 1.0,
+   "z": -807.96,
+   "start_health": 170,
+   "spawn_t": 267.37,
+   "death_t": 289.41,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 3.6
+  },
+  {
+   "type": "enm_thug_kingpin_baton",
+   "wave": 5,
+   "point": 106,
+   "boss": false,
+   "x": 1267.63,
+   "y": 1.0,
+   "z": -817.71,
+   "start_health": 170,
+   "spawn_t": 276.85,
+   "death_t": 290.1,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 2.4
+  },
+  {
+   "type": "enm_thug_kingpin_shield",
+   "wave": 5,
+   "point": 85,
+   "boss": false,
+   "x": 1232.66,
+   "y": 1.0,
+   "z": -795.49,
+   "start_health": 170,
+   "spawn_t": 276.62,
+   "death_t": 309.73,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_thug_kingpin_pistol",
+   "wave": 5,
+   "point": 85,
+   "boss": false,
+   "x": 1250.23,
+   "y": 1.0,
+   "z": -789.9,
+   "start_health": 170,
+   "spawn_t": 269.27,
+   "death_t": 302.94,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_rocket_kingpin",
+   "wave": 5,
+   "point": 109,
+   "boss": false,
+   "x": 1253.42,
+   "y": 1.0,
+   "z": -825.27,
+   "start_health": 170,
+   "spawn_t": 256.78,
+   "death_t": 291.42,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_thug_kingpin_baton",
+   "wave": 5,
+   "point": 115,
+   "boss": false,
+   "x": 1235.62,
+   "y": 1.0,
+   "z": -796.03,
+   "start_health": 170,
+   "spawn_t": 268.04,
+   "death_t": 304.72,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 4.8
+  },
+  {
+   "type": "enm_thug_kingpin_pistol",
+   "wave": 5,
+   "point": 10,
+   "boss": false,
+   "x": 1248.21,
+   "y": 1.0,
+   "z": -831.71,
+   "start_health": 170,
+   "spawn_t": 259.7,
+   "death_t": 272.73,
+   "stuck": false,
+   "hits_on_hero": 4,
+   "damage_to_hero": 22.08
+  },
+  {
+   "type": "enm_thug_kingpin_pistol",
+   "wave": 5,
+   "point": 70,
+   "boss": false,
+   "x": 1270.13,
+   "y": 1.0,
+   "z": -841.24,
+   "start_health": 170,
+   "spawn_t": 274.68,
+   "death_t": 300.98,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 0.0
+  },
+  {
+   "type": "enm_rocket_kingpin",
+   "wave": 5,
+   "point": 124,
+   "boss": false,
+   "x": 1241.89,
+   "y": 1.0,
+   "z": -845.11,
+   "start_health": 170,
+   "spawn_t": 261.67,
+   "death_t": 272.39,
+   "stuck": false,
+   "hits_on_hero": 2,
+   "damage_to_hero": 7.2
+  },
+  {
+   "type": "enm_thug_kingpin_shield",
+   "wave": 5,
+   "point": 14,
+   "boss": false,
+   "x": 1263.81,
+   "y": 1.0,
+   "z": -787.63,
+   "start_health": 170,
+   "spawn_t": 276.29,
+   "death_t": 291.78,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 1.2
+  },
+  {
+   "type": "enm_swat_kingpin_rifle",
+   "wave": 5,
+   "point": 2,
+   "boss": false,
+   "x": 1233.05,
+   "y": 1.0,
+   "z": -798.09,
+   "start_health": 170,
+   "spawn_t": 276.15,
+   "death_t": 302.91,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 2.4
+  },
+  {
+   "type": "enm_rocket_kingpin",
+   "wave": 6,
+   "point": 19,
+   "boss": false,
+   "x": 1254.73,
+   "y": 1.0,
+   "z": -827.3,
+   "start_health": 170,
+   "spawn_t": 339.07,
+   "death_t": 358.8,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 3.6
+  },
+  {
+   "type": "enm_thug_kingpin_pistol",
+   "wave": 6,
+   "point": 130,
+   "boss": false,
+   "x": 1242.28,
+   "y": 1.0,
+   "z": -816.01,
+   "start_health": 170,
+   "spawn_t": 352.36,
+   "death_t": 382.44,
+   "stuck": false,
+   "hits_on_hero": 3,
+   "damage_to_hero": 11.4
+  },
+  {
+   "type": "enm_thug_kingpin_shield",
+   "wave": 6,
+   "point": 48,
+   "boss": false,
+   "x": 1239.3,
+   "y": 1.0,
+   "z": -831.95,
+   "start_health": 170,
+   "spawn_t": 350.4,
+   "death_t": 365.05,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_thug_kingpin_shield",
+   "wave": 6,
+   "point": 10,
+   "boss": false,
+   "x": 1265.61,
+   "y": 1.0,
+   "z": -791.54,
+   "start_health": 170,
+   "spawn_t": 345.08,
+   "death_t": 364.38,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_swat_kingpin_rifle",
+   "wave": 6,
+   "point": 1,
+   "boss": false,
+   "x": 1229.79,
+   "y": 1.0,
+   "z": -799.31,
+   "start_health": 170,
+   "spawn_t": 337.67,
+   "death_t": 367.77,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_thug_kingpin_pistol",
+   "wave": 6,
+   "point": 44,
+   "boss": false,
+   "x": 1245.03,
+   "y": 1.0,
+   "z": -807.52,
+   "start_health": 170,
+   "spawn_t": 330.39,
+   "death_t": 339.33,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 6.0
+  },
+  {
+   "type": "enm_thug_kingpin_shield",
+   "wave": 6,
+   "point": 131,
+   "boss": false,
+   "x": 1257.87,
+   "y": 1.0,
+   "z": -839.0,
+   "start_health": 170,
+   "spawn_t": 351.78,
+   "death_t": 388.44,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 4.2
+  },
+  {
+   "type": "enm_thug_kingpin_baton",
+   "wave": 6,
+   "point": 130,
+   "boss": false,
+   "x": 1236.9,
+   "y": 1.0,
+   "z": -824.15,
+   "start_health": 170,
+   "spawn_t": 333.04,
+   "death_t": 346.05,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_thug_kingpin_melee",
+   "wave": 6,
+   "point": 119,
+   "boss": false,
+   "x": 1266.71,
+   "y": 1.0,
+   "z": -812.84,
+   "start_health": 170,
+   "spawn_t": 353.7,
+   "death_t": 377.39,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 6.6
+  },
+  {
+   "type": "enm_rocket_kingpin",
+   "wave": 6,
+   "point": 82,
+   "boss": false,
+   "x": 1227.8,
+   "y": 1.0,
+   "z": -802.33,
+   "start_health": 170,
+   "spawn_t": 346.25,
+   "death_t": 376.16,
+   "stuck": false,
+   "hits_on_hero": 2,
+   "damage_to_hero": 10.93
+  },
+  {
+   "type": "enm_thug_kingpin_baton",
+   "wave": 6,
+   "point": 25,
+   "boss": false,
+   "x": 1250.94,
+   "y": 1.0,
+   "z": -833.4,
+   "start_health": 170,
+   "spawn_t": 334.24,
+   "death_t": 350.77,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_rocket_kingpin",
+   "wave": 6,
+   "point": 56,
+   "boss": false,
+   "x": 1268.65,
+   "y": 1.0,
+   "z": -809.29,
+   "start_health": 170,
+   "spawn_t": 345.6,
+   "death_t": 354.23,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 21.69
+  },
+  {
+   "type": "enm_thug_kingpin_shield",
+   "wave": 6,
+   "point": 63,
+   "boss": false,
+   "x": 1225.49,
+   "y": 1.0,
+   "z": -831.87,
+   "start_health": 170,
+   "spawn_t": 340.99,
+   "death_t": 368.84,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 3.6
+  },
+  {
+   "type": "enm_thug_kingpin_baton",
+   "wave": 6,
+   "point": 116,
+   "boss": false,
+   "x": 1287.01,
+   "y": 1.0,
+   "z": -805.92,
+   "start_health": 170,
+   "spawn_t": 351.37,
+   "death_t": 369.44,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 15.83
+  },
+  {
+   "type": "enm_thug_kingpin_pistol",
+   "wave": 6,
+   "point": 17,
+   "boss": false,
+   "x": 1240.8,
+   "y": 1.0,
+   "z": -807.0,
+   "start_health": 170,
+   "spawn_t": 352.17,
+   "death_t": 391.52,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_thug_kingpin_baton",
+   "wave": 6,
+   "point": 102,
+   "boss": false,
+   "x": 1243.14,
+   "y": 1.0,
+   "z": -839.12,
+   "start_health": 170,
+   "spawn_t": 344.62,
+   "death_t": 365.85,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_swat_kingpin_rifle",
+   "wave": 6,
+   "point": 91,
+   "boss": false,
+   "x": 1225.32,
+   "y": 1.0,
+   "z": -812.08,
+   "start_health": 170,
+   "spawn_t": 336.08,
+   "death_t": 349.64,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 11.4
+  },
+  {
+   "type": "enm_thug_kingpin_shield",
+   "wave": 6,
+   "point": 29,
+   "boss": false,
+   "x": 1268.31,
+   "y": 1.0,
+   "z": -783.4,
+   "start_health": 170,
+   "spawn_t": 337.27,
+   "death_t": 363.24,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_thug_kingpin_baton",
+   "wave": 7,
+   "point": 116,
+   "boss": false,
+   "x": 1268.77,
+   "y": 1.0,
+   "z": -815.29,
+   "start_health": 170,
+   "spawn_t": 418.13,
+   "death_t": 454.57,
+   "stuck": false,
+   "hits_on_hero": 3,
+   "damage_to_hero": 20.4
+  },
+  {
+   "type": "enm_thug_kingpin_shield",
+   "wave": 7,
+   "point": 16,
+   "boss": false,
+   "x": 1232.19,
+   "y": 1.0,
+   "z": -806.87,
+   "start_health": 170,
+   "spawn_t": 420.56,
+   "death_t": 433.97,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 1.2
+  },
+  {
+   "type": "enm_thug_kingpin_baton",
+   "wave": 7,
+   "point": 87,
+   "boss": false,
+   "x": 1249.37,
+   "y": 1.0,
+   "z": -798.21,
+   "start_health": 170,
+   "spawn_t": 431.17,
+   "death_t": 456.81,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 2.4
+  },
+  {
+   "type": "enm_thug_kingpin_melee",
+   "wave": 7,
+   "point": 90,
+   "boss": false,
+   "x": 1276.63,
+   "y": 1.0,
+   "z": -826.68,
+   "start_health": 170,
+   "spawn_t": 415.0,
+   "death_t": 428.72,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 4.2
+  },
+  {
+   "type": "enm_thug_kingpin_shield",
+   "wave": 7,
+   "point": 17,
+   "boss": false,
+   "x": 1236.72,
+   "y": 1.0,
+   "z": -792.03,
+   "start_health": 170,
+   "spawn_t": 423.71,
+   "death_t": 459.49,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 0.0
+  },
+  {
+   "type": "enm_thug_kingpin_shield",
+   "wave": 7,
+   "point": 42,
+   "boss": false,
+   "x": 1248.94,
+   "y": 1.0,
+   "z": -801.96,
+   "start_health": 170,
+   "spawn_t": 435.44,
+   "death_t": 460.93,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_swat_kingpin_rifle",
+   "wave": 7,
+   "point": 51,
+   "boss": false,
+   "x": 1251.88,
+   "y": 1.0,
+   "z": -787.57,
+   "start_health": 170,
+   "spawn_t": 418.46,
+   "death_t": 439.24,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 0.6
+  },
+  {
+   "type": "enm_rocket_kingpin",
+   "wave": 7,
+   "point": 14,
+   "boss": false,
+   "x": 1250.41,
+   "y": 1.0,
+   "z": -792.92,
+   "start_health": 170,
+   "spawn_t": 415.49,
+   "death_t": 431.22,
+   "stuck": false,
+   "hits_on_hero": 2,
+   "damage_to_hero": 3.0
+  },
+  {
+   "type": "enm_thug_kingpin_baton",
+   "wave": 7,
+   "point": 87,
+   "boss": false,
+   "x": 1245.35,
+   "y": 1.0,
+   "z": -822.11,
+   "start_health": 170,
+   "spawn_t": 433.24,
+   "death_t": 469.25,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 7.2
+  },
+  {
+   "type": "enm_swat_kingpin_rifle",
+   "wave": 7,
+   "point": 82,
+   "boss": false,
+   "x": 1264.61,
+   "y": 1.0,
+   "z": -803.87,
+   "start_health": 170,
+   "spawn_t": 426.42,
+   "death_t": 462.44,
+   "stuck": false,
+   "hits_on_hero": 2,
+   "damage_to_hero": 2.4
+  },
+  {
+   "type": "enm_thug_kingpin_melee",
+   "wave": 7,
+   "point": 103,
+   "boss": false,
+   "x": 1259.27,
+   "y": 1.0,
+   "z": -797.34,
+   "start_health": 170,
+   "spawn_t": 431.73,
+   "death_t": 460.5,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 0.0
+  },
+  {
+   "type": "enm_rocket_kingpin",
+   "wave": 7,
+   "point": 11,
+   "boss": false,
+   "x": 1247.04,
+   "y": 1.0,
+   "z": -831.64,
+   "start_health": 170,
+   "spawn_t": 414.44,
+   "death_t": 435.69,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_thug_kingpin_melee",
+   "wave": 7,
+   "point": 65,
+   "boss": false,
+   "x": 1242.12,
+   "y": 1.0,
+   "z": -828.09,
+   "start_health": 170,
+   "spawn_t": 425.36,
+   "death_t": 452.49,
+   "stuck": false,
+   "hits_on_hero": 2,
+   "damage_to_hero": 4.8
+  },
+  {
+   "type": "enm_thug_kingpin_shield",
+   "wave": 7,
+   "point": 80,
+   "boss": false,
+   "x": 1262.45,
+   "y": 1.0,
+   "z": -822.61,
+   "start_health": 170,
+   "spawn_t": 420.92,
+   "death_t": 449.85,
+   "stuck": false,
+   "hits_on_hero": 0,
+   "damage_to_hero": 0
+  },
+  {
+   "type": "enm_thug_kingpin_melee",
+   "wave": 7,
+   "point": 4,
+   "boss": false,
+   "x": 1231.1,
+   "y": 1.0,
+   "z": -800.89,
+   "start_health": 170,
+   "spawn_t": 433.87,
+   "death_t": 446.89,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 4.8
+  },
+  {
+   "type": "enm_thug_kingpin_baton",
+   "wave": 7,
+   "point": 92,
+   "boss": false,
+   "x": 1260.71,
+   "y": 1.0,
+   "z": -792.48,
+   "start_health": 170,
+   "spawn_t": 434.02,
+   "death_t": 453.47,
+   "stuck": false,
+   "hits_on_hero": 3,
+   "damage_to_hero": 7.8
+  },
+  {
+   "type": "enm_thug_kingpin_shield",
+   "wave": 7,
+   "point": 84,
+   "boss": false,
+   "x": 1239.95,
+   "y": 1.0,
+   "z": -792.58,
+   "start_health": 170,
+   "spawn_t": 434.65,
+   "death_t": 447.56,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 4.2
+  },
+  {
+   "type": "enm_thug_kingpin_baton",
+   "wave": 7,
+   "point": 79,
+   "boss": false,
+   "x": 1254.08,
+   "y": 1.0,
+   "z": -831.42,
+   "start_health": 170,
+   "spawn_t": 430.79,
+   "death_t": 463.21,
+   "stuck": false,
+   "hits_on_hero": 2,
+   "damage_to_hero": 2.4
+  },
+  {
+   "type": "enm_swat_kingpin_rifle",
+   "wave": 7,
+   "point": 133,
+   "boss": false,
+   "x": 1259.87,
+   "y": 1.0,
+   "z": -849.09,
+   "start_health": 170,
+   "spawn_t": 424.33,
+   "death_t": 441.23,
+   "stuck": false,
+   "hits_on_hero": 2,
+   "damage_to_hero": 6.6
+  },
+  {
+   "type": "enm_rocket_kingpin",
+   "wave": 7,
+   "point": 92,
+   "boss": false,
+   "x": 1267.39,
+   "y": 1.0,
+   "z": -819.82,
+   "start_health": 170,
+   "spawn_t": 413.23,
+   "death_t": 436.45,
+   "stuck": false,
+   "hits_on_hero": 1,
+   "damage_to_hero": 8.4
+  }
+ ],
+ "hits_taken": [
+  {
+   "t": 7.0,
+   "wave": 1,
+   "by": "enm_pistolthug",
+   "amount": 21.0,
+   "before": 208.0,
+   "after": 187.0,
+   "x": 1254.21,
+   "y": 1.0,
+   "z": -815.48
+  },
+  {
+   "t": 9.0,
+   "wave": 1,
+   "by": "enm_meleethug",
+   "amount": 19.0,
+   "before": 188.8,
+   "after": 169.8,
+   "x": 1255.4,
+   "y": 1.0,
+   "z": -809.64
+  },
+  {
+   "t": 10.0,
+   "wave": 1,
+   "by": "enm_riflethug",
+   "amount": 14.0,
+   "before": 170.4,
+   "after": 156.4,
+   "x": 1257.67,
+   "y": 1.0,
+   "z": -806.7
+  },
+  {
+   "t": 29.5,
+   "wave": 1,
+   "by": "enm_rocket_thug",
+   "amount": 21.6,
+   "before": 179.2,
+   "after": 157.6,
+   "x": 1268.96,
+   "y": 1.0,
+   "z": -797.97
+  },
+  {
+   "t": 38.5,
+   "wave": 1,
+   "by": "enm_riflethug",
+   "amount": 21.2,
+   "before": 167.8,
+   "after": 146.6,
+   "x": 1264.71,
+   "y": 1.0,
+   "z": -775.18
+  },
+  {
+   "t": 41.0,
+   "wave": 1,
+   "by": "enm_pistolthug",
+   "amount": 16.6,
+   "before": 149.0,
+   "after": 132.3,
+   "x": 1257.82,
+   "y": 1.0,
+   "z": -771.91
+  },
+  {
+   "t": 49.0,
+   "wave": 1,
+   "by": "enm_riflethug",
+   "amount": 15.5,
+   "before": 141.3,
+   "after": 125.8,
+   "x": 1263.54,
+   "y": 1.0,
+   "z": -777.4
+  },
+  {
+   "t": 60.5,
+   "wave": 2,
+   "by": "enm_pistolthug",
+   "amount": 22.8,
+   "before": 130.6,
+   "after": 107.8,
+   "x": 1261.91,
+   "y": 1.0,
+   "z": -775.67
+  },
+  {
+   "t": 64.5,
+   "wave": 2,
+   "by": "enm_pistolthug",
+   "amount": 18.0,
+   "before": 112.0,
+   "after": 94.1,
+   "x": 1261.05,
+   "y": 1.0,
+   "z": -783.42
+  },
+  {
+   "t": 69.0,
+   "wave": 2,
+   "by": "enm_baton_thug",
+   "amount": 21.6,
+   "before": 98.9,
+   "after": 77.3,
+   "x": 1254.78,
+   "y": 1.0,
+   "z": -773.37
+  },
+  {
+   "t": 80.0,
+   "wave": 2,
+   "by": "enm_slayer",
+   "amount": 10.4,
+   "before": 89.9,
+   "after": 79.5,
+   "x": 1246.13,
+   "y": 1.0,
+   "z": -769.13
+  },
+  {
+   "t": 82.0,
+   "wave": 2,
+   "by": "enm_pistolthug",
+   "amount": 19.6,
+   "before": 81.3,
+   "after": 61.7,
+   "x": 1249.33,
+   "y": 1.0,
+   "z": -770.82
+  },
+  {
+   "t": 84.0,
+   "wave": 2,
+   "by": "enm_meleethug",
+   "amount": 12.3,
+   "before": 63.5,
+   "after": 51.2,
+   "x": 1249.61,
+   "y": 1.0,
+   "z": -774.53
+  },
+  {
+   "t": 85.5,
+   "wave": 2,
+   "by": "enm_meleethug",
+   "amount": 18.8,
+   "before": 52.4,
+   "after": 33.6,
+   "x": 1246.58,
+   "y": 1.0,
+   "z": -773.95
+  },
+  {
+   "t": 94.0,
+   "wave": 2,
+   "by": "enm_pistolthug",
+   "amount": 14.5,
+   "before": 43.2,
+   "after": 28.7,
+   "x": 1246.25,
+   "y": 1.0,
+   "z": -780.06
+  },
+  {
+   "t": 96.0,
+   "wave": 2,
+   "by": "enm_pistolthug",
+   "amount": 14.5,
+   "before": 30.5,
+   "after": 16.0,
+   "x": 1250.14,
+   "y": 1.0,
+   "z": -778.6
+  },
+  {
+   "t": 98.0,
+   "wave": 2,
+   "by": "enm_meleethug",
+   "amount": 22.5,
+   "before": 17.8,
+   "after": 1.0,
+   "x": 1255.27,
+   "y": 1.0,
+   "z": -774.68
+  },
+  {
+   "t": 102.0,
+   "wave": 2,
+   "by": "enm_meleethug",
+   "amount": 24.0,
+   "before": 5.2,
+   "after": 1.0,
+   "x": 1258.98,
+   "y": 1.0,
+   "z": -776.23
+  },
+  {
+   "t": 117.5,
+   "wave": 3,
+   "by": "enm_meleethug",
+   "amount": 13.2,
+   "before": 10.6,
+   "after": 1.0,
+   "x": 1246.38,
+   "y": 1.0,
+   "z": -784.99
+  },
+  {
+   "t": 120.5,
+   "wave": 3,
+   "by": "enm_slayer",
+   "amount": 9.4,
+   "before": 4.0,
+   "after": 1.0,
+   "x": 1247.69,
+   "y": 1.0,
+   "z": -789.9
+  },
+  {
+   "t": 132.0,
+   "wave": 3,
+   "by": "enm_riflethug",
+   "amount": 21.5,
+   "before": 14.2,
+   "after": 1.0,
+   "x": 1248.89,
+   "y": 1.0,
+   "z": -793.28
+  },
+  {
+   "t": 136.0,
+   "wave": 3,
+   "by": "enm_slayer",
+   "amount": 23.0,
+   "before": 5.2,
+   "after": 1.0,
+   "x": 1249.7,
+   "y": 1.0,
+   "z": -795.18
+  },
+  {
+   "t": 136.5,
+   "wave": 3,
+   "by": "enm_meleethug",
+   "amount": 10.4,
+   "before": 1.0,
+   "after": 1.0,
+   "x": 1249.47,
+   "y": 1.0,
+   "z": -797.21
+  },
+  {
+   "t": 142.0,
+   "wave": 3,
+   "by": "enm_meleethug",
+   "amount": 10.7,
+   "before": 7.0,
+   "after": 1.0,
+   "x": 1253.45,
+   "y": 1.0,
+   "z": -796.2
+  },
+  {
+   "t": 149.0,
+   "wave": 3,
+   "by": "enm_meleethug",
+   "amount": 23.2,
+   "before": 8.8,
+   "after": 1.0,
+   "x": 1249.71,
+   "y": 1.0,
+   "z": -795.81
+  },
+  {
+   "t": 149.5,
+   "wave": 3,
+   "by": "enm_riflethug",
+   "amount": 24.9,
+   "before": 1.0,
+   "after": 1.0,
+   "x": 1250.63,
+   "y": 1.0,
+   "z": -794.11
+  },
+  {
+   "t": 158.5,
+   "wave": 3,
+   "by": "enm_meleethug",
+   "amount": 12.3,
+   "before": 11.2,
+   "after": 1.0,
+   "x": 1257.93,
+   "y": 1.0,
+   "z": -789.47
+  },
+  {
+   "t": 159.5,
+   "wave": 3,
+   "by": "enm_meleethug",
+   "amount": 11.8,
+   "before": 1.6,
+   "after": 1.0,
+   "x": 1259.74,
+   "y": 1.0,
+   "z": -787.69
+  },
+  {
+   "t": 161.0,
+   "wave": 3,
+   "by": "enm_slayer",
+   "amount": 14.0,
+   "before": 2.2,
+   "after": 1.0,
+   "x": 1258.35,
+   "y": 1.0,
+   "z": -792.37
+  },
+  {
+   "t": 166.5,
+   "wave": 3,
+   "by": "enm_riflethug",
+   "amount": 8.2,
+   "before": 7.0,
+   "after": 1.0,
+   "x": 1259.77,
+   "y": 1.0,
+   "z": -795.31
+  },
+  {
+   "t": 168.5,
+   "wave": 3,
+   "by": "enm_meleethug",
+   "amount": 21.3,
+   "before": 2.8,
+   "after": 1.0,
+   "x": 1257.98,
+   "y": 1.0,
+   "z": -791.33
+  },
+  {
+   "t": 170.0,
+   "wave": 3,
+   "by": "enm_slayer",
+   "amount": 18.9,
+   "before": 2.2,
+   "after": 1.0,
+   "x": 1260.46,
+   "y": 1.0,
+   "z": -796.15
+  },
+  {
+   "t": 171.0,
+   "wave": 3,
+   "by": "enm_pistolthug",
+   "amount": 17.4,
+   "before": 1.6,
+   "after": 1.0,
+   "x": 1260.86,
+   "y": 1.0,
+   "z": -795.22
+  },
+  {
+   "t": 172.5,
+   "wave": 3,
+   "by": "enm_riflethug",
+   "amount": 23.4,
+   "before": 2.2,
+   "after": 1.0,
+   "x": 1257.37,
+   "y": 1.0,
+   "z": -790.36
+  },
+  {
+   "t": 184.0,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 10.4,
+   "before": 5.8,
+   "after": 1.0,
+   "x": 1257.21,
+   "y": 1.0,
+   "z": -794.25
+  },
+  {
+   "t": 184.5,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 9.1,
+   "before": 1.0,
+   "after": 1.0,
+   "x": 1258.07,
+   "y": 1.0,
+   "z": -796.99
+  },
+  {
+   "t": 185.5,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 9.8,
+   "before": 1.6,
+   "after": 1.0,
+   "x": 1260.53,
+   "y": 1.0,
+   "z": -795.46
+  },
+  {
+   "t": 186.0,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 22.0,
+   "before": 1.0,
+   "after": 1.0,
+   "x": 1258.77,
+   "y": 1.0,
+   "z": -797.79
+  },
+  {
+   "t": 186.5,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 21.5,
+   "before": 1.0,
+   "after": 1.0,
+   "x": 1259.56,
+   "y": 1.0,
+   "z": -799.07
+  },
+  {
+   "t": 189.5,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 20.0,
+   "before": 4.0,
+   "after": 1.0,
+   "x": 1253.82,
+   "y": 1.0,
+   "z": -797.44
+  },
+  {
+   "t": 194.0,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 18.7,
+   "before": 5.8,
+   "after": 1.0,
+   "x": 1245.89,
+   "y": 1.0,
+   "z": -796.44
+  },
+  {
+   "t": 202.0,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 11.3,
+   "before": 10.0,
+   "after": 1.0,
+   "x": 1250.61,
+   "y": 1.0,
+   "z": -803.35
+  },
+  {
+   "t": 203.0,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 12.8,
+   "before": 1.6,
+   "after": 1.0,
+   "x": 1247.3,
+   "y": 1.0,
+   "z": -806.82
+  },
+  {
+   "t": 203.5,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 19.8,
+   "before": 1.0,
+   "after": 1.0,
+   "x": 1249.61,
+   "y": 1.0,
+   "z": -807.04
+  },
+  {
+   "t": 207.5,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 12.1,
+   "before": 5.2,
+   "after": 1.0,
+   "x": 1249.33,
+   "y": 1.0,
+   "z": -797.52
+  },
+  {
+   "t": 208.5,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 16.8,
+   "before": 1.6,
+   "after": 1.0,
+   "x": 1250.82,
+   "y": 1.0,
+   "z": -796.35
+  },
+  {
+   "t": 226.5,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 11.4,
+   "before": 22.0,
+   "after": 10.6,
+   "x": 1264.03,
+   "y": 1.0,
+   "z": -793.86
+  },
+  {
+   "t": 229.5,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 16.0,
+   "before": 13.6,
+   "after": 1.0,
+   "x": 1261.47,
+   "y": 1.0,
+   "z": -793.5
+  },
+  {
+   "t": 237.5,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 17.3,
+   "before": 10.0,
+   "after": 1.0,
+   "x": 1254.28,
+   "y": 1.0,
+   "z": -785.7
+  },
+  {
+   "t": 238.0,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 22.0,
+   "before": 1.0,
+   "after": 1.0,
+   "x": 1251.58,
+   "y": 1.0,
+   "z": -786.9
+  },
+  {
+   "t": 238.5,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 18.5,
+   "before": 1.0,
+   "after": 1.0,
+   "x": 1251.43,
+   "y": 1.0,
+   "z": -785.3
+  },
+  {
+   "t": 240.0,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 22.8,
+   "before": 2.2,
+   "after": 1.0,
+   "x": 1253.02,
+   "y": 1.0,
+   "z": -784.28
+  },
+  {
+   "t": 242.0,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 16.5,
+   "before": 2.8,
+   "after": 1.0,
+   "x": 1246.6,
+   "y": 1.0,
+   "z": -785.97
+  },
+  {
+   "t": 244.5,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 11.6,
+   "before": 3.4,
+   "after": 1.0,
+   "x": 1248.24,
+   "y": 1.0,
+   "z": -780.52
+  },
+  {
+   "t": 245.0,
+   "wave": 4,
+   "by": "enm_baton_thug_bounty",
+   "amount": 24.8,
+   "before": 1.0,
+   "after": 1.0,
+   "x": 1246.15,
+   "y": 1.0,
+   "z": -783.43
+  },
+  {
+   "t": 253.0,
+   "wave": 5,
+   "by": "enm_thug_kingpin_pistol",
+   "amount": 21.1,
+   "before": 1.6,
+   "after": 1.0,
+   "x": 1250.05,
+   "y": 1.0,
+   "z": -785.36
+  },
+  {
+   "t": 257.5,
+   "wave": 5,
+   "by": "enm_thug_kingpin_melee",
+   "amount": 11.5,
+   "before": 5.8,
+   "after": 1.0,
+   "x": 1247.69,
+   "y": 1.0,
+   "z": -793.04
+  },
+  {
+   "t": 262.0,
+   "wave": 5,
+   "by": "enm_thug_kingpin_baton",
+   "amount": 17.6,
+   "before": 5.8,
+   "after": 1.0,
+   "x": 1248.77,
+   "y": 1.0,
+   "z": -789.11
+  },
+  {
+   "t": 265.5,
+   "wave": 5,
+   "by": "enm_thug_kingpin_shield",
+   "amount": 13.4,
+   "before": 4.6,
+   "after": 1.0,
+   "x": 1249.58,
+   "y": 1.0,
+   "z": -778.14
+  },
+  {
+   "t": 269.0,
+   "wave": 5,
+   "by": "enm_thug_kingpin_pistol",
+   "amount": 23.1,
+   "before": 4.6,
+   "after": 1.0,
+   "x": 1245.82,
+   "y": 1.0,
+   "z": -774.83
+  },
+  {
+   "t": 269.5,
+   "wave": 5,
+   "by": "enm_thug_kingpin_pistol",
+   "amount": 22.3,
+   "before": 1.0,
+   "after": 1.0,
+   "x": 1243.66,
+   "y": 1.0,
+   "z": -775.15
+  },
+  {
+   "t": 271.0,
+   "wave": 5,
+   "by": "enm_thug_kingpin_shield",
+   "amount": 17.4,
+   "before": 2.2,
+   "after": 1.0,
+   "x": 1244.22,
+   "y": 1.0,
+   "z": -777.24
+  },
+  {
+   "t": 273.5,
+   "wave": 5,
+   "by": "enm_thug_kingpin_baton",
+   "amount": 17.5,
+   "before": 3.4,
+   "after": 1.0,
+   "x": 1241.23,
+   "y": 1.0,
+   "z": -776.29
+  },
+  {
+   "t": 277.5,
+   "wave": 5,
+   "by": "enm_rocket_kingpin",
+   "amount": 11.7,
+   "before": 5.2,
+   "after": 1.0,
+   "x": 1244.89,
+   "y": 1.0,
+   "z": -783.77
+  },
+  {
+   "t": 280.5,
+   "wave": 5,
+   "by": "enm_rocket_kingpin",
+   "amount": 22.3,
+   "before": 4.0,
+   "after": 1.0,
+   "x": 1245.56,
+   "y": 1.0,
+   "z": -789.05
+  },
+  {
+   "t": 283.0,
+   "wave": 5,
+   "by": "enm_thug_kingpin_pistol",
+   "amount": 17.8,
+   "before": 3.4,
+   "after": 1.0,
+   "x": 1242.47,
+   "y": 1.0,
+   "z": -784.74
+  },
+  {
+   "t": 285.5,
+   "wave": 5,
+   "by": "enm_swat_kingpin_rifle",
+   "amount": 15.6,
+   "before": 3.4,
+   "after": 1.0,
+   "x": 1249.96,
+   "y": 1.0,
+   "z": -785.23
+  },
+  {
+   "t": 289.0,
+   "wave": 5,
+   "by": "enm_rocket_kingpin",
+   "amount": 8.8,
+   "before": 4.6,
+   "after": 1.0,
+   "x": 1248.24,
+   "y": 1.0,
+   "z": -792.43
+  },
+  {
+   "t": 307.5,
+   "wave": 5,
+   "by": "enm_thug_kingpin_pistol",
+   "amount": 15.5,
+   "before": 22.6,
+   "after": 7.1,
+   "x": 1242.96,
+   "y": 1.0,
+   "z": -798.08
+  },
+  {
+   "t": 311.5,
+   "wave": 5,
+   "by": "enm_thug_kingpin_melee",
+   "amount": 8.1,
+   "before": 11.3,
+   "after": 3.2,
+   "x": 1247.13,
+   "y": 1.0,
+   "z": -794.68
+  },
+  {
+   "t": 339.5,
+   "wave": 6,
+   "by": "enm_rocket_kingpin",
+   "amount": 21.7,
+   "before": 27.8,
+   "after": 6.2,
+   "x": 1247.07,
+   "y": 1.0,
+   "z": -777.4
+  },
+  {
+   "t": 355.5,
+   "wave": 6,
+   "by": "enm_rocket_kingpin",
+   "amount": 10.3,
+   "before": 24.8,
+   "after": 14.4,
+   "x": 1253.56,
+   "y": 1.0,
+   "z": -764.94
+  },
+  {
+   "t": 358.0,
+   "wave": 6,
+   "by": "enm_thug_kingpin_baton",
+   "amount": 20.9,
+   "before": 16.8,
+   "after": 1.0,
+   "x": 1249.95,
+   "y": 1.0,
+   "z": -765.12
+  },
+  {
+   "t": 361.5,
+   "wave": 6,
+   "by": "enm_rocket_kingpin",
+   "amount": 16.0,
+   "before": 4.6,
+   "after": 1.0,
+   "x": 1238.7,
+   "y": 1.0,
+   "z": -768.26
+  },
+  {
+   "t": 365.0,
+   "wave": 6,
+   "by": "enm_thug_kingpin_shield",
+   "amount": 22.3,
+   "before": 4.6,
+   "after": 1.0,
+   "x": 1239.54,
+   "y": 1.0,
+   "z": -763.85
+  },
+  {
+   "t": 371.0,
+   "wave": 6,
+   "by": "enm_thug_kingpin_pistol",
+   "amount": 22.5,
+   "before": 7.6,
+   "after": 1.0,
+   "x": 1236.12,
+   "y": 1.0,
+   "z": -757.54
+  },
+  {
+   "t": 372.5,
+   "wave": 6,
+   "by": "enm_thug_kingpin_pistol",
+   "amount": 16.7,
+   "before": 2.2,
+   "after": 1.0,
+   "x": 1233.26,
+   "y": 1.0,
+   "z": -760.7
+  },
+  {
+   "t": 382.5,
+   "wave": 6,
+   "by": "enm_swat_kingpin_rifle",
+   "amount": 23.5,
+   "before": 12.4,
+   "after": 1.0,
+   "x": 1228.99,
+   "y": 1.0,
+   "z": -772.38
+  },
+  {
+   "t": 386.5,
+   "wave": 6,
+   "by": "enm_thug_kingpin_shield",
+   "amount": 15.8,
+   "before": 5.2,
+   "after": 1.0,
+   "x": 1231.55,
+   "y": 1.0,
+   "z": -771.89
+  },
+  {
+   "t": 392.5,
+   "wave": 6,
+   "by": "enm_thug_kingpin_melee",
+   "amount": 11.1,
+   "before": 7.6,
+   "after": 1.0,
+   "x": 1219.75,
+   "y": 1.0,
+   "z": -772.31
+  },
+  {
+   "t": 398.0,
+   "wave": 6,
+   "by": "enm_thug_kingpin_pistol",
+   "amount": 21.9,
+   "before": 7.0,
+   "after": 1.0,
+   "x": 1222.94,
+   "y": 1.0,
+   "z": -779.49
+  },
+  {
+   "t": 401.5,
+   "wave": 6,
+   "by": "enm_thug_kingpin_pistol",
+   "amount": 23.6,
+   "before": 4.6,
+   "after": 1.0,
+   "x": 1228.27,
+   "y": 1.0,
+   "z": -781.29
+  },
+  {
+   "t": 402.5,
+   "wave": 6,
+   "by": "enm_rocket_kingpin",
+   "amount": 21.5,
+   "before": 1.6,
+   "after": 1.0,
+   "x": 1230.24,
+   "y": 1.0,
+   "z": -783.28
+  },
+  {
+   "t": 419.5,
+   "wave": 7,
+   "by": "enm_thug_kingpin_baton",
+   "amount": 12.5,
+   "before": 12.4,
+   "after": 1.0,
+   "x": 1237.92,
+   "y": 1.0,
+   "z": -766.38
+  },
+  {
+   "t": 425.5,
+   "wave": 7,
+   "by": "enm_thug_kingpin_baton",
+   "amount": 10.3,
+   "before": 7.6,
+   "after": 1.0,
+   "x": 1238.55,
+   "y": 1.0,
+   "z": -769.2
+  },
+  {
+   "t": 429.5,
+   "wave": 7,
+   "by": "enm_thug_kingpin_melee",
+   "amount": 10.0,
+   "before": 5.2,
+   "after": 1.0,
+   "x": 1233.08,
+   "y": 1.0,
+   "z": -769.96
+  },
+  {
+   "t": 430.5,
+   "wave": 7,
+   "by": "enm_thug_kingpin_baton",
+   "amount": 16.5,
+   "before": 1.6,
+   "after": 1.0,
+   "x": 1231.08,
+   "y": 1.0,
+   "z": -771.03
+  },
+  {
+   "t": 438.0,
+   "wave": 7,
+   "by": "enm_rocket_kingpin",
+   "amount": 21.3,
+   "before": 9.4,
+   "after": 1.0,
+   "x": 1225.49,
+   "y": 1.0,
+   "z": -775.6
+  },
+  {
+   "t": 439.5,
+   "wave": 7,
+   "by": "enm_thug_kingpin_baton",
+   "amount": 16.7,
+   "before": 2.2,
+   "after": 1.0,
+   "x": 1225.78,
+   "y": 1.0,
+   "z": -774.59
+  },
+  {
+   "t": 443.5,
+   "wave": 7,
+   "by": "enm_thug_kingpin_shield",
+   "amount": 14.2,
+   "before": 5.2,
+   "after": 1.0,
+   "x": 1230.21,
+   "y": 1.0,
+   "z": -771.23
+  },
+  {
+   "t": 448.0,
+   "wave": 7,
+   "by": "enm_thug_kingpin_baton",
+   "amount": 20.4,
+   "before": 5.8,
+   "after": 1.0,
+   "x": 1223.84,
+   "y": 1.0,
+   "z": -765.13
+  },
+  {
+   "t": 448.5,
+   "wave": 7,
+   "by": "enm_thug_kingpin_shield",
+   "amount": 14.2,
+   "before": 1.0,
+   "after": 1.0,
+   "x": 1221.88,
+   "y": 1.0,
+   "z": -765.03
+  },
+  {
+   "t": 449.5,
+   "wave": 7,
+   "by": "enm_swat_kingpin_rifle",
+   "amount": 8.0,
+   "before": 1.6,
+   "after": 1.0,
+   "x": 1221.05,
+   "y": 1.0,
+   "z": -767.31
+  },
+  {
+   "t": 451.5,
+   "wave": 7,
+   "by": "enm_swat_kingpin_rifle",
+   "amount": 18.5,
+   "before": 2.8,
+   "after": 1.0,
+   "x": 1218.43,
+   "y": 1.0,
+   "z": -767.11
+  },
+  {
+   "t": 456.0,
+   "wave": 7,
+   "by": "enm_swat_kingpin_rifle",
+   "amount": 17.6,
+   "before": 5.8,
+   "after": 1.0,
+   "x": 1219.9,
+   "y": 1.0,
+   "z": -771.86
+  },
+  {
+   "t": 457.0,
+   "wave": 7,
+   "by": "enm_thug_kingpin_melee",
+   "amount": 16.4,
+   "before": 1.6,
+   "after": 1.0,
+   "x": 1225.48,
+   "y": 1.0,
+   "z": -772.6
+  },
+  {
+   "t": 458.0,
+   "wave": 7,
+   "by": "enm_swat_kingpin_rifle",
+   "amount": 17.4,
+   "before": 1.6,
+   "after": 1.0,
+   "x": 1227.0,
+   "y": 1.0,
+   "z": -771.24
+  },
+  {
+   "t": 458.5,
+   "wave": 7,
+   "by": "enm_rocket_kingpin",
+   "amount": 22.4,
+   "before": 1.0,
+   "after": 1.0,
+   "x": 1228.61,
+   "y": 1.0,
+   "z": -769.62
+  },
+  {
+   "t": 462.5,
+   "wave": 7,
+   "by": "enm_thug_kingpin_melee",
+   "amount": 12.3,
+   "before": 5.2,
+   "after": 1.0,
+   "x": 1232.99,
+   "y": 1.0,
+   "z": -774.12
+  },
+  {
+   "t": 464.5,
+   "wave": 7,
+   "by": "enm_thug_kingpin_baton",
+   "amount": 19.1,
+   "before": 2.8,
+   "after": 1.0,
+   "x": 1235.4,
+   "y": 1.0,
+   "z": -776.46
+  },
+  {
+   "t": 466.5,
+   "wave": 7,
+   "by": "enm_swat_kingpin_rifle",
+   "amount": 22.0,
+   "before": 2.8,
+   "after": 1.0,
+   "x": 1236.96,
+   "y": 1.0,
+   "z": -774.64
+  },
+  {
+   "t": 469.0,
+   "wave": 7,
+   "by": "enm_thug_kingpin_baton",
+   "amount": 21.8,
+   "before": 3.4,
+   "after": 1.0,
+   "x": 1233.41,
+   "y": 1.0,
+   "z": -782.67
+  },
+  {
+   "t": 472.0,
+   "wave": 7,
+   "by": "enm_rocket_kingpin",
+   "amount": 19.2,
+   "before": 4.0,
+   "after": 1.0,
+   "x": 1235.85,
+   "y": 1.0,
+   "z": -790.5
+  },
+  {
+   "t": 476.5,
+   "wave": 7,
+   "by": "enm_thug_kingpin_melee",
+   "amount": 10.5,
+   "before": 5.8,
+   "after": 1.0,
+   "x": 1224.61,
+   "y": 1.0,
+   "z": -785.81
+  },
+  {
+   "t": 478.5,
+   "wave": 7,
+   "by": "enm_thug_kingpin_baton",
+   "amount": 23.1,
+   "before": 2.8,
+   "after": 1.0,
+   "x": 1215.65,
+   "y": 1.0,
+   "z": -786.83
+  },
+  {
+   "t": 481.0,
+   "wave": 7,
+   "by": "enm_thug_kingpin_baton",
+   "amount": 13.9,
+   "before": 3.4,
+   "after": 1.0,
+   "x": 1215.54,
+   "y": 1.0,
+   "z": -785.39
+  },
+  {
+   "t": 481.5,
+   "wave": 7,
+   "by": "enm_thug_kingpin_melee",
+   "amount": 14.0,
+   "before": 1.0,
+   "after": 1.0,
+   "x": 1218.21,
+   "y": 1.0,
+   "z": -784.45
+  },
+  {
+   "t": 488.0,
+   "wave": 7,
+   "by": "enm_thug_kingpin_baton",
+   "amount": 14.2,
+   "before": 8.2,
+   "after": 1.0,
+   "x": 1209.19,
+   "y": 1.0,
+   "z": -795.81
+  },
+  {
+   "t": 489.5,
+   "wave": 7,
+   "by": "enm_thug_kingpin_shield",
+   "amount": 16.3,
+   "before": 2.2,
+   "after": 1.0,
+   "x": 1205.15,
+   "y": 1.0,
+   "z": -795.61
+  }
+ ],
+ "samples": [
+  [
+   5.0,
+   1256.77,
+   1.0,
+   -813.81,
+   208.0,
+   208.0,
+   0
+  ],
+  [
+   5.5,
+   1257.21,
+   1.0,
+   -813.65,
+   208.0,
+   208.0,
+   0
+  ],
+  [
+   6.0,
+   1258.59,
+   1.0,
+   -814.93,
+   208.0,
+   208.0,
+   0
+  ],
+  [
+   6.5,
+   1256.3,
+   1.0,
+   -815.42,
+   208.0,
+   208.0,
+   3
+  ],
+  [
+   7.0,
+   1254.21,
+   1.0,
+   -815.48,
+   187.0,
+   208.0,
+   3
+  ],
+  [
+   7.5,
+   1254.65,
+   1.0,
+   -813.23,
+   187.6,
+   208.0,
+   3
+  ],
+  [
+   8.0,
+   1255.82,
+   1.0,
+   -812.67,
+   188.2,
+   208.0,
+   3
+  ],
+  [
+   8.5,
+   1255.56,
+   1.0,
+   -810.63,
+   188.8,
+   208.0,
+   3
+  ],
+  [
+   9.0,
+   1255.4,
+   1.0,
+   -809.64,
+   169.8,
+   208.0,
+   3
+  ],
+  [
+   9.5,
+   1258.36,
+   1.0,
+   -807.71,
+   170.4,
+   208.0,
+   3
+  ],
+  [
+   10.0,
+   1257.67,
+   1.0,
+   -806.7,
+   156.4,
+   208.0,
+   3
+  ],
+  [
+   10.5,
+   1258.34,
+   1.0,
+   -806.74,
+   157.0,
+   208.0,
+   4
+  ],
+  [
+   11.0,
+   1257.06,
+   1.0,
+   -805.31,
+   157.6,
+   208.0,
+   4
+  ],
+  [
+   11.5,
+   1259.57,
+   1.0,
+   -805.33,
+   158.2,
+   208.0,
+   4
+  ],
+  [
+   12.0,
+   1258.98,
+   1.0,
+   -806.66,
+   158.8,
+   208.0,
+   4
+  ],
+  [
+   12.5,
+   1258.56,
+   1.0,
+   -806.36,
+   159.4,
+   208.0,
+   4
+  ],
+  [
+   13.0,
+   1261.48,
+   1.0,
+   -805.26,
+   160.0,
+   208.0,
+   4
+  ],
+  [
+   13.5,
+   1259.86,
+   1.0,
+   -807.76,
+   160.6,
+   208.0,
+   4
+  ],
+  [
+   14.0,
+   1260.81,
+   1.0,
+   -810.69,
+   161.2,
+   208.0,
+   4
+  ],
+  [
+   14.5,
+   1258.91,
+   1.0,
+   -812.0,
+   161.8,
+   208.0,
+   4
+  ],
+  [
+   15.0,
+   1259.11,
+   1.0,
+   -811.34,
+   162.4,
+   208.0,
+   4
+  ],
+  [
+   15.5,
+   1256.87,
+   1.0,
+   -809.19,
+   163.0,
+   208.0,
+   5
+  ],
+  [
+   16.0,
+   1257.8,
+   1.0,
+   -807.75,
+   163.6,
+   208.0,
+   5
+  ],
+  [
+   16.5,
+   1260.02,
+   1.0,
+   -805.04,
+   164.2,
+   208.0,
+   5
+  ],
+  [
+   17.0,
+   1260.38,
+   1.0,
+   -805.65,
+   164.8,
+   208.0,
+   5
+  ],
+  [
+   17.5,
+   1260.27,
+   1.0,
+   -806.24,
+   165.4,
+   208.0,
+   5
+  ],
+  [
+   18.0,
+   1263.18,
+   1.0,
+   -806.6,
+   166.0,
+   208.0,
+   5
+  ],
+  [
+   18.5,
+   1263.78,
+   1.0,
+   -808.99,
+   166.6,
+   208.0,
+   5
+  ],
+  [
+   19.0,
+   1264.0,
+   1.0,
+   -806.29,
+   167.2,
+   208.0,
+   5
+  ],
+  [
+   19.5,
+   1261.42,
+   1.0,
+   -808.04,
+   167.8,
+   208.0,
+   6
+  ],
+  [
+   20.0,
+   1262.23,
+   1.0,
+   -805.31,
+   168.4,
+   208.0,
+   7
+  ],
+  [
+   20.5,
+   1262.07,
+   1.0,
+   -807.62,
+   169.0,
+   208.0,
+   7
+  ],
+  [
+   21.0,
+   1264.94,
+   1.0,
+   -807.74,
+   169.6,
+   208.0,
+   7
+  ],
+  [
+   21.5,
+   1262.81,
+   1.0,
+   -806.24,
+   170.2,
+   208.0,
+   5
+  ],
+  [
+   22.0,
+   1262.68,
+   1.0,
+   -805.09,
+   170.8,
+   208.0,
+   5
+  ],
+  [
+   22.5,
+   1260.91,
+   1.0,
+   -802.38,
+   171.4,
+   208.0,
+   5
+  ],
+  [
+   23.0,
+   1262.05,
+   1.0,
+   -799.89,
+   172.0,
+   208.0,
+   5
+  ],
+  [
+   23.5,
+   1260.84,
+   1.0,
+   -799.03,
+   172.6,
+   208.0,
+   5
+  ],
+  [
+   24.0,
+   1262.91,
+   1.0,
+   -798.92,
+   173.2,
+   208.0,
+   5
+  ],
+  [
+   24.5,
+   1262.04,
+   1.0,
+   -800.59,
+   173.8,
+   208.0,
+   5
+  ],
+  [
+   25.0,
+   1262.06,
+   1.0,
+   -799.77,
+   174.4,
+   208.0,
+   5
+  ],
+  [
+   25.5,
+   1263.79,
+   1.0,
+   -798.22,
+   175.0,
+   208.0,
+   5
+  ],
+  [
+   26.0,
+   1262.23,
+   1.0,
+   -798.81,
+   175.6,
+   208.0,
+   5
+  ],
+  [
+   26.5,
+   1260.43,
+   1.0,
+   -798.86,
+   176.2,
+   208.0,
+   5
+  ],
+  [
+   27.0,
+   1263.36,
+   1.0,
+   -797.12,
+   176.8,
+   208.0,
+   5
+  ],
+  [
+   27.5,
+   1261.53,
+   1.0,
+   -796.48,
+   177.4,
+   208.0,
+   5
+  ],
+  [
+   28.0,
+   1263.38,
+   1.0,
+   -795.15,
+   178.0,
+   208.0,
+   5
+  ],
+  [
+   28.5,
+   1266.22,
+   1.0,
+   -797.66,
+   178.6,
+   208.0,
+   6
+  ],
+  [
+   29.0,
+   1266.04,
+   1.0,
+   -798.64,
+   179.2,
+   208.0,
+   6
+  ],
+  [
+   29.5,
+   1268.96,
+   1.0,
+   -797.97,
+   157.6,
+   208.0,
+   6
+  ],
+  [
+   30.0,
+   1266.47,
+   1.0,
+   -797.01,
+   158.2,
+   208.0,
+   6
+  ],
+  [
+   30.5,
+   1268.16,
+   1.0,
+   -795.51,
+   158.8,
+   208.0,
+   6
+  ],
+  [
+   31.0,
+   1266.23,
+   1.0,
+   -793.78,
+   159.4,
+   208.0,
+   6
+  ],
+  [
+   31.5,
+   1268.04,
+   1.0,
+   -790.95,
+   160.0,
+   208.0,
+   6
+  ],
+  [
+   32.0,
+   1267.44,
+   1.0,
+   -788.26,
+   160.6,
+   208.0,
+   6
+  ],
+  [
+   32.5,
+   1265.46,
+   1.0,
+   -790.5,
+   161.2,
+   208.0,
+   6
+  ],
+  [
+   33.0,
+   1267.89,
+   1.0,
+   -788.66,
+   161.8,
+   208.0,
+   5
+  ],
+  [
+   33.5,
+   1269.85,
+   1.0,
+   -785.78,
+   162.4,
+   208.0,
+   5
+  ],
+  [
+   34.0,
+   1268.95,
+   1.0,
+   -785.49,
+   163.0,
+   208.0,
+   5
+  ],
+  [
+   34.5,
+   1266.04,
+   1.0,
+   -782.66,
+   163.6,
+   208.0,
+   5
+  ],
+  [
+   35.0,
+   1266.2,
+   1.0,
+   -780.06,
+   164.2,
+   208.0,
+   5
+  ],
+  [
+   35.5,
+   1268.43,
+   1.0,
+   -778.11,
+   164.8,
+   208.0,
+   5
+  ],
+  [
+   36.0,
+   1266.94,
+   1.0,
+   -779.35,
+   165.4,
+   208.0,
+   5
+  ],
+  [
+   36.5,
+   1267.46,
+   1.0,
+   -780.79,
+   166.0,
+   208.0,
+   5
+  ],
+  [
+   37.0,
+   1265.25,
+   1.0,
+   -778.33,
+   166.6,
+   208.0,
+   5
+  ],
+  [
+   37.5,
+   1264.99,
+   1.0,
+   -777.83,
+   167.2,
+   208.0,
+   5
+  ],
+  [
+   38.0,
+   1264.52,
+   1.0,
+   -775.33,
+   167.8,
+   208.0,
+   5
+  ],
+  [
+   38.5,
+   1264.71,
+   1.0,
+   -775.18,
+   146.6,
+   208.0,
+   5
+  ],
+  [
+   39.0,
+   1265.36,
+   1.0,
+   -773.53,
+   147.2,
+   208.0,
+   5
+  ],
+  [
+   39.5,
+   1263.21,
+   1.0,
+   -772.81,
+   147.8,
+   208.0,
+   5
+  ],
+  [
+   40.0,
+   1260.58,
+   1.0,
+   -771.72,
+   148.4,
+   208.0,
+   5
+  ],
+  [
+   40.5,
+   1260.48,
+   1.0,
+   -770.06,
+   149.0,
+   208.0,
+   3
+  ],
+  [
+   41.0,
+   1257.82,
+   1.0,
+   -771.91,
+   132.3,
+   208.0,
+   2
+  ],
+  [
+   41.5,
+   1258.19,
+   1.0,
+   -770.35,
+   132.9,
+   208.0,
+   2
+  ],
+  [
+   42.0,
+   1257.85,
+   1.0,
+   -769.68,
+   133.5,
+   208.0,
+   2
+  ],
+  [
+   42.5,
+   1257.92,
+   1.0,
+   -768.52,
+   134.1,
+   208.0,
+   2
+  ],
+  [
+   43.0,
+   1258.12,
+   1.0,
+   -768.65,
+   134.7,
+   208.0,
+   2
+  ],
+  [
+   43.5,
+   1259.31,
+   1.0,
+   -766.39,
+   135.3,
+   208.0,
+   2
+  ],
+  [
+   44.0,
+   1257.87,
+   1.0,
+   -766.04,
+   135.9,
+   208.0,
+   2
+  ],
+  [
+   44.5,
+   1259.91,
+   1.0,
+   -768.21,
+   136.5,
+   208.0,
+   2
+  ],
+  [
+   45.0,
+   1259.56,
+   1.0,
+   -770.78,
+   137.1,
+   208.0,
+   2
+  ],
+  [
+   45.5,
+   1257.0,
+   1.0,
+   -769.76,
+   137.7,
+   208.0,
+   2
+  ],
+  [
+   46.0,
+   1259.39,
+   1.0,
+   -771.83,
+   138.3,
+   208.0,
+   2
+  ],
+  [
+   46.5,
+   1260.35,
+   1.0,
+   -773.98,
+   138.9,
+   208.0,
+   2
+  ],
+  [
+   47.0,
+   1263.15,
+   1.0,
+   -775.66,
+   139.5,
+   208.0,
+   2
+  ],
+  [
+   47.5,
+   1262.54,
+   1.0,
+   -775.74,
+   140.1,
+   208.0,
+   2
+  ],
+  [
+   48.0,
+   1264.54,
+   1.0,
+   -777.77,
+   140.7,
+   208.0,
+   0
+  ],
+  [
+   48.5,
+   1264.63,
+   1.0,
+   -778.73,
+   141.3,
+   208.0,
+   0
+  ],
+  [
+   49.0,
+   1263.54,
+   1.0,
+   -777.4,
+   125.8,
+   208.0,
+   0
+  ],
+  [
+   49.5,
+   1260.65,
+   1.0,
+   -778.41,
+   126.4,
+   208.0,
+   0
+  ],
+  [
+   50.0,
+   1260.72,
+   1.0,
+   -781.02,
+   127.0,
+   208.0,
+   0
+  ],
+  [
+   50.5,
+   1262.45,
+   1.0,
+   -778.19,
+   127.6,
+   208.0,
+   0
+  ],
+  [
+   58.0,
+   1262.73,
+   1.0,
+   -775.86,
+   128.2,
+   208.0,
+   0
+  ],
+  [
+   58.5,
+   1261.58,
+   1.0,
+   -777.57,
+   128.8,
+   208.0,
+   1
+  ],
+  [
+   59.0,
+   1259.77,
+   1.0,
+   -775.28,
+   129.4,
+   208.0,
+   1
+  ],
+  [
+   59.5,
+   1257.61,
+   1.0,
+   -772.34,
+   130.0,
+   208.0,
+   1
+  ],
+  [
+   60.0,
+   1259.63,
+   1.0,
+   -775.26,
+   130.6,
+   208.0,
+   1
+  ],
+  [
+   60.5,
+   1261.91,
+   1.0,
+   -775.67,
+   107.8,
+   208.0,
+   1
+  ],
+  [
+   61.0,
+   1262.93,
+   1.0,
+   -776.98,
+   108.4,
+   208.0,
+   1
+  ],
+  [
+   61.5,
+   1261.69,
+   1.0,
+   -777.22,
+   109.0,
+   208.0,
+   1
+  ],
+  [
+   62.0,
+   1261.36,
+   1.0,
+   -778.65,
+   109.6,
+   208.0,
+   2
+  ],
+  [
+   62.5,
+   1264.2,
+   1.0,
+   -778.36,
+   110.2,
+   208.0,
+   2
+  ],
+  [
+   63.0,
+   1266.99,
+   1.0,
+   -779.51,
+   110.8,
+   208.0,
+   3
+  ],
+  [
+   63.5,
+   1264.0,
+   1.0,
+   -780.22,
+   111.4,
+   208.0,
+   3
+  ],
+  [
+   64.0,
+   1264.02,
+   1.0,
+   -782.01,
+   112.0,
+   208.0,
+   3
+  ],
+  [
+   64.5,
+   1261.05,
+   1.0,
+   -783.42,
+   94.1,
+   208.0,
+   3
+  ],
+  [
+   65.0,
+   1260.41,
+   1.0,
+   -784.63,
+   94.7,
+   208.0,
+   4
+  ],
+  [
+   65.5,
+   1257.92,
+   1.0,
+   -781.88,
+   95.3,
+   208.0,
+   4
+  ],
+  [
+   66.0,
+   1255.85,
+   1.0,
+   -779.52,
+   95.9,
+   208.0,
+   5
+  ],
+  [
+   66.5,
+   1256.43,
+   1.0,
+   -777.94,
+   96.5,
+   208.0,
+   5
+  ],
+  [
+   67.0,
+   1256.39,
+   1.0,
+   -779.23,
+   97.1,
+   208.0,
+   5
+  ],
+  [
+   67.5,
+   1254.26,
+   1.0,
+   -777.28,
+   97.7,
+   208.0,
+   5
+  ],
+  [
+   68.0,
+   1254.34,
+   1.0,
+   -777.71,
+   98.3,
+   208.0,
+   5
+  ],
+  [
+   68.5,
+   1254.37,
+   1.0,
+   -775.25,
+   98.9,
+   208.0,
+   5
+  ],
+  [
+   69.0,
+   1254.78,
+   1.0,
+   -773.37,
+   77.3,
+   208.0,
+   5
+  ],
+  [
+   69.5,
+   1256.05,
+   1.0,
+   -770.64,
+   77.9,
+   208.0,
+   5
+  ],
+  [
+   70.0,
+   1253.56,
+   1.0,
+   -773.38,
+   78.5,
+   208.0,
+   5
+  ],
+  [
+   70.5,
+   1256.32,
+   1.0,
+   -774.12,
+   79.1,
+   208.0,
+   5
+  ],
+  [
+   71.0,
+   1253.62,
+   1.0,
+   -777.01,
+   79.7,
+   208.0,
+   5
+  ],
+  [
+   71.5,
+   1252.09,
+   1.0,
+   -778.43,
+   80.3,
+   208.0,
+   5
+  ],
+  [
+   72.0,
+   1249.51,
+   1.0,
+   -775.83,
+   80.9,
+   208.0,
+   6
+  ],
+  [
+   72.5,
+   1247.06,
+   1.0,
+   -775.68,
+   81.5,
+   208.0,
+   6
+  ],
+  [
+   73.0,
+   1246.91,
+   1.0,
+   -773.82,
+   82.1,
+   208.0,
+   6
+  ],
+  [
+   73.5,
+   1245.31,
+   1.0,
+   -772.28,
+   82.7,
+   208.0,
+   6
+  ],
+  [
+   74.0,
+   1246.21,
+   1.0,
+   -772.52,
+   83.3,
+   208.0,
+   6
+  ],
+  [
+   74.5,
+   1243.67,
+   1.0,
+   -770.06,
+   83.9,
+   208.0,
+   6
+  ],
+  [
+   75.0,
+   1240.95,
+   1.0,
+   -769.26,
+   84.5,
+   208.0,
+   6
+  ],
+  [
+   75.5,
+   1241.55,
+   1.0,
+   -770.27,
+   85.1,
+   208.0,
+   6
+  ],
+  [
+   76.0,
+   1242.71,
+   1.0,
+   -769.54,
+   85.7,
+   208.0,
+   7
+  ],
+  [
+   76.5,
+   1242.6,
+   1.0,
+   -769.63,
+   86.3,
+   208.0,
+   7
+  ],
+  [
+   77.0,
+   1240.2,
+   1.0,
+   -771.32,
+   86.9,
+   208.0,
+   7
+  ],
+  [
+   77.5,
+   1241.45,
+   1.0,
+   -772.61,
+   87.5,
+   208.0,
+   7
+  ],
+  [
+   78.0,
+   1243.06,
+   1.0,
+   -769.65,
+   88.1,
+   208.0,
+   8
+  ],
+  [
+   78.5,
+   1241.93,
+   1.0,
+   -772.14,
+   88.7,
+   208.0,
+   10
+  ],
+  [
+   79.0,
+   1240.67,
+   1.0,
+   -774.68,
+   89.3,
+   208.0,
+   10
+  ],
+  [
+   79.5,
+   1243.63,
+   1.0,
+   -771.71,
+   89.9,
+   208.0,
+   10
+  ],
+  [
+   80.0,
+   1246.13,
+   1.0,
+   -769.13,
+   79.5,
+   208.0,
+   10
+  ],
+  [
+   80.5,
+   1246.28,
+   1.0,
+   -766.41,
+   80.1,
+   208.0,
+   10
+  ],
+  [
+   81.0,
+   1248.2,
+   1.0,
+   -766.36,
+   80.7,
+   208.0,
+   10
+  ],
+  [
+   81.5,
+   1249.42,
+   1.0,
+   -767.97,
+   81.3,
+   208.0,
+   10
+  ],
+  [
+   82.0,
+   1249.33,
+   1.0,
+   -770.82,
+   61.7,
+   208.0,
+   10
+  ],
+  [
+   82.5,
+   1248.77,
+   1.0,
+   -769.46,
+   62.3,
+   208.0,
+   10
+  ],
+  [
+   83.0,
+   1248.02,
+   1.0,
+   -771.74,
+   62.9,
+   208.0,
+   10
+  ],
+  [
+   83.5,
+   1246.97,
+   1.0,
+   -772.71,
+   63.5,
+   208.0,
+   10
+  ],
+  [
+   84.0,
+   1249.61,
+   1.0,
+   -774.53,
+   51.2,
+   208.0,
+   9
+  ],
+  [
+   84.5,
+   1247.0,
+   1.0,
+   -775.19,
+   51.8,
+   208.0,
+   9
+  ],
+  [
+   85.0,
+   1244.46,
+   1.0,
+   -772.64,
+   52.4,
+   208.0,
+   9
+  ],
+  [
+   85.5,
+   1246.58,
+   1.0,
+   -773.95,
+   33.6,
+   208.0,
+   9
+  ],
+  [
+   86.0,
+   1244.48,
+   1.0,
+   -771.13,
+   34.2,
+   208.0,
+   8
+  ],
+  [
+   86.5,
+   1243.37,
+   1.0,
+   -769.49,
+   34.8,
+   208.0,
+   8
+  ],
+  [
+   87.0,
+   1242.94,
+   1.0,
+   -772.31,
+   35.4,
+   208.0,
+   8
+  ],
+  [
+   87.5,
+   1242.34,
+   1.0,
+   -770.06,
+   36.0,
+   208.0,
+   8
+  ],
+  [
+   88.0,
+   1240.56,
+   1.0,
+   -772.58,
+   36.6,
+   208.0,
+   8
+  ],
+  [
+   88.5,
+   1240.02,
+   1.0,
+   -771.89,
+   37.2,
+   208.0,
+   8
+  ],
+  [
+   89.0,
+   1242.24,
+   1.0,
+   -771.97,
+   37.8,
+   208.0,
+   7
+  ],
+  [
+   89.5,
+   1242.54,
+   1.0,
+   -773.95,
+   38.4,
+   208.0,
+   7
+  ],
+  [
+   90.0,
+   1241.23,
+   1.0,
+   -775.41,
+   39.0,
+   208.0,
+   7
+  ],
+  [
+   90.5,
+   1242.15,
+   1.0,
+   -775.98,
+   39.6,
+   208.0,
+   7
+  ],
+  [
+   91.0,
+   1242.05,
+   1.0,
+   -774.96,
+   40.2,
+   208.0,
+   7
+  ],
+  [
+   91.5,
+   1242.91,
+   1.0,
+   -777.51,
+   40.8,
+   208.0,
+   7
+  ],
+  [
+   92.0,
+   1244.78,
+   1.0,
+   -777.21,
+   41.4,
+   208.0,
+   6
+  ],
+  [
+   92.5,
+   1243.78,
+   1.0,
+   -775.66,
+   42.0,
+   208.0,
+   6
+  ],
+  [
+   93.0,
+   1244.06,
+   1.0,
+   -777.19,
+   42.6,
+   208.0,
+   6
+  ],
+  [
+   93.5,
+   1244.4,
+   1.0,
+   -778.27,
+   43.2,
+   208.0,
+   6
+  ],
+  [
+   94.0,
+   1246.25,
+   1.0,
+   -780.06,
+   28.7,
+   208.0,
+   6
+  ],
+  [
+   94.5,
+   1247.73,
+   1.0,
+   -781.8,
+   29.3,
+   208.0,
+   6
+  ],
+  [
+   95.0,
+   1249.24,
+   1.0,
+   -781.81,
+   29.9,
+   208.0,
+   5
+  ],
+  [
+   95.5,
+   1248.4,
+   1.0,
+   -780.69,
+   30.5,
+   208.0,
+   5
+  ],
+  [
+   96.0,
+   1250.14,
+   1.0,
+   -778.6,
+   16.0,
+   208.0,
+   5
+  ],
+  [
+   96.5,
+   1251.02,
+   1.0,
+   -779.01,
+   16.6,
+   208.0,
+   5
+  ],
+  [
+   97.0,
+   1252.9,
+   1.0,
+   -776.2,
+   17.2,
+   208.0,
+   5
+  ],
+  [
+   97.5,
+   1252.46,
+   1.0,
+   -774.62,
+   17.8,
+   208.0,
+   5
+  ],
+  [
+   98.0,
+   1255.27,
+   1.0,
+   -774.68,
+   1.0,
+   208.0,
+   5
+  ],
+  [
+   98.5,
+   1258.1,
+   1.0,
+   -776.19,
+   1.6,
+   208.0,
+   3
+  ],
+  [
+   99.0,
+   1256.03,
+   1.0,
+   -776.06,
+   2.2,
+   208.0,
+   3
+  ],
+  [
+   99.5,
+   1258.67,
+   1.0,
+   -774.73,
+   2.8,
+   208.0,
+   2
+  ],
+  [
+   100.0,
+   1260.26,
+   1.0,
+   -774.98,
+   3.4,
+   208.0,
+   2
+  ],
+  [
+   100.5,
+   1257.5,
+   1.0,
+   -773.29,
+   4.0,
+   208.0,
+   1
+  ],
+  [
+   101.0,
+   1260.02,
+   1.0,
+   -772.41,
+   4.6,
+   208.0,
+   1
+  ],
+  [
+   101.5,
+   1257.79,
+   1.0,
+   -773.9,
+   5.2,
+   208.0,
+   1
+  ],
+  [
+   102.0,
+   1258.98,
+   1.0,
+   -776.23,
+   1.0,
+   208.0,
+   1
+  ],
+  [
+   102.5,
+   1257.13,
+   1.0,
+   -777.67,
+   1.6,
+   208.0,
+   1
+  ],
+  [
+   103.0,
+   1254.14,
+   1.0,
+   -777.44,
+   2.2,
+   208.0,
+   1
+  ],
+  [
+   103.5,
+   1252.81,
+   1.0,
+   -778.54,
+   2.8,
+   208.0,
+   1
+  ],
+  [
+   104.0,
+   1251.26,
+   1.0,
+   -778.38,
+   3.4,
+   208.0,
+   1
+  ],
+  [
+   104.5,
+   1248.44,
+   1.0,
+   -778.91,
+   4.0,
+   208.0,
+   1
+  ],
+  [
+   105.0,
+   1245.77,
+   1.0,
+   -780.75,
+   4.6,
+   208.0,
+   1
+  ],
+  [
+   105.5,
+   1246.65,
+   1.0,
+   -783.26,
+   5.2,
+   208.0,
+   1
+  ],
+  [
+   106.0,
+   1246.2,
+   1.0,
+   -784.04,
+   5.8,
+   208.0,
+   1
+  ],
+  [
+   106.5,
+   1247.37,
+   1.0,
+   -782.73,
+   6.4,
+   208.0,
+   1
+  ],
+  [
+   107.0,
+   1246.75,
+   1.0,
+   -785.69,
+   7.0,
+   208.0,
+   1
+  ],
+  [
+   107.5,
+   1248.82,
+   1.0,
+   -788.29,
+   7.6,
+   208.0,
+   1
+  ],
+  [
+   108.0,
+   1247.02,
+   1.0,
+   -786.69,
+   8.2,
+   208.0,
+   1
+  ],
+  [
+   108.5,
+   1246.82,
+   1.0,
+   -788.1,
+   8.8,
+   208.0,
+   1
+  ],
+  [
+   109.0,
+   1244.47,
+   1.0,
+   -787.36,
+   9.4,
+   208.0,
+   1
+  ],
+  [
+   109.5,
+   1246.85,
+   1.0,
+   -787.45,
+   10.0,
+   208.0,
+   1
+  ],
+  [
+   117.0,
+   1248.59,
+   1.0,
+   -784.97,
+   10.6,
+   208.0,
+   0
+  ],
+  [
+   117.5,
+   1246.38,
+   1.0,
+   -784.99,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   118.0,
+   1247.54,
+   1.0,
+   -787.08,
+   1.6,
+   208.0,
+   1
+  ],
+  [
+   118.5,
+   1249.7,
+   1.0,
+   -787.32,
+   2.2,
+   208.0,
+   1
+  ],
+  [
+   119.0,
+   1250.28,
+   1.0,
+   -787.24,
+   2.8,
+   208.0,
+   1
+  ],
+  [
+   119.5,
+   1248.24,
+   1.0,
+   -787.8,
+   3.4,
+   208.0,
+   1
+  ],
+  [
+   120.0,
+   1248.13,
+   1.0,
+   -787.53,
+   4.0,
+   208.0,
+   1
+  ],
+  [
+   120.5,
+   1247.69,
+   1.0,
+   -789.9,
+   1.0,
+   208.0,
+   1
+  ],
+  [
+   121.0,
+   1245.27,
+   1.0,
+   -789.91,
+   1.6,
+   208.0,
+   1
+  ],
+  [
+   121.5,
+   1244.95,
+   1.0,
+   -791.5,
+   2.2,
+   208.0,
+   2
+  ],
+  [
+   122.0,
+   1245.67,
+   1.0,
+   -790.46,
+   2.8,
+   208.0,
+   2
+  ],
+  [
+   122.5,
+   1247.75,
+   1.0,
+   -789.47,
+   3.4,
+   208.0,
+   2
+  ],
+  [
+   123.0,
+   1249.8,
+   1.0,
+   -790.71,
+   4.0,
+   208.0,
+   2
+  ],
+  [
+   123.5,
+   1249.03,
+   1.0,
+   -789.28,
+   4.6,
+   208.0,
+   2
+  ],
+  [
+   124.0,
+   1247.52,
+   1.0,
+   -790.81,
+   5.2,
+   208.0,
+   3
+  ],
+  [
+   124.5,
+   1249.82,
+   1.0,
+   -790.34,
+   5.8,
+   208.0,
+   3
+  ],
+  [
+   125.0,
+   1249.2,
+   1.0,
+   -787.38,
+   6.4,
+   208.0,
+   3
+  ],
+  [
+   125.5,
+   1247.59,
+   1.0,
+   -785.53,
+   7.0,
+   208.0,
+   3
+  ],
+  [
+   126.0,
+   1250.53,
+   1.0,
+   -787.92,
+   7.6,
+   208.0,
+   4
+  ],
+  [
+   126.5,
+   1252.45,
+   1.0,
+   -785.88,
+   8.2,
+   208.0,
+   6
+  ],
+  [
+   127.0,
+   1249.69,
+   1.0,
+   -787.11,
+   8.8,
+   208.0,
+   8
+  ],
+  [
+   127.5,
+   1247.83,
+   1.0,
+   -784.28,
+   9.4,
+   208.0,
+   8
+  ],
+  [
+   128.0,
+   1250.41,
+   1.0,
+   -785.04,
+   10.0,
+   208.0,
+   8
+  ],
+  [
+   128.5,
+   1250.1,
+   1.0,
+   -786.48,
+   10.6,
+   208.0,
+   8
+  ],
+  [
+   129.0,
+   1252.78,
+   1.0,
+   -788.85,
+   11.2,
+   208.0,
+   8
+  ],
+  [
+   129.5,
+   1253.5,
+   1.0,
+   -790.54,
+   11.8,
+   208.0,
+   8
+  ],
+  [
+   130.0,
+   1251.35,
+   1.0,
+   -792.32,
+   12.4,
+   208.0,
+   8
+  ],
+  [
+   130.5,
+   1251.94,
+   1.0,
+   -791.41,
+   13.0,
+   208.0,
+   8
+  ],
+  [
+   131.0,
+   1249.01,
+   1.0,
+   -792.45,
+   13.6,
+   208.0,
+   8
+  ],
+  [
+   131.5,
+   1247.12,
+   1.0,
+   -793.57,
+   14.2,
+   208.0,
+   8
+  ],
+  [
+   132.0,
+   1248.89,
+   1.0,
+   -793.28,
+   1.0,
+   208.0,
+   8
+  ],
+  [
+   132.5,
+   1249.88,
+   1.0,
+   -795.36,
+   1.6,
+   208.0,
+   8
+  ],
+  [
+   133.0,
+   1250.8,
+   1.0,
+   -795.97,
+   2.2,
+   208.0,
+   8
+  ],
+  [
+   133.5,
+   1253.73,
+   1.0,
+   -794.96,
+   2.8,
+   208.0,
+   8
+  ],
+  [
+   134.0,
+   1251.03,
+   1.0,
+   -793.49,
+   3.4,
+   208.0,
+   8
+  ],
+  [
+   134.5,
+   1250.52,
+   1.0,
+   -796.38,
+   4.0,
+   208.0,
+   8
+  ],
+  [
+   135.0,
+   1252.33,
+   1.0,
+   -795.52,
+   4.6,
+   208.0,
+   9
+  ],
+  [
+   135.5,
+   1251.76,
+   1.0,
+   -792.86,
+   5.2,
+   208.0,
+   9
+  ],
+  [
+   136.0,
+   1249.7,
+   1.0,
+   -795.18,
+   1.0,
+   208.0,
+   9
+  ],
+  [
+   136.5,
+   1249.47,
+   1.0,
+   -797.21,
+   1.0,
+   208.0,
+   9
+  ],
+  [
+   137.0,
+   1251.31,
+   1.0,
+   -797.83,
+   1.6,
+   208.0,
+   9
+  ],
+  [
+   137.5,
+   1253.87,
+   1.0,
+   -796.4,
+   2.2,
+   208.0,
+   10
+  ],
+  [
+   138.0,
+   1252.96,
+   1.0,
+   -798.43,
+   2.8,
+   208.0,
+   10
+  ],
+  [
+   138.5,
+   1250.36,
+   1.0,
+   -799.13,
+   3.4,
+   208.0,
+   10
+  ],
+  [
+   139.0,
+   1252.11,
+   1.0,
+   -797.3,
+   4.0,
+   208.0,
+   9
+  ],
+  [
+   139.5,
+   1254.14,
+   1.0,
+   -800.04,
+   4.6,
+   208.0,
+   9
+  ],
+  [
+   140.0,
+   1253.02,
+   1.0,
+   -799.39,
+   5.2,
+   208.0,
+   9
+  ],
+  [
+   140.5,
+   1250.54,
+   1.0,
+   -798.12,
+   5.8,
+   208.0,
+   10
+  ],
+  [
+   141.0,
+   1252.89,
+   1.0,
+   -797.28,
+   6.4,
+   208.0,
+   10
+  ],
+  [
+   141.5,
+   1253.61,
+   1.0,
+   -796.59,
+   7.0,
+   208.0,
+   10
+  ],
+  [
+   142.0,
+   1253.45,
+   1.0,
+   -796.2,
+   1.0,
+   208.0,
+   9
+  ],
+  [
+   142.5,
+   1252.61,
+   1.0,
+   -798.3,
+   1.6,
+   208.0,
+   9
+  ],
+  [
+   143.0,
+   1254.5,
+   1.0,
+   -800.15,
+   2.2,
+   208.0,
+   9
+  ],
+  [
+   143.5,
+   1256.56,
+   1.0,
+   -799.11,
+   2.8,
+   208.0,
+   8
+  ],
+  [
+   144.0,
+   1255.5,
+   1.0,
+   -799.77,
+   3.4,
+   208.0,
+   8
+  ],
+  [
+   144.5,
+   1257.59,
+   1.0,
+   -798.1,
+   4.0,
+   208.0,
+   8
+  ],
+  [
+   145.0,
+   1256.44,
+   1.0,
+   -799.61,
+   4.6,
+   208.0,
+   7
+  ],
+  [
+   145.5,
+   1255.65,
+   1.0,
+   -799.59,
+   5.2,
+   208.0,
+   7
+  ],
+  [
+   146.0,
+   1252.67,
+   1.0,
+   -796.67,
+   5.8,
+   208.0,
+   7
+  ],
+  [
+   146.5,
+   1252.35,
+   1.0,
+   -795.96,
+   6.4,
+   208.0,
+   7
+  ],
+  [
+   147.0,
+   1254.37,
+   1.0,
+   -794.1,
+   7.0,
+   208.0,
+   7
+  ],
+  [
+   147.5,
+   1251.77,
+   1.0,
+   -794.94,
+   7.6,
+   208.0,
+   6
+  ],
+  [
+   148.0,
+   1253.59,
+   1.0,
+   -794.92,
+   8.2,
+   208.0,
+   6
+  ],
+  [
+   148.5,
+   1250.83,
+   1.0,
+   -797.14,
+   8.8,
+   208.0,
+   6
+  ],
+  [
+   149.0,
+   1249.71,
+   1.0,
+   -795.81,
+   1.0,
+   208.0,
+   6
+  ],
+  [
+   149.5,
+   1250.63,
+   1.0,
+   -794.11,
+   1.0,
+   208.0,
+   6
+  ],
+  [
+   150.0,
+   1252.02,
+   1.0,
+   -792.22,
+   1.6,
+   208.0,
+   6
+  ],
+  [
+   150.5,
+   1254.91,
+   1.0,
+   -792.27,
+   2.2,
+   208.0,
+   6
+  ],
+  [
+   151.0,
+   1257.41,
+   1.0,
+   -794.28,
+   2.8,
+   208.0,
+   6
+  ],
+  [
+   151.5,
+   1259.99,
+   1.0,
+   -796.88,
+   3.4,
+   208.0,
+   6
+  ],
+  [
+   152.0,
+   1261.53,
+   1.0,
+   -798.93,
+   4.0,
+   208.0,
+   6
+  ],
+  [
+   152.5,
+   1260.18,
+   1.0,
+   -797.04,
+   4.6,
+   208.0,
+   6
+  ],
+  [
+   153.0,
+   1260.19,
+   1.0,
+   -794.52,
+   5.2,
+   208.0,
+   6
+  ],
+  [
+   153.5,
+   1258.77,
+   1.0,
+   -794.48,
+   5.8,
+   208.0,
+   6
+  ],
+  [
+   154.0,
+   1255.99,
+   1.0,
+   -796.39,
+   6.4,
+   208.0,
+   6
+  ],
+  [
+   154.5,
+   1258.61,
+   1.0,
+   -795.31,
+   7.0,
+   208.0,
+   6
+  ],
+  [
+   155.0,
+   1256.62,
+   1.0,
+   -793.6,
+   7.6,
+   208.0,
+   6
+  ],
+  [
+   155.5,
+   1256.81,
+   1.0,
+   -792.78,
+   8.2,
+   208.0,
+   6
+  ],
+  [
+   156.0,
+   1259.04,
+   1.0,
+   -792.45,
+   8.8,
+   208.0,
+   6
+  ],
+  [
+   156.5,
+   1261.34,
+   1.0,
+   -794.83,
+   9.4,
+   208.0,
+   6
+  ],
+  [
+   157.0,
+   1262.12,
+   1.0,
+   -795.46,
+   10.0,
+   208.0,
+   6
+  ],
+  [
+   157.5,
+   1260.71,
+   1.0,
+   -792.52,
+   10.6,
+   208.0,
+   6
+  ],
+  [
+   158.0,
+   1259.87,
+   1.0,
+   -790.93,
+   11.2,
+   208.0,
+   4
+  ],
+  [
+   158.5,
+   1257.93,
+   1.0,
+   -789.47,
+   1.0,
+   208.0,
+   4
+  ],
+  [
+   159.0,
+   1258.76,
+   1.0,
+   -786.56,
+   1.6,
+   208.0,
+   4
+  ],
+  [
+   159.5,
+   1259.74,
+   1.0,
+   -787.69,
+   1.0,
+   208.0,
+   4
+  ],
+  [
+   160.0,
+   1258.49,
+   1.0,
+   -786.93,
+   1.6,
+   208.0,
+   4
+  ],
+  [
+   160.5,
+   1257.68,
+   1.0,
+   -789.65,
+   2.2,
+   208.0,
+   3
+  ],
+  [
+   161.0,
+   1258.35,
+   1.0,
+   -792.37,
+   1.0,
+   208.0,
+   3
+  ],
+  [
+   161.5,
+   1255.99,
+   1.0,
+   -793.23,
+   1.6,
+   208.0,
+   3
+  ],
+  [
+   162.0,
+   1256.49,
+   1.0,
+   -792.7,
+   2.2,
+   208.0,
+   3
+  ],
+  [
+   162.5,
+   1257.23,
+   1.0,
+   -792.85,
+   2.8,
+   208.0,
+   3
+  ],
+  [
+   163.0,
+   1259.85,
+   1.0,
+   -794.39,
+   3.4,
+   208.0,
+   3
+  ],
+  [
+   163.5,
+   1257.43,
+   1.0,
+   -793.56,
+   4.0,
+   208.0,
+   3
+  ],
+  [
+   164.0,
+   1259.12,
+   1.0,
+   -794.14,
+   4.6,
+   208.0,
+   1
+  ],
+  [
+   164.5,
+   1256.19,
+   1.0,
+   -793.27,
+   5.2,
+   208.0,
+   1
+  ],
+  [
+   165.0,
+   1255.29,
+   1.0,
+   -792.4,
+   5.8,
+   208.0,
+   1
+  ],
+  [
+   165.5,
+   1257.92,
+   1.0,
+   -791.0,
+   6.4,
+   208.0,
+   1
+  ],
+  [
+   166.0,
+   1260.34,
+   1.0,
+   -793.74,
+   7.0,
+   208.0,
+   1
+  ],
+  [
+   166.5,
+   1259.77,
+   1.0,
+   -795.31,
+   1.0,
+   208.0,
+   1
+  ],
+  [
+   167.0,
+   1260.08,
+   1.0,
+   -792.66,
+   1.6,
+   208.0,
+   1
+  ],
+  [
+   167.5,
+   1258.27,
+   1.0,
+   -792.02,
+   2.2,
+   208.0,
+   1
+  ],
+  [
+   168.0,
+   1259.12,
+   1.0,
+   -790.14,
+   2.8,
+   208.0,
+   1
+  ],
+  [
+   168.5,
+   1257.98,
+   1.0,
+   -791.33,
+   1.0,
+   208.0,
+   1
+  ],
+  [
+   169.0,
+   1259.27,
+   1.0,
+   -794.3,
+   1.6,
+   208.0,
+   1
+  ],
+  [
+   169.5,
+   1260.74,
+   1.0,
+   -794.5,
+   2.2,
+   208.0,
+   1
+  ],
+  [
+   170.0,
+   1260.46,
+   1.0,
+   -796.15,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   170.5,
+   1258.2,
+   1.0,
+   -793.8,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   171.0,
+   1260.86,
+   1.0,
+   -795.22,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   171.5,
+   1260.47,
+   1.0,
+   -793.49,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   172.0,
+   1259.06,
+   1.0,
+   -792.64,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   172.5,
+   1257.37,
+   1.0,
+   -790.36,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   173.0,
+   1259.42,
+   1.0,
+   -792.14,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   173.5,
+   1261.91,
+   1.0,
+   -793.99,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   174.0,
+   1262.51,
+   1.0,
+   -794.71,
+   2.8,
+   208.0,
+   0
+  ],
+  [
+   174.5,
+   1265.04,
+   1.0,
+   -791.82,
+   3.4,
+   208.0,
+   0
+  ],
+  [
+   182.0,
+   1264.67,
+   1.0,
+   -790.48,
+   4.0,
+   208.0,
+   0
+  ],
+  [
+   182.5,
+   1263.51,
+   1.0,
+   -792.2,
+   4.6,
+   208.0,
+   0
+  ],
+  [
+   183.0,
+   1260.98,
+   1.0,
+   -789.74,
+   5.2,
+   208.0,
+   0
+  ],
+  [
+   183.5,
+   1258.14,
+   1.0,
+   -792.1,
+   5.8,
+   208.0,
+   0
+  ],
+  [
+   184.0,
+   1257.21,
+   1.0,
+   -794.25,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   184.5,
+   1258.07,
+   1.0,
+   -796.99,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   185.0,
+   1258.61,
+   1.0,
+   -797.81,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   185.5,
+   1260.53,
+   1.0,
+   -795.46,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   186.0,
+   1258.77,
+   1.0,
+   -797.79,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   186.5,
+   1259.56,
+   1.0,
+   -799.07,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   187.0,
+   1260.43,
+   1.0,
+   -800.3,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   187.5,
+   1259.0,
+   1.0,
+   -801.2,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   188.0,
+   1256.29,
+   1.0,
+   -799.64,
+   2.8,
+   208.0,
+   0
+  ],
+  [
+   188.5,
+   1257.91,
+   1.0,
+   -799.02,
+   3.4,
+   208.0,
+   0
+  ],
+  [
+   189.0,
+   1256.63,
+   1.0,
+   -797.55,
+   4.0,
+   208.0,
+   0
+  ],
+  [
+   189.5,
+   1253.82,
+   1.0,
+   -797.44,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   190.0,
+   1254.05,
+   1.0,
+   -799.14,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   190.5,
+   1251.59,
+   1.0,
+   -797.22,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   191.0,
+   1248.6,
+   1.0,
+   -799.01,
+   2.8,
+   208.0,
+   0
+  ],
+  [
+   191.5,
+   1251.47,
+   1.0,
+   -801.98,
+   3.4,
+   208.0,
+   0
+  ],
+  [
+   192.0,
+   1251.42,
+   1.0,
+   -800.2,
+   4.0,
+   208.0,
+   0
+  ],
+  [
+   192.5,
+   1251.38,
+   1.0,
+   -801.12,
+   4.6,
+   208.0,
+   0
+  ],
+  [
+   193.0,
+   1249.95,
+   1.0,
+   -798.46,
+   5.2,
+   208.0,
+   0
+  ],
+  [
+   193.5,
+   1248.24,
+   1.0,
+   -797.26,
+   5.8,
+   208.0,
+   0
+  ],
+  [
+   194.0,
+   1245.89,
+   1.0,
+   -796.44,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   194.5,
+   1245.03,
+   1.0,
+   -797.03,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   195.0,
+   1247.37,
+   1.0,
+   -799.51,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   195.5,
+   1244.52,
+   1.0,
+   -801.28,
+   2.8,
+   208.0,
+   1
+  ],
+  [
+   196.0,
+   1246.93,
+   1.0,
+   -801.27,
+   3.4,
+   208.0,
+   1
+  ],
+  [
+   196.5,
+   1249.23,
+   1.0,
+   -802.87,
+   4.0,
+   208.0,
+   1
+  ],
+  [
+   197.0,
+   1249.42,
+   1.0,
+   -801.34,
+   4.6,
+   208.0,
+   1
+  ],
+  [
+   197.5,
+   1250.3,
+   1.0,
+   -802.25,
+   5.2,
+   208.0,
+   1
+  ],
+  [
+   198.0,
+   1248.23,
+   1.0,
+   -800.19,
+   5.8,
+   208.0,
+   1
+  ],
+  [
+   198.5,
+   1249.68,
+   1.0,
+   -802.18,
+   6.4,
+   208.0,
+   1
+  ],
+  [
+   199.0,
+   1251.32,
+   1.0,
+   -801.7,
+   7.0,
+   208.0,
+   1
+  ],
+  [
+   199.5,
+   1251.1,
+   1.0,
+   -799.39,
+   7.6,
+   208.0,
+   1
+  ],
+  [
+   200.0,
+   1249.25,
+   1.0,
+   -800.58,
+   8.2,
+   208.0,
+   1
+  ],
+  [
+   200.5,
+   1251.31,
+   1.0,
+   -802.65,
+   8.8,
+   208.0,
+   1
+  ],
+  [
+   201.0,
+   1249.79,
+   1.0,
+   -803.69,
+   9.4,
+   208.0,
+   1
+  ],
+  [
+   201.5,
+   1247.76,
+   1.0,
+   -804.73,
+   10.0,
+   208.0,
+   1
+  ],
+  [
+   202.0,
+   1250.61,
+   1.0,
+   -803.35,
+   1.0,
+   208.0,
+   1
+  ],
+  [
+   202.5,
+   1248.52,
+   1.0,
+   -805.46,
+   1.6,
+   208.0,
+   1
+  ],
+  [
+   203.0,
+   1247.3,
+   1.0,
+   -806.82,
+   1.0,
+   208.0,
+   1
+  ],
+  [
+   203.5,
+   1249.61,
+   1.0,
+   -807.04,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   204.0,
+   1249.61,
+   1.0,
+   -806.24,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   204.5,
+   1247.47,
+   1.0,
+   -805.62,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   205.0,
+   1248.91,
+   1.0,
+   -803.17,
+   2.8,
+   208.0,
+   0
+  ],
+  [
+   205.5,
+   1249.36,
+   1.0,
+   -801.68,
+   3.4,
+   208.0,
+   0
+  ],
+  [
+   206.0,
+   1247.73,
+   1.0,
+   -800.34,
+   4.0,
+   208.0,
+   0
+  ],
+  [
+   206.5,
+   1249.37,
+   1.0,
+   -799.14,
+   4.6,
+   208.0,
+   0
+  ],
+  [
+   207.0,
+   1250.45,
+   1.0,
+   -798.29,
+   5.2,
+   208.0,
+   0
+  ],
+  [
+   207.5,
+   1249.33,
+   1.0,
+   -797.52,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   208.0,
+   1248.73,
+   1.0,
+   -796.25,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   208.5,
+   1250.82,
+   1.0,
+   -796.35,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   209.0,
+   1251.79,
+   1.0,
+   -794.11,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   209.5,
+   1250.76,
+   1.0,
+   -797.05,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   210.0,
+   1253.21,
+   1.0,
+   -799.41,
+   2.8,
+   208.0,
+   0
+  ],
+  [
+   210.5,
+   1251.52,
+   1.0,
+   -798.12,
+   3.4,
+   208.0,
+   0
+  ],
+  [
+   211.0,
+   1249.71,
+   1.0,
+   -799.03,
+   4.0,
+   208.0,
+   0
+  ],
+  [
+   211.5,
+   1249.45,
+   1.0,
+   -800.8,
+   4.6,
+   208.0,
+   0
+  ],
+  [
+   212.0,
+   1246.55,
+   1.0,
+   -799.04,
+   5.2,
+   208.0,
+   0
+  ],
+  [
+   212.5,
+   1245.61,
+   1.0,
+   -797.59,
+   5.8,
+   208.0,
+   0
+  ],
+  [
+   213.0,
+   1248.55,
+   1.0,
+   -799.49,
+   6.4,
+   208.0,
+   0
+  ],
+  [
+   213.5,
+   1251.15,
+   1.0,
+   -798.11,
+   7.0,
+   208.0,
+   0
+  ],
+  [
+   214.0,
+   1251.97,
+   1.0,
+   -799.6,
+   7.6,
+   208.0,
+   0
+  ],
+  [
+   214.5,
+   1249.34,
+   1.0,
+   -802.14,
+   8.2,
+   208.0,
+   0
+  ],
+  [
+   215.0,
+   1250.11,
+   1.0,
+   -801.1,
+   8.8,
+   208.0,
+   0
+  ],
+  [
+   215.5,
+   1247.77,
+   1.0,
+   -802.27,
+   9.4,
+   208.0,
+   0
+  ],
+  [
+   216.0,
+   1250.49,
+   1.0,
+   -799.45,
+   10.0,
+   208.0,
+   0
+  ],
+  [
+   216.5,
+   1253.25,
+   1.0,
+   -799.67,
+   10.6,
+   208.0,
+   0
+  ],
+  [
+   217.0,
+   1255.83,
+   1.0,
+   -802.26,
+   11.2,
+   208.0,
+   0
+  ],
+  [
+   217.5,
+   1253.99,
+   1.0,
+   -801.41,
+   11.8,
+   208.0,
+   0
+  ],
+  [
+   218.0,
+   1255.88,
+   1.0,
+   -803.53,
+   12.4,
+   208.0,
+   0
+  ],
+  [
+   218.5,
+   1257.86,
+   1.0,
+   -801.76,
+   13.0,
+   208.0,
+   0
+  ],
+  [
+   219.0,
+   1260.84,
+   1.0,
+   -800.2,
+   13.6,
+   208.0,
+   0
+  ],
+  [
+   219.5,
+   1262.52,
+   1.0,
+   -800.38,
+   14.2,
+   208.0,
+   0
+  ],
+  [
+   220.0,
+   1260.9,
+   1.0,
+   -799.16,
+   14.8,
+   208.0,
+   0
+  ],
+  [
+   220.5,
+   1263.8,
+   1.0,
+   -798.08,
+   15.4,
+   208.0,
+   0
+  ],
+  [
+   221.0,
+   1265.63,
+   1.0,
+   -796.29,
+   16.0,
+   208.0,
+   0
+  ],
+  [
+   221.5,
+   1266.56,
+   1.0,
+   -797.37,
+   16.6,
+   208.0,
+   0
+  ],
+  [
+   222.0,
+   1267.3,
+   1.0,
+   -799.86,
+   17.2,
+   208.0,
+   0
+  ],
+  [
+   222.5,
+   1265.21,
+   1.0,
+   -801.04,
+   17.8,
+   208.0,
+   0
+  ],
+  [
+   223.0,
+   1262.73,
+   1.0,
+   -800.65,
+   18.4,
+   208.0,
+   0
+  ],
+  [
+   223.5,
+   1265.38,
+   1.0,
+   -800.46,
+   19.0,
+   208.0,
+   0
+  ],
+  [
+   224.0,
+   1265.88,
+   1.0,
+   -799.52,
+   19.6,
+   208.0,
+   0
+  ],
+  [
+   224.5,
+   1263.31,
+   1.0,
+   -800.76,
+   20.2,
+   208.0,
+   0
+  ],
+  [
+   225.0,
+   1263.78,
+   1.0,
+   -798.64,
+   20.8,
+   208.0,
+   0
+  ],
+  [
+   225.5,
+   1263.49,
+   1.0,
+   -796.93,
+   21.4,
+   208.0,
+   0
+  ],
+  [
+   226.0,
+   1262.91,
+   1.0,
+   -796.72,
+   22.0,
+   208.0,
+   0
+  ],
+  [
+   226.5,
+   1264.03,
+   1.0,
+   -793.86,
+   10.6,
+   208.0,
+   0
+  ],
+  [
+   227.0,
+   1265.19,
+   1.0,
+   -793.67,
+   11.2,
+   208.0,
+   0
+  ],
+  [
+   227.5,
+   1264.82,
+   1.0,
+   -791.38,
+   11.8,
+   208.0,
+   0
+  ],
+  [
+   228.0,
+   1263.41,
+   1.0,
+   -792.97,
+   12.4,
+   208.0,
+   0
+  ],
+  [
+   228.5,
+   1263.37,
+   1.0,
+   -795.62,
+   13.0,
+   208.0,
+   0
+  ],
+  [
+   229.0,
+   1261.23,
+   1.0,
+   -795.67,
+   13.6,
+   208.0,
+   0
+  ],
+  [
+   229.5,
+   1261.47,
+   1.0,
+   -793.5,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   230.0,
+   1261.85,
+   1.0,
+   -792.5,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   230.5,
+   1261.1,
+   1.0,
+   -792.99,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   231.0,
+   1258.55,
+   1.0,
+   -792.17,
+   2.8,
+   208.0,
+   0
+  ],
+  [
+   231.5,
+   1255.72,
+   1.0,
+   -791.51,
+   3.4,
+   208.0,
+   0
+  ],
+  [
+   232.0,
+   1258.31,
+   1.0,
+   -792.53,
+   4.0,
+   208.0,
+   0
+  ],
+  [
+   232.5,
+   1258.37,
+   1.0,
+   -792.62,
+   4.6,
+   208.0,
+   0
+  ],
+  [
+   233.0,
+   1255.58,
+   1.0,
+   -791.31,
+   5.2,
+   208.0,
+   0
+  ],
+  [
+   233.5,
+   1254.61,
+   1.0,
+   -789.14,
+   5.8,
+   208.0,
+   0
+  ],
+  [
+   234.0,
+   1254.45,
+   1.0,
+   -788.99,
+   6.4,
+   208.0,
+   0
+  ],
+  [
+   234.5,
+   1252.72,
+   1.0,
+   -789.38,
+   7.0,
+   208.0,
+   0
+  ],
+  [
+   235.0,
+   1253.04,
+   1.0,
+   -787.42,
+   7.6,
+   208.0,
+   0
+  ],
+  [
+   235.5,
+   1255.01,
+   1.0,
+   -787.99,
+   8.2,
+   208.0,
+   0
+  ],
+  [
+   236.0,
+   1253.64,
+   1.0,
+   -787.96,
+   8.8,
+   208.0,
+   0
+  ],
+  [
+   236.5,
+   1254.57,
+   1.0,
+   -786.2,
+   9.4,
+   208.0,
+   0
+  ],
+  [
+   237.0,
+   1253.47,
+   1.0,
+   -787.41,
+   10.0,
+   208.0,
+   0
+  ],
+  [
+   237.5,
+   1254.28,
+   1.0,
+   -785.7,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   238.0,
+   1251.58,
+   1.0,
+   -786.9,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   238.5,
+   1251.43,
+   1.0,
+   -785.3,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   239.0,
+   1252.19,
+   1.0,
+   -784.13,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   239.5,
+   1253.27,
+   1.0,
+   -785.85,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   240.0,
+   1253.02,
+   1.0,
+   -784.28,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   240.5,
+   1252.55,
+   1.0,
+   -786.67,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   241.0,
+   1249.63,
+   1.0,
+   -784.44,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   241.5,
+   1248.49,
+   1.0,
+   -783.18,
+   2.8,
+   208.0,
+   0
+  ],
+  [
+   242.0,
+   1246.6,
+   1.0,
+   -785.97,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   242.5,
+   1246.73,
+   1.0,
+   -784.03,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   243.0,
+   1246.26,
+   1.0,
+   -782.85,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   243.5,
+   1243.66,
+   1.0,
+   -781.77,
+   2.8,
+   208.0,
+   0
+  ],
+  [
+   244.0,
+   1246.62,
+   1.0,
+   -780.82,
+   3.4,
+   208.0,
+   0
+  ],
+  [
+   244.5,
+   1248.24,
+   1.0,
+   -780.52,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   245.0,
+   1246.15,
+   1.0,
+   -783.43,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   245.5,
+   1248.3,
+   1.0,
+   -785.12,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   253.0,
+   1250.05,
+   1.0,
+   -785.36,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   253.5,
+   1248.45,
+   1.0,
+   -784.88,
+   1.6,
+   208.0,
+   1
+  ],
+  [
+   254.0,
+   1250.76,
+   1.0,
+   -784.75,
+   2.2,
+   208.0,
+   1
+  ],
+  [
+   254.5,
+   1251.29,
+   1.0,
+   -786.62,
+   2.8,
+   208.0,
+   1
+  ],
+  [
+   255.0,
+   1249.38,
+   1.0,
+   -785.41,
+   3.4,
+   208.0,
+   1
+  ],
+  [
+   255.5,
+   1249.76,
+   1.0,
+   -786.0,
+   4.0,
+   208.0,
+   1
+  ],
+  [
+   256.0,
+   1247.66,
+   1.0,
+   -788.73,
+   4.6,
+   208.0,
+   1
+  ],
+  [
+   256.5,
+   1246.9,
+   1.0,
+   -791.09,
+   5.2,
+   208.0,
+   1
+  ],
+  [
+   257.0,
+   1248.62,
+   1.0,
+   -793.16,
+   5.8,
+   208.0,
+   2
+  ],
+  [
+   257.5,
+   1247.69,
+   1.0,
+   -793.04,
+   1.0,
+   208.0,
+   3
+  ],
+  [
+   258.0,
+   1249.92,
+   1.0,
+   -792.65,
+   1.6,
+   208.0,
+   3
+  ],
+  [
+   258.5,
+   1248.2,
+   1.0,
+   -790.09,
+   2.2,
+   208.0,
+   3
+  ],
+  [
+   259.0,
+   1245.78,
+   1.0,
+   -790.41,
+   2.8,
+   208.0,
+   3
+  ],
+  [
+   259.5,
+   1246.44,
+   1.0,
+   -792.63,
+   3.4,
+   208.0,
+   4
+  ],
+  [
+   260.0,
+   1245.47,
+   1.0,
+   -789.66,
+   4.0,
+   208.0,
+   5
+  ],
+  [
+   260.5,
+   1242.63,
+   1.0,
+   -792.45,
+   4.6,
+   208.0,
+   5
+  ],
+  [
+   261.0,
+   1243.87,
+   1.0,
+   -792.53,
+   5.2,
+   208.0,
+   5
+  ],
+  [
+   261.5,
+   1246.24,
+   1.0,
+   -790.35,
+   5.8,
+   208.0,
+   5
+  ],
+  [
+   262.0,
+   1248.77,
+   1.0,
+   -789.11,
+   1.0,
+   208.0,
+   6
+  ],
+  [
+   262.5,
+   1249.61,
+   1.0,
+   -786.37,
+   1.6,
+   208.0,
+   6
+  ],
+  [
+   263.0,
+   1248.97,
+   1.0,
+   -786.68,
+   2.2,
+   208.0,
+   6
+  ],
+  [
+   263.5,
+   1251.77,
+   1.0,
+   -783.73,
+   2.8,
+   208.0,
+   6
+  ],
+  [
+   264.0,
+   1249.0,
+   1.0,
+   -785.2,
+   3.4,
+   208.0,
+   6
+  ],
+  [
+   264.5,
+   1251.41,
+   1.0,
+   -782.77,
+   4.0,
+   208.0,
+   6
+  ],
+  [
+   265.0,
+   1248.7,
+   1.0,
+   -781.05,
+   4.6,
+   208.0,
+   7
+  ],
+  [
+   265.5,
+   1249.58,
+   1.0,
+   -778.14,
+   1.0,
+   208.0,
+   7
+  ],
+  [
+   266.0,
+   1246.61,
+   1.0,
+   -779.95,
+   1.6,
+   208.0,
+   7
+  ],
+  [
+   266.5,
+   1247.15,
+   1.0,
+   -780.3,
+   2.2,
+   208.0,
+   7
+  ],
+  [
+   267.0,
+   1246.97,
+   1.0,
+   -781.07,
+   2.8,
+   208.0,
+   7
+  ],
+  [
+   267.5,
+   1246.22,
+   1.0,
+   -781.79,
+   3.4,
+   208.0,
+   8
+  ],
+  [
+   268.0,
+   1248.07,
+   1.0,
+   -779.3,
+   4.0,
+   208.0,
+   8
+  ],
+  [
+   268.5,
+   1247.88,
+   1.0,
+   -776.83,
+   4.6,
+   208.0,
+   9
+  ],
+  [
+   269.0,
+   1245.82,
+   1.0,
+   -774.83,
+   1.0,
+   208.0,
+   9
+  ],
+  [
+   269.5,
+   1243.66,
+   1.0,
+   -775.15,
+   1.0,
+   208.0,
+   10
+  ],
+  [
+   270.0,
+   1244.43,
+   1.0,
+   -775.43,
+   1.6,
+   208.0,
+   10
+  ],
+  [
+   270.5,
+   1246.37,
+   1.0,
+   -775.57,
+   2.2,
+   208.0,
+   11
+  ],
+  [
+   271.0,
+   1244.22,
+   1.0,
+   -777.24,
+   1.0,
+   208.0,
+   11
+  ],
+  [
+   271.5,
+   1242.09,
+   1.0,
+   -775.02,
+   1.6,
+   208.0,
+   11
+  ],
+  [
+   272.0,
+   1241.56,
+   1.0,
+   -777.08,
+   2.2,
+   208.0,
+   11
+  ],
+  [
+   272.5,
+   1243.6,
+   1.0,
+   -778.07,
+   2.8,
+   208.0,
+   10
+  ],
+  [
+   273.0,
+   1243.54,
+   1.0,
+   -779.17,
+   3.4,
+   208.0,
+   9
+  ],
+  [
+   273.5,
+   1241.23,
+   1.0,
+   -776.29,
+   1.0,
+   208.0,
+   9
+  ],
+  [
+   274.0,
+   1243.24,
+   1.0,
+   -778.58,
+   1.6,
+   208.0,
+   9
+  ],
+  [
+   274.5,
+   1246.07,
+   1.0,
+   -778.99,
+   2.2,
+   208.0,
+   9
+  ],
+  [
+   275.0,
+   1244.5,
+   1.0,
+   -780.56,
+   2.8,
+   208.0,
+   10
+  ],
+  [
+   275.5,
+   1243.99,
+   1.0,
+   -782.58,
+   3.4,
+   208.0,
+   10
+  ],
+  [
+   276.0,
+   1246.86,
+   1.0,
+   -784.72,
+   4.0,
+   208.0,
+   10
+  ],
+  [
+   276.5,
+   1246.52,
+   1.0,
+   -784.67,
+   4.6,
+   208.0,
+   12
+  ],
+  [
+   277.0,
+   1246.17,
+   1.0,
+   -782.93,
+   5.2,
+   208.0,
+   14
+  ],
+  [
+   277.5,
+   1244.89,
+   1.0,
+   -783.77,
+   1.0,
+   208.0,
+   14
+  ],
+  [
+   278.0,
+   1245.32,
+   1.0,
+   -785.95,
+   1.6,
+   208.0,
+   14
+  ],
+  [
+   278.5,
+   1246.94,
+   1.0,
+   -784.68,
+   2.2,
+   208.0,
+   14
+  ],
+  [
+   279.0,
+   1244.42,
+   1.0,
+   -787.15,
+   2.8,
+   208.0,
+   14
+  ],
+  [
+   279.5,
+   1244.39,
+   1.0,
+   -788.51,
+   3.4,
+   208.0,
+   14
+  ],
+  [
+   280.0,
+   1245.07,
+   1.0,
+   -787.26,
+   4.0,
+   208.0,
+   14
+  ],
+  [
+   280.5,
+   1245.56,
+   1.0,
+   -789.05,
+   1.0,
+   208.0,
+   14
+  ],
+  [
+   281.0,
+   1248.06,
+   1.0,
+   -788.94,
+   1.6,
+   208.0,
+   14
+  ],
+  [
+   281.5,
+   1246.75,
+   1.0,
+   -788.1,
+   2.2,
+   208.0,
+   14
+  ],
+  [
+   282.0,
+   1244.29,
+   1.0,
+   -788.64,
+   2.8,
+   208.0,
+   14
+  ],
+  [
+   282.5,
+   1242.09,
+   1.0,
+   -787.65,
+   3.4,
+   208.0,
+   13
+  ],
+  [
+   283.0,
+   1242.47,
+   1.0,
+   -784.74,
+   1.0,
+   208.0,
+   12
+  ],
+  [
+   283.5,
+   1244.62,
+   1.0,
+   -785.6,
+   1.6,
+   208.0,
+   12
+  ],
+  [
+   284.0,
+   1247.43,
+   1.0,
+   -788.17,
+   2.2,
+   208.0,
+   12
+  ],
+  [
+   284.5,
+   1245.9,
+   1.0,
+   -786.19,
+   2.8,
+   208.0,
+   12
+  ],
+  [
+   285.0,
+   1247.58,
+   1.0,
+   -783.98,
+   3.4,
+   208.0,
+   12
+  ],
+  [
+   285.5,
+   1249.96,
+   1.0,
+   -785.23,
+   1.0,
+   208.0,
+   12
+  ],
+  [
+   286.0,
+   1247.12,
+   1.0,
+   -783.41,
+   1.6,
+   208.0,
+   12
+  ],
+  [
+   286.5,
+   1245.58,
+   1.0,
+   -785.88,
+   2.2,
+   208.0,
+   12
+  ],
+  [
+   287.0,
+   1243.59,
+   1.0,
+   -787.0,
+   2.8,
+   208.0,
+   12
+  ],
+  [
+   287.5,
+   1246.32,
+   1.0,
+   -789.89,
+   3.4,
+   208.0,
+   12
+  ],
+  [
+   288.0,
+   1247.75,
+   1.0,
+   -791.32,
+   4.0,
+   208.0,
+   12
+  ],
+  [
+   288.5,
+   1248.57,
+   1.0,
+   -791.54,
+   4.6,
+   208.0,
+   12
+  ],
+  [
+   289.0,
+   1248.24,
+   1.0,
+   -792.43,
+   1.0,
+   208.0,
+   12
+  ],
+  [
+   289.5,
+   1245.98,
+   1.0,
+   -792.47,
+   1.6,
+   208.0,
+   11
+  ],
+  [
+   290.0,
+   1244.65,
+   1.0,
+   -794.74,
+   2.2,
+   208.0,
+   11
+  ],
+  [
+   290.5,
+   1242.48,
+   1.0,
+   -794.19,
+   2.8,
+   208.0,
+   10
+  ],
+  [
+   291.0,
+   1240.36,
+   1.0,
+   -793.75,
+   3.4,
+   208.0,
+   9
+  ],
+  [
+   291.5,
+   1238.34,
+   1.0,
+   -791.79,
+   4.0,
+   208.0,
+   8
+  ],
+  [
+   292.0,
+   1237.68,
+   1.0,
+   -792.27,
+   4.6,
+   208.0,
+   7
+  ],
+  [
+   292.5,
+   1237.83,
+   1.0,
+   -792.9,
+   5.2,
+   208.0,
+   7
+  ],
+  [
+   293.0,
+   1239.49,
+   1.0,
+   -793.87,
+   5.8,
+   208.0,
+   6
+  ],
+  [
+   293.5,
+   1238.5,
+   1.0,
+   -794.25,
+   6.4,
+   208.0,
+   6
+  ],
+  [
+   294.0,
+   1240.33,
+   1.0,
+   -791.78,
+   7.0,
+   208.0,
+   6
+  ],
+  [
+   294.5,
+   1242.41,
+   1.0,
+   -794.45,
+   7.6,
+   208.0,
+   6
+  ],
+  [
+   295.0,
+   1245.16,
+   1.0,
+   -791.85,
+   8.2,
+   208.0,
+   6
+  ],
+  [
+   295.5,
+   1244.69,
+   1.0,
+   -791.05,
+   8.8,
+   208.0,
+   6
+  ],
+  [
+   296.0,
+   1244.88,
+   1.0,
+   -793.64,
+   9.4,
+   208.0,
+   6
+  ],
+  [
+   296.5,
+   1244.91,
+   1.0,
+   -796.51,
+   10.0,
+   208.0,
+   6
+  ],
+  [
+   297.0,
+   1247.73,
+   1.0,
+   -794.85,
+   10.6,
+   208.0,
+   6
+  ],
+  [
+   297.5,
+   1248.53,
+   1.0,
+   -793.0,
+   11.2,
+   208.0,
+   6
+  ],
+  [
+   298.0,
+   1250.83,
+   1.0,
+   -795.79,
+   11.8,
+   208.0,
+   6
+  ],
+  [
+   298.5,
+   1249.43,
+   1.0,
+   -794.72,
+   12.4,
+   208.0,
+   6
+  ],
+  [
+   299.0,
+   1249.68,
+   1.0,
+   -792.17,
+   13.0,
+   208.0,
+   6
+  ],
+  [
+   299.5,
+   1248.18,
+   1.0,
+   -792.05,
+   13.6,
+   208.0,
+   6
+  ],
+  [
+   300.0,
+   1250.89,
+   1.0,
+   -793.33,
+   14.2,
+   208.0,
+   6
+  ],
+  [
+   300.5,
+   1251.78,
+   1.0,
+   -795.6,
+   14.8,
+   208.0,
+   6
+  ],
+  [
+   301.0,
+   1254.51,
+   1.0,
+   -795.52,
+   15.4,
+   208.0,
+   5
+  ],
+  [
+   301.5,
+   1254.31,
+   1.0,
+   -795.32,
+   16.0,
+   208.0,
+   5
+  ],
+  [
+   302.0,
+   1252.05,
+   1.0,
+   -797.53,
+   16.6,
+   208.0,
+   5
+  ],
+  [
+   302.5,
+   1251.49,
+   1.0,
+   -798.8,
+   17.2,
+   208.0,
+   4
+  ],
+  [
+   303.0,
+   1249.02,
+   1.0,
+   -798.52,
+   17.8,
+   208.0,
+   2
+  ],
+  [
+   303.5,
+   1249.68,
+   1.0,
+   -798.1,
+   18.4,
+   208.0,
+   2
+  ],
+  [
+   304.0,
+   1247.89,
+   1.0,
+   -796.84,
+   19.0,
+   208.0,
+   2
+  ],
+  [
+   304.5,
+   1248.18,
+   1.0,
+   -796.16,
+   19.6,
+   208.0,
+   2
+  ],
+  [
+   305.0,
+   1247.04,
+   1.0,
+   -797.71,
+   20.2,
+   208.0,
+   1
+  ],
+  [
+   305.5,
+   1247.11,
+   1.0,
+   -798.41,
+   20.8,
+   208.0,
+   1
+  ],
+  [
+   306.0,
+   1244.18,
+   1.0,
+   -799.29,
+   21.4,
+   208.0,
+   1
+  ],
+  [
+   306.5,
+   1242.62,
+   1.0,
+   -798.95,
+   22.0,
+   208.0,
+   1
+  ],
+  [
+   307.0,
+   1241.32,
+   1.0,
+   -796.03,
+   22.6,
+   208.0,
+   1
+  ],
+  [
+   307.5,
+   1242.96,
+   1.0,
+   -798.08,
+   7.1,
+   208.0,
+   1
+  ],
+  [
+   308.0,
+   1240.33,
+   1.0,
+   -798.75,
+   7.7,
+   208.0,
+   1
+  ],
+  [
+   308.5,
+   1241.74,
+   1.0,
+   -801.09,
+   8.3,
+   208.0,
+   1
+  ],
+  [
+   309.0,
+   1244.5,
+   1.0,
+   -799.66,
+   8.9,
+   208.0,
+   1
+  ],
+  [
+   309.5,
+   1243.52,
+   1.0,
+   -800.55,
+   9.5,
+   208.0,
+   1
+  ],
+  [
+   310.0,
+   1244.22,
+   1.0,
+   -798.45,
+   10.1,
+   208.0,
+   0
+  ],
+  [
+   310.5,
+   1244.32,
+   1.0,
+   -797.02,
+   10.7,
+   208.0,
+   0
+  ],
+  [
+   311.0,
+   1245.88,
+   1.0,
+   -797.16,
+   11.3,
+   208.0,
+   0
+  ],
+  [
+   311.5,
+   1247.13,
+   1.0,
+   -794.68,
+   3.2,
+   208.0,
+   0
+  ],
+  [
+   312.0,
+   1248.73,
+   1.0,
+   -794.16,
+   3.8,
+   208.0,
+   0
+  ],
+  [
+   312.5,
+   1251.5,
+   1.0,
+   -793.73,
+   4.4,
+   208.0,
+   0
+  ],
+  [
+   313.0,
+   1253.21,
+   1.0,
+   -791.49,
+   5.0,
+   208.0,
+   0
+  ],
+  [
+   313.5,
+   1252.48,
+   1.0,
+   -791.78,
+   5.6,
+   208.0,
+   0
+  ],
+  [
+   314.0,
+   1253.82,
+   1.0,
+   -793.02,
+   6.2,
+   208.0,
+   0
+  ],
+  [
+   314.5,
+   1254.15,
+   1.0,
+   -793.71,
+   6.8,
+   208.0,
+   0
+  ],
+  [
+   315.0,
+   1255.88,
+   1.0,
+   -791.62,
+   7.4,
+   208.0,
+   0
+  ],
+  [
+   315.5,
+   1255.54,
+   1.0,
+   -793.51,
+   8.0,
+   208.0,
+   0
+  ],
+  [
+   316.0,
+   1253.41,
+   1.0,
+   -793.06,
+   8.6,
+   208.0,
+   0
+  ],
+  [
+   316.5,
+   1250.94,
+   1.0,
+   -790.54,
+   9.2,
+   208.0,
+   0
+  ],
+  [
+   317.0,
+   1253.0,
+   1.0,
+   -788.51,
+   9.8,
+   208.0,
+   0
+  ],
+  [
+   317.5,
+   1251.22,
+   1.0,
+   -788.95,
+   10.4,
+   208.0,
+   0
+  ],
+  [
+   318.0,
+   1248.29,
+   1.0,
+   -791.67,
+   11.0,
+   208.0,
+   0
+  ],
+  [
+   318.5,
+   1248.27,
+   1.0,
+   -789.14,
+   11.6,
+   208.0,
+   0
+  ],
+  [
+   319.0,
+   1248.5,
+   1.0,
+   -786.15,
+   12.2,
+   208.0,
+   0
+  ],
+  [
+   319.5,
+   1248.61,
+   1.0,
+   -785.04,
+   12.8,
+   208.0,
+   0
+  ],
+  [
+   320.0,
+   1247.75,
+   1.0,
+   -784.47,
+   13.4,
+   208.0,
+   0
+  ],
+  [
+   320.5,
+   1250.44,
+   1.0,
+   -783.42,
+   14.0,
+   208.0,
+   0
+  ],
+  [
+   321.0,
+   1248.03,
+   1.0,
+   -784.17,
+   14.6,
+   208.0,
+   0
+  ],
+  [
+   321.5,
+   1248.4,
+   1.0,
+   -783.72,
+   15.2,
+   208.0,
+   0
+  ],
+  [
+   322.0,
+   1251.19,
+   1.0,
+   -783.8,
+   15.8,
+   208.0,
+   0
+  ],
+  [
+   322.5,
+   1251.94,
+   1.0,
+   -780.83,
+   16.4,
+   208.0,
+   0
+  ],
+  [
+   330.0,
+   1250.95,
+   1.0,
+   -778.6,
+   17.0,
+   208.0,
+   0
+  ],
+  [
+   330.5,
+   1251.85,
+   1.0,
+   -775.83,
+   17.6,
+   208.0,
+   1
+  ],
+  [
+   331.0,
+   1254.33,
+   1.0,
+   -775.51,
+   18.2,
+   208.0,
+   1
+  ],
+  [
+   331.5,
+   1254.13,
+   1.0,
+   -776.44,
+   18.8,
+   208.0,
+   1
+  ],
+  [
+   332.0,
+   1252.81,
+   1.0,
+   -779.29,
+   19.4,
+   208.0,
+   1
+  ],
+  [
+   332.5,
+   1251.26,
+   1.0,
+   -781.51,
+   20.0,
+   208.0,
+   1
+  ],
+  [
+   333.0,
+   1251.53,
+   1.0,
+   -779.79,
+   20.6,
+   208.0,
+   1
+  ],
+  [
+   333.5,
+   1251.33,
+   1.0,
+   -778.02,
+   21.2,
+   208.0,
+   2
+  ],
+  [
+   334.0,
+   1250.54,
+   1.0,
+   -779.72,
+   21.8,
+   208.0,
+   2
+  ],
+  [
+   334.5,
+   1251.32,
+   1.0,
+   -779.23,
+   22.4,
+   208.0,
+   3
+  ],
+  [
+   335.0,
+   1251.17,
+   1.0,
+   -781.01,
+   23.0,
+   208.0,
+   3
+  ],
+  [
+   335.5,
+   1252.22,
+   1.0,
+   -778.35,
+   23.6,
+   208.0,
+   3
+  ],
+  [
+   336.0,
+   1252.8,
+   1.0,
+   -778.71,
+   24.2,
+   208.0,
+   3
+  ],
+  [
+   336.5,
+   1253.01,
+   1.0,
+   -779.29,
+   24.8,
+   208.0,
+   4
+  ],
+  [
+   337.0,
+   1250.76,
+   1.0,
+   -777.78,
+   25.4,
+   208.0,
+   4
+  ],
+  [
+   337.5,
+   1248.31,
+   1.0,
+   -775.67,
+   26.0,
+   208.0,
+   5
+  ],
+  [
+   338.0,
+   1249.9,
+   1.0,
+   -778.5,
+   26.6,
+   208.0,
+   6
+  ],
+  [
+   338.5,
+   1247.77,
+   1.0,
+   -781.41,
+   27.2,
+   208.0,
+   6
+  ],
+  [
+   339.0,
+   1248.94,
+   1.0,
+   -779.75,
+   27.8,
+   208.0,
+   6
+  ],
+  [
+   339.5,
+   1247.07,
+   1.0,
+   -777.4,
+   6.2,
+   208.0,
+   6
+  ],
+  [
+   340.0,
+   1248.62,
+   1.0,
+   -779.25,
+   6.8,
+   208.0,
+   6
+  ],
+  [
+   340.5,
+   1246.14,
+   1.0,
+   -780.52,
+   7.4,
+   208.0,
+   6
+  ],
+  [
+   341.0,
+   1245.54,
+   1.0,
+   -781.38,
+   8.0,
+   208.0,
+   7
+  ],
+  [
+   341.5,
+   1245.32,
+   1.0,
+   -780.61,
+   8.6,
+   208.0,
+   7
+  ],
+  [
+   342.0,
+   1247.5,
+   1.0,
+   -777.99,
+   9.2,
+   208.0,
+   7
+  ],
+  [
+   342.5,
+   1246.7,
+   1.0,
+   -776.2,
+   9.8,
+   208.0,
+   7
+  ],
+  [
+   343.0,
+   1249.08,
+   1.0,
+   -779.04,
+   10.4,
+   208.0,
+   7
+  ],
+  [
+   343.5,
+   1248.86,
+   1.0,
+   -776.04,
+   11.0,
+   208.0,
+   7
+  ],
+  [
+   344.0,
+   1251.3,
+   1.0,
+   -778.46,
+   11.6,
+   208.0,
+   7
+  ],
+  [
+   344.5,
+   1249.92,
+   1.0,
+   -777.8,
+   12.2,
+   208.0,
+   7
+  ],
+  [
+   345.0,
+   1250.99,
+   1.0,
+   -778.38,
+   12.8,
+   208.0,
+   8
+  ],
+  [
+   345.5,
+   1250.57,
+   1.0,
+   -776.83,
+   13.4,
+   208.0,
+   9
+  ],
+  [
+   346.0,
+   1252.0,
+   1.0,
+   -776.52,
+   14.0,
+   208.0,
+   10
+  ],
+  [
+   346.5,
+   1254.65,
+   1.0,
+   -776.13,
+   14.6,
+   208.0,
+   10
+  ],
+  [
+   347.0,
+   1254.64,
+   1.0,
+   -776.01,
+   15.2,
+   208.0,
+   10
+  ],
+  [
+   347.5,
+   1255.66,
+   1.0,
+   -775.56,
+   15.8,
+   208.0,
+   10
+  ],
+  [
+   348.0,
+   1253.33,
+   1.0,
+   -773.97,
+   16.4,
+   208.0,
+   10
+  ],
+  [
+   348.5,
+   1255.74,
+   1.0,
+   -771.72,
+   17.0,
+   208.0,
+   10
+  ],
+  [
+   349.0,
+   1256.91,
+   1.0,
+   -768.88,
+   17.6,
+   208.0,
+   10
+  ],
+  [
+   349.5,
+   1254.13,
+   1.0,
+   -769.97,
+   18.2,
+   208.0,
+   10
+  ],
+  [
+   350.0,
+   1253.21,
+   1.0,
+   -767.49,
+   18.8,
+   208.0,
+   9
+  ],
+  [
+   350.5,
+   1254.67,
+   1.0,
+   -764.5,
+   19.4,
+   208.0,
+   10
+  ],
+  [
+   351.0,
+   1253.0,
+   1.0,
+   -764.33,
+   20.0,
+   208.0,
+   9
+  ],
+  [
+   351.5,
+   1255.69,
+   1.0,
+   -764.68,
+   20.6,
+   208.0,
+   10
+  ],
+  [
+   352.0,
+   1255.71,
+   1.0,
+   -763.55,
+   21.2,
+   208.0,
+   11
+  ],
+  [
+   352.5,
+   1256.47,
+   1.0,
+   -763.5,
+   21.8,
+   208.0,
+   13
+  ],
+  [
+   353.0,
+   1254.7,
+   1.0,
+   -762.46,
+   22.4,
+   208.0,
+   13
+  ],
+  [
+   353.5,
+   1256.37,
+   1.0,
+   -762.52,
+   23.0,
+   208.0,
+   13
+  ],
+  [
+   354.0,
+   1259.09,
+   1.0,
+   -760.57,
+   23.6,
+   208.0,
+   14
+  ],
+  [
+   354.5,
+   1257.13,
+   1.0,
+   -762.59,
+   24.2,
+   208.0,
+   13
+  ],
+  [
+   355.0,
+   1255.55,
+   1.0,
+   -764.03,
+   24.8,
+   208.0,
+   13
+  ],
+  [
+   355.5,
+   1253.56,
+   1.0,
+   -764.94,
+   14.4,
+   208.0,
+   13
+  ],
+  [
+   356.0,
+   1254.68,
+   1.0,
+   -765.02,
+   15.0,
+   208.0,
+   13
+  ],
+  [
+   356.5,
+   1255.91,
+   1.0,
+   -767.99,
+   15.6,
+   208.0,
+   13
+  ],
+  [
+   357.0,
+   1253.71,
+   1.0,
+   -767.14,
+   16.2,
+   208.0,
+   13
+  ],
+  [
+   357.5,
+   1251.51,
+   1.0,
+   -765.9,
+   16.8,
+   208.0,
+   13
+  ],
+  [
+   358.0,
+   1249.95,
+   1.0,
+   -765.12,
+   1.0,
+   208.0,
+   13
+  ],
+  [
+   358.5,
+   1247.97,
+   1.0,
+   -764.12,
+   1.6,
+   208.0,
+   13
+  ],
+  [
+   359.0,
+   1247.74,
+   1.0,
+   -762.52,
+   2.2,
+   208.0,
+   12
+  ],
+  [
+   359.5,
+   1245.42,
+   1.0,
+   -763.79,
+   2.8,
+   208.0,
+   12
+  ],
+  [
+   360.0,
+   1243.66,
+   1.0,
+   -766.43,
+   3.4,
+   208.0,
+   12
+  ],
+  [
+   360.5,
+   1241.84,
+   1.0,
+   -765.22,
+   4.0,
+   208.0,
+   12
+  ],
+  [
+   361.0,
+   1239.52,
+   1.0,
+   -766.27,
+   4.6,
+   208.0,
+   12
+  ],
+  [
+   361.5,
+   1238.7,
+   1.0,
+   -768.26,
+   1.0,
+   208.0,
+   12
+  ],
+  [
+   362.0,
+   1241.58,
+   1.0,
+   -768.35,
+   1.6,
+   208.0,
+   12
+  ],
+  [
+   362.5,
+   1240.57,
+   1.0,
+   -766.91,
+   2.2,
+   208.0,
+   12
+  ],
+  [
+   363.0,
+   1241.44,
+   1.0,
+   -764.17,
+   2.8,
+   208.0,
+   12
+  ],
+  [
+   363.5,
+   1243.14,
+   1.0,
+   -765.24,
+   3.4,
+   208.0,
+   11
+  ],
+  [
+   364.0,
+   1240.69,
+   1.0,
+   -766.53,
+   4.0,
+   208.0,
+   11
+  ],
+  [
+   364.5,
+   1242.07,
+   1.0,
+   -765.33,
+   4.6,
+   208.0,
+   10
+  ],
+  [
+   365.0,
+   1239.54,
+   1.0,
+   -763.85,
+   1.0,
+   208.0,
+   10
+  ],
+  [
+   365.5,
+   1238.32,
+   1.0,
+   -765.73,
+   1.6,
+   208.0,
+   9
+  ],
+  [
+   366.0,
+   1240.39,
+   1.0,
+   -763.17,
+   2.2,
+   208.0,
+   8
+  ],
+  [
+   366.5,
+   1242.1,
+   1.0,
+   -761.19,
+   2.8,
+   208.0,
+   8
+  ],
+  [
+   367.0,
+   1241.06,
+   1.0,
+   -763.08,
+   3.4,
+   208.0,
+   8
+  ],
+  [
+   367.5,
+   1239.98,
+   1.0,
+   -763.87,
+   4.0,
+   208.0,
+   8
+  ],
+  [
+   368.0,
+   1239.2,
+   1.0,
+   -761.88,
+   4.6,
+   208.0,
+   7
+  ],
+  [
+   368.5,
+   1236.45,
+   1.0,
+   -761.48,
+   5.2,
+   208.0,
+   7
+  ],
+  [
+   369.0,
+   1238.36,
+   1.0,
+   -760.25,
+   5.8,
+   208.0,
+   6
+  ],
+  [
+   369.5,
+   1241.03,
+   1.0,
+   -760.28,
+   6.4,
+   208.0,
+   5
+  ],
+  [
+   370.0,
+   1238.98,
+   1.0,
+   -761.48,
+   7.0,
+   208.0,
+   5
+  ],
+  [
+   370.5,
+   1236.46,
+   1.0,
+   -760.36,
+   7.6,
+   208.0,
+   5
+  ],
+  [
+   371.0,
+   1236.12,
+   1.0,
+   -757.54,
+   1.0,
+   208.0,
+   5
+  ],
+  [
+   371.5,
+   1236.0,
+   1.0,
+   -759.23,
+   1.6,
+   208.0,
+   5
+  ],
+  [
+   372.0,
+   1233.19,
+   1.0,
+   -758.56,
+   2.2,
+   208.0,
+   5
+  ],
+  [
+   372.5,
+   1233.26,
+   1.0,
+   -760.7,
+   1.0,
+   208.0,
+   5
+  ],
+  [
+   373.0,
+   1232.78,
+   1.0,
+   -761.67,
+   1.6,
+   208.0,
+   5
+  ],
+  [
+   373.5,
+   1233.78,
+   1.0,
+   -759.71,
+   2.2,
+   208.0,
+   5
+  ],
+  [
+   374.0,
+   1231.77,
+   1.0,
+   -760.94,
+   2.8,
+   208.0,
+   5
+  ],
+  [
+   374.5,
+   1232.15,
+   1.0,
+   -761.85,
+   3.4,
+   208.0,
+   5
+  ],
+  [
+   375.0,
+   1229.66,
+   1.0,
+   -762.91,
+   4.0,
+   208.0,
+   5
+  ],
+  [
+   375.5,
+   1232.48,
+   1.0,
+   -760.46,
+   4.6,
+   208.0,
+   5
+  ],
+  [
+   376.0,
+   1235.33,
+   1.0,
+   -757.69,
+   5.2,
+   208.0,
+   5
+  ],
+  [
+   376.5,
+   1237.2,
+   1.0,
+   -760.33,
+   5.8,
+   208.0,
+   4
+  ],
+  [
+   377.0,
+   1237.85,
+   1.0,
+   -761.54,
+   6.4,
+   208.0,
+   4
+  ],
+  [
+   377.5,
+   1240.57,
+   1.0,
+   -761.66,
+   7.0,
+   208.0,
+   3
+  ],
+  [
+   378.0,
+   1239.37,
+   1.0,
+   -762.6,
+   7.6,
+   208.0,
+   3
+  ],
+  [
+   378.5,
+   1236.53,
+   1.0,
+   -764.47,
+   8.2,
+   208.0,
+   3
+  ],
+  [
+   379.0,
+   1236.22,
+   1.0,
+   -766.96,
+   8.8,
+   208.0,
+   3
+  ],
+  [
+   379.5,
+   1235.45,
+   1.0,
+   -766.47,
+   9.4,
+   208.0,
+   3
+  ],
+  [
+   380.0,
+   1235.63,
+   1.0,
+   -766.08,
+   10.0,
+   208.0,
+   3
+  ],
+  [
+   380.5,
+   1233.31,
+   1.0,
+   -768.0,
+   10.6,
+   208.0,
+   3
+  ],
+  [
+   381.0,
+   1233.6,
+   1.0,
+   -770.32,
+   11.2,
+   208.0,
+   3
+  ],
+  [
+   381.5,
+   1232.12,
+   1.0,
+   -772.76,
+   11.8,
+   208.0,
+   3
+  ],
+  [
+   382.0,
+   1230.63,
+   1.0,
+   -772.82,
+   12.4,
+   208.0,
+   3
+  ],
+  [
+   382.5,
+   1228.99,
+   1.0,
+   -772.38,
+   1.0,
+   208.0,
+   2
+  ],
+  [
+   383.0,
+   1229.39,
+   1.0,
+   -770.27,
+   1.6,
+   208.0,
+   2
+  ],
+  [
+   383.5,
+   1231.2,
+   1.0,
+   -772.47,
+   2.2,
+   208.0,
+   2
+  ],
+  [
+   384.0,
+   1231.24,
+   1.0,
+   -770.44,
+   2.8,
+   208.0,
+   2
+  ],
+  [
+   384.5,
+   1232.0,
+   1.0,
+   -767.67,
+   3.4,
+   208.0,
+   2
+  ],
+  [
+   385.0,
+   1231.76,
+   1.0,
+   -766.56,
+   4.0,
+   208.0,
+   2
+  ],
+  [
+   385.5,
+   1234.57,
+   1.0,
+   -768.41,
+   4.6,
+   208.0,
+   2
+  ],
+  [
+   386.0,
+   1232.12,
+   1.0,
+   -769.17,
+   5.2,
+   208.0,
+   2
+  ],
+  [
+   386.5,
+   1231.55,
+   1.0,
+   -771.89,
+   1.0,
+   208.0,
+   2
+  ],
+  [
+   387.0,
+   1229.27,
+   1.0,
+   -774.07,
+   1.6,
+   208.0,
+   2
+  ],
+  [
+   387.5,
+   1226.8,
+   1.0,
+   -771.14,
+   2.2,
+   208.0,
+   2
+  ],
+  [
+   388.0,
+   1224.49,
+   1.0,
+   -769.77,
+   2.8,
+   208.0,
+   2
+  ],
+  [
+   388.5,
+   1223.69,
+   1.0,
+   -767.72,
+   3.4,
+   208.0,
+   1
+  ],
+  [
+   389.0,
+   1225.11,
+   1.0,
+   -770.65,
+   4.0,
+   208.0,
+   1
+  ],
+  [
+   389.5,
+   1223.54,
+   1.0,
+   -770.57,
+   4.6,
+   208.0,
+   1
+  ],
+  [
+   390.0,
+   1222.68,
+   1.0,
+   -770.64,
+   5.2,
+   208.0,
+   1
+  ],
+  [
+   390.5,
+   1221.8,
+   1.0,
+   -771.5,
+   5.8,
+   208.0,
+   1
+  ],
+  [
+   391.0,
+   1222.42,
+   1.0,
+   -774.3,
+   6.4,
+   208.0,
+   1
+  ],
+  [
+   391.5,
+   1220.88,
+   1.0,
+   -775.17,
+   7.0,
+   208.0,
+   1
+  ],
+  [
+   392.0,
+   1218.01,
+   1.0,
+   -772.24,
+   7.6,
+   208.0,
+   0
+  ],
+  [
+   392.5,
+   1219.75,
+   1.0,
+   -772.31,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   393.0,
+   1220.08,
+   1.0,
+   -773.57,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   393.5,
+   1219.36,
+   1.0,
+   -775.71,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   394.0,
+   1219.59,
+   1.0,
+   -774.57,
+   2.8,
+   208.0,
+   0
+  ],
+  [
+   394.5,
+   1222.29,
+   1.0,
+   -777.49,
+   3.4,
+   208.0,
+   0
+  ],
+  [
+   395.0,
+   1220.19,
+   1.0,
+   -777.48,
+   4.0,
+   208.0,
+   0
+  ],
+  [
+   395.5,
+   1221.99,
+   1.0,
+   -780.26,
+   4.6,
+   208.0,
+   0
+  ],
+  [
+   396.0,
+   1223.9,
+   1.0,
+   -779.19,
+   5.2,
+   208.0,
+   0
+  ],
+  [
+   396.5,
+   1223.76,
+   1.0,
+   -781.24,
+   5.8,
+   208.0,
+   0
+  ],
+  [
+   397.0,
+   1223.12,
+   1.0,
+   -779.0,
+   6.4,
+   208.0,
+   0
+  ],
+  [
+   397.5,
+   1220.57,
+   1.0,
+   -780.02,
+   7.0,
+   208.0,
+   0
+  ],
+  [
+   398.0,
+   1222.94,
+   1.0,
+   -779.49,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   398.5,
+   1224.3,
+   1.0,
+   -780.5,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   399.0,
+   1226.93,
+   1.0,
+   -781.61,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   399.5,
+   1226.83,
+   1.0,
+   -783.25,
+   2.8,
+   208.0,
+   0
+  ],
+  [
+   400.0,
+   1229.08,
+   1.0,
+   -782.6,
+   3.4,
+   208.0,
+   0
+  ],
+  [
+   400.5,
+   1230.45,
+   1.0,
+   -784.74,
+   4.0,
+   208.0,
+   0
+  ],
+  [
+   401.0,
+   1227.83,
+   1.0,
+   -781.79,
+   4.6,
+   208.0,
+   0
+  ],
+  [
+   401.5,
+   1228.27,
+   1.0,
+   -781.29,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   402.0,
+   1230.68,
+   1.0,
+   -783.71,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   402.5,
+   1230.24,
+   1.0,
+   -783.28,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   403.0,
+   1228.67,
+   1.0,
+   -781.5,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   403.5,
+   1226.1,
+   1.0,
+   -778.73,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   404.0,
+   1225.28,
+   1.0,
+   -776.61,
+   2.8,
+   208.0,
+   0
+  ],
+  [
+   404.5,
+   1227.52,
+   1.0,
+   -775.31,
+   3.4,
+   208.0,
+   0
+  ],
+  [
+   405.0,
+   1228.74,
+   1.0,
+   -774.28,
+   4.0,
+   208.0,
+   0
+  ],
+  [
+   405.5,
+   1230.44,
+   1.0,
+   -774.26,
+   4.6,
+   208.0,
+   0
+  ],
+  [
+   413.0,
+   1228.34,
+   1.0,
+   -773.49,
+   5.2,
+   208.0,
+   0
+  ],
+  [
+   413.5,
+   1231.21,
+   1.0,
+   -770.86,
+   5.8,
+   208.0,
+   1
+  ],
+  [
+   414.0,
+   1228.95,
+   1.0,
+   -770.6,
+   6.4,
+   208.0,
+   1
+  ],
+  [
+   414.5,
+   1230.61,
+   1.0,
+   -772.05,
+   7.0,
+   208.0,
+   2
+  ],
+  [
+   415.0,
+   1232.04,
+   1.0,
+   -769.63,
+   7.6,
+   208.0,
+   3
+  ],
+  [
+   415.5,
+   1234.17,
+   1.0,
+   -767.96,
+   8.2,
+   208.0,
+   4
+  ],
+  [
+   416.0,
+   1233.28,
+   1.0,
+   -766.7,
+   8.8,
+   208.0,
+   4
+  ],
+  [
+   416.5,
+   1235.44,
+   1.0,
+   -768.42,
+   9.4,
+   208.0,
+   4
+  ],
+  [
+   417.0,
+   1237.84,
+   1.0,
+   -769.09,
+   10.0,
+   208.0,
+   4
+  ],
+  [
+   417.5,
+   1239.58,
+   1.0,
+   -771.93,
+   10.6,
+   208.0,
+   4
+  ],
+  [
+   418.0,
+   1236.67,
+   1.0,
+   -770.09,
+   11.2,
+   208.0,
+   4
+  ],
+  [
+   418.5,
+   1237.72,
+   1.0,
+   -770.98,
+   11.8,
+   208.0,
+   6
+  ],
+  [
+   419.0,
+   1236.97,
+   1.0,
+   -768.54,
+   12.4,
+   208.0,
+   6
+  ],
+  [
+   419.5,
+   1237.92,
+   1.0,
+   -766.38,
+   1.0,
+   208.0,
+   6
+  ],
+  [
+   420.0,
+   1237.52,
+   1.0,
+   -767.99,
+   1.6,
+   208.0,
+   6
+  ],
+  [
+   420.5,
+   1239.07,
+   1.0,
+   -767.14,
+   2.2,
+   208.0,
+   6
+  ],
+  [
+   421.0,
+   1242.04,
+   1.0,
+   -768.84,
+   2.8,
+   208.0,
+   8
+  ],
+  [
+   421.5,
+   1239.98,
+   1.0,
+   -766.66,
+   3.4,
+   208.0,
+   8
+  ],
+  [
+   422.0,
+   1238.58,
+   1.0,
+   -765.15,
+   4.0,
+   208.0,
+   8
+  ],
+  [
+   422.5,
+   1237.28,
+   1.0,
+   -766.16,
+   4.6,
+   208.0,
+   8
+  ],
+  [
+   423.0,
+   1239.63,
+   1.0,
+   -768.19,
+   5.2,
+   208.0,
+   8
+  ],
+  [
+   423.5,
+   1240.21,
+   1.0,
+   -768.47,
+   5.8,
+   208.0,
+   8
+  ],
+  [
+   424.0,
+   1242.51,
+   1.0,
+   -770.21,
+   6.4,
+   208.0,
+   9
+  ],
+  [
+   424.5,
+   1241.67,
+   1.0,
+   -768.53,
+   7.0,
+   208.0,
+   10
+  ],
+  [
+   425.0,
+   1239.76,
+   1.0,
+   -766.35,
+   7.6,
+   208.0,
+   10
+  ],
+  [
+   425.5,
+   1238.55,
+   1.0,
+   -769.2,
+   1.0,
+   208.0,
+   11
+  ],
+  [
+   426.0,
+   1237.37,
+   1.0,
+   -769.19,
+   1.6,
+   208.0,
+   11
+  ],
+  [
+   426.5,
+   1238.87,
+   1.0,
+   -769.4,
+   2.2,
+   208.0,
+   12
+  ],
+  [
+   427.0,
+   1238.36,
+   1.0,
+   -768.55,
+   2.8,
+   208.0,
+   12
+  ],
+  [
+   427.5,
+   1237.74,
+   1.0,
+   -769.53,
+   3.4,
+   208.0,
+   12
+  ],
+  [
+   428.0,
+   1238.25,
+   1.0,
+   -771.32,
+   4.0,
+   208.0,
+   12
+  ],
+  [
+   428.5,
+   1235.34,
+   1.0,
+   -773.52,
+   4.6,
+   208.0,
+   12
+  ],
+  [
+   429.0,
+   1235.79,
+   1.0,
+   -772.33,
+   5.2,
+   208.0,
+   11
+  ],
+  [
+   429.5,
+   1233.08,
+   1.0,
+   -769.96,
+   1.0,
+   208.0,
+   11
+  ],
+  [
+   430.0,
+   1233.01,
+   1.0,
+   -772.15,
+   1.6,
+   208.0,
+   11
+  ],
+  [
+   430.5,
+   1231.08,
+   1.0,
+   -771.03,
+   1.0,
+   208.0,
+   11
+  ],
+  [
+   431.0,
+   1228.75,
+   1.0,
+   -771.91,
+   1.6,
+   208.0,
+   12
+  ],
+  [
+   431.5,
+   1231.27,
+   1.0,
+   -772.82,
+   2.2,
+   208.0,
+   12
+  ],
+  [
+   432.0,
+   1234.07,
+   1.0,
+   -770.52,
+   2.8,
+   208.0,
+   13
+  ],
+  [
+   432.5,
+   1232.71,
+   1.0,
+   -772.45,
+   3.4,
+   208.0,
+   13
+  ],
+  [
+   433.0,
+   1230.12,
+   1.0,
+   -775.19,
+   4.0,
+   208.0,
+   13
+  ],
+  [
+   433.5,
+   1229.57,
+   1.0,
+   -774.85,
+   4.6,
+   208.0,
+   14
+  ],
+  [
+   434.0,
+   1226.64,
+   1.0,
+   -773.73,
+   5.2,
+   208.0,
+   14
+  ],
+  [
+   434.5,
+   1226.9,
+   1.0,
+   -773.43,
+   5.8,
+   208.0,
+   15
+  ],
+  [
+   435.0,
+   1229.79,
+   1.0,
+   -771.19,
+   6.4,
+   208.0,
+   16
+  ],
+  [
+   435.5,
+   1229.19,
+   1.0,
+   -772.28,
+   7.0,
+   208.0,
+   17
+  ],
+  [
+   436.0,
+   1232.03,
+   1.0,
+   -772.96,
+   7.6,
+   208.0,
+   16
+  ],
+  [
+   436.5,
+   1231.49,
+   1.0,
+   -775.1,
+   8.2,
+   208.0,
+   15
+  ],
+  [
+   437.0,
+   1228.52,
+   1.0,
+   -774.45,
+   8.8,
+   208.0,
+   15
+  ],
+  [
+   437.5,
+   1227.05,
+   1.0,
+   -773.79,
+   9.4,
+   208.0,
+   15
+  ],
+  [
+   438.0,
+   1225.49,
+   1.0,
+   -775.6,
+   1.0,
+   208.0,
+   15
+  ],
+  [
+   438.5,
+   1227.94,
+   1.0,
+   -778.3,
+   1.6,
+   208.0,
+   15
+  ],
+  [
+   439.0,
+   1226.89,
+   1.0,
+   -777.42,
+   2.2,
+   208.0,
+   15
+  ],
+  [
+   439.5,
+   1225.78,
+   1.0,
+   -774.59,
+   1.0,
+   208.0,
+   14
+  ],
+  [
+   440.0,
+   1226.34,
+   1.0,
+   -771.62,
+   1.6,
+   208.0,
+   14
+  ],
+  [
+   440.5,
+   1227.11,
+   1.0,
+   -770.16,
+   2.2,
+   208.0,
+   14
+  ],
+  [
+   441.0,
+   1228.39,
+   1.0,
+   -770.8,
+   2.8,
+   208.0,
+   14
+  ],
+  [
+   441.5,
+   1229.06,
+   1.0,
+   -769.74,
+   3.4,
+   208.0,
+   13
+  ],
+  [
+   442.0,
+   1229.84,
+   1.0,
+   -769.48,
+   4.0,
+   208.0,
+   13
+  ],
+  [
+   442.5,
+   1230.51,
+   1.0,
+   -770.89,
+   4.6,
+   208.0,
+   13
+  ],
+  [
+   443.0,
+   1230.35,
+   1.0,
+   -769.56,
+   5.2,
+   208.0,
+   13
+  ],
+  [
+   443.5,
+   1230.21,
+   1.0,
+   -771.23,
+   1.0,
+   208.0,
+   13
+  ],
+  [
+   444.0,
+   1228.44,
+   1.0,
+   -773.22,
+   1.6,
+   208.0,
+   13
+  ],
+  [
+   444.5,
+   1229.48,
+   1.0,
+   -775.3,
+   2.2,
+   208.0,
+   13
+  ],
+  [
+   445.0,
+   1227.55,
+   1.0,
+   -772.62,
+   2.8,
+   208.0,
+   13
+  ],
+  [
+   445.5,
+   1228.46,
+   1.0,
+   -770.16,
+   3.4,
+   208.0,
+   13
+  ],
+  [
+   446.0,
+   1227.63,
+   1.0,
+   -767.98,
+   4.0,
+   208.0,
+   13
+  ],
+  [
+   446.5,
+   1227.09,
+   1.0,
+   -766.76,
+   4.6,
+   208.0,
+   13
+  ],
+  [
+   447.0,
+   1226.28,
+   1.0,
+   -765.78,
+   5.2,
+   208.0,
+   12
+  ],
+  [
+   447.5,
+   1225.09,
+   1.0,
+   -764.81,
+   5.8,
+   208.0,
+   12
+  ],
+  [
+   448.0,
+   1223.84,
+   1.0,
+   -765.13,
+   1.0,
+   208.0,
+   11
+  ],
+  [
+   448.5,
+   1221.88,
+   1.0,
+   -765.03,
+   1.0,
+   208.0,
+   11
+  ],
+  [
+   449.0,
+   1222.01,
+   1.0,
+   -766.6,
+   1.6,
+   208.0,
+   11
+  ],
+  [
+   449.5,
+   1221.05,
+   1.0,
+   -767.31,
+   1.0,
+   208.0,
+   11
+  ],
+  [
+   450.0,
+   1219.61,
+   1.0,
+   -766.77,
+   1.6,
+   208.0,
+   10
+  ],
+  [
+   450.5,
+   1219.87,
+   1.0,
+   -764.27,
+   2.2,
+   208.0,
+   10
+  ],
+  [
+   451.0,
+   1218.47,
+   1.0,
+   -764.64,
+   2.8,
+   208.0,
+   10
+  ],
+  [
+   451.5,
+   1218.43,
+   1.0,
+   -767.11,
+   1.0,
+   208.0,
+   10
+  ],
+  [
+   452.0,
+   1217.66,
+   1.0,
+   -769.84,
+   1.6,
+   208.0,
+   10
+  ],
+  [
+   452.5,
+   1216.86,
+   1.0,
+   -768.57,
+   2.2,
+   208.0,
+   9
+  ],
+  [
+   453.0,
+   1216.31,
+   1.0,
+   -767.68,
+   2.8,
+   208.0,
+   9
+  ],
+  [
+   453.5,
+   1215.42,
+   1.0,
+   -768.37,
+   3.4,
+   208.0,
+   8
+  ],
+  [
+   454.0,
+   1217.97,
+   1.0,
+   -770.22,
+   4.0,
+   208.0,
+   8
+  ],
+  [
+   454.5,
+   1219.24,
+   1.0,
+   -770.98,
+   4.6,
+   208.0,
+   8
+  ],
+  [
+   455.0,
+   1218.22,
+   1.0,
+   -773.56,
+   5.2,
+   208.0,
+   7
+  ],
+  [
+   455.5,
+   1217.5,
+   1.0,
+   -773.4,
+   5.8,
+   208.0,
+   7
+  ],
+  [
+   456.0,
+   1219.9,
+   1.0,
+   -771.86,
+   1.0,
+   208.0,
+   7
+  ],
+  [
+   456.5,
+   1222.51,
+   1.0,
+   -770.66,
+   1.6,
+   208.0,
+   7
+  ],
+  [
+   457.0,
+   1225.48,
+   1.0,
+   -772.6,
+   1.0,
+   208.0,
+   6
+  ],
+  [
+   457.5,
+   1225.55,
+   1.0,
+   -770.65,
+   1.6,
+   208.0,
+   6
+  ],
+  [
+   458.0,
+   1227.0,
+   1.0,
+   -771.24,
+   1.0,
+   208.0,
+   6
+  ],
+  [
+   458.5,
+   1228.61,
+   1.0,
+   -769.62,
+   1.0,
+   208.0,
+   6
+  ],
+  [
+   459.0,
+   1229.04,
+   1.0,
+   -772.53,
+   1.6,
+   208.0,
+   6
+  ],
+  [
+   459.5,
+   1231.13,
+   1.0,
+   -774.24,
+   2.2,
+   208.0,
+   5
+  ],
+  [
+   460.0,
+   1233.07,
+   1.0,
+   -776.04,
+   2.8,
+   208.0,
+   5
+  ],
+  [
+   460.5,
+   1235.25,
+   1.0,
+   -775.73,
+   3.4,
+   208.0,
+   4
+  ],
+  [
+   461.0,
+   1237.31,
+   1.0,
+   -777.89,
+   4.0,
+   208.0,
+   3
+  ],
+  [
+   461.5,
+   1234.61,
+   1.0,
+   -777.13,
+   4.6,
+   208.0,
+   3
+  ],
+  [
+   462.0,
+   1232.75,
+   1.0,
+   -774.24,
+   5.2,
+   208.0,
+   3
+  ],
+  [
+   462.5,
+   1232.99,
+   1.0,
+   -774.12,
+   1.0,
+   208.0,
+   2
+  ],
+  [
+   463.0,
+   1235.14,
+   1.0,
+   -773.79,
+   1.6,
+   208.0,
+   2
+  ],
+  [
+   463.5,
+   1234.66,
+   1.0,
+   -776.48,
+   2.2,
+   208.0,
+   1
+  ],
+  [
+   464.0,
+   1236.86,
+   1.0,
+   -774.67,
+   2.8,
+   208.0,
+   1
+  ],
+  [
+   464.5,
+   1235.4,
+   1.0,
+   -776.46,
+   1.0,
+   208.0,
+   1
+  ],
+  [
+   465.0,
+   1238.0,
+   1.0,
+   -775.52,
+   1.6,
+   208.0,
+   1
+  ],
+  [
+   465.5,
+   1235.85,
+   1.0,
+   -772.93,
+   2.2,
+   208.0,
+   1
+  ],
+  [
+   466.0,
+   1235.58,
+   1.0,
+   -771.69,
+   2.8,
+   208.0,
+   1
+  ],
+  [
+   466.5,
+   1236.96,
+   1.0,
+   -774.64,
+   1.0,
+   208.0,
+   1
+  ],
+  [
+   467.0,
+   1234.17,
+   1.0,
+   -776.32,
+   1.6,
+   208.0,
+   1
+  ],
+  [
+   467.5,
+   1232.38,
+   1.0,
+   -778.07,
+   2.2,
+   208.0,
+   1
+  ],
+  [
+   468.0,
+   1233.04,
+   1.0,
+   -778.63,
+   2.8,
+   208.0,
+   1
+  ],
+  [
+   468.5,
+   1231.26,
+   1.0,
+   -780.41,
+   3.4,
+   208.0,
+   1
+  ],
+  [
+   469.0,
+   1233.41,
+   1.0,
+   -782.67,
+   1.0,
+   208.0,
+   1
+  ],
+  [
+   469.5,
+   1233.39,
+   1.0,
+   -785.58,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   470.0,
+   1234.82,
+   1.0,
+   -787.6,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   470.5,
+   1236.14,
+   1.0,
+   -786.1,
+   2.8,
+   208.0,
+   0
+  ],
+  [
+   471.0,
+   1236.35,
+   1.0,
+   -788.15,
+   3.4,
+   208.0,
+   0
+  ],
+  [
+   471.5,
+   1237.64,
+   1.0,
+   -788.05,
+   4.0,
+   208.0,
+   0
+  ],
+  [
+   472.0,
+   1235.85,
+   1.0,
+   -790.5,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   472.5,
+   1234.39,
+   1.0,
+   -788.07,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   473.0,
+   1232.32,
+   1.0,
+   -790.73,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   473.5,
+   1229.57,
+   1.0,
+   -788.71,
+   2.8,
+   208.0,
+   0
+  ],
+  [
+   474.0,
+   1227.97,
+   1.0,
+   -788.22,
+   3.4,
+   208.0,
+   0
+  ],
+  [
+   474.5,
+   1228.33,
+   1.0,
+   -790.29,
+   4.0,
+   208.0,
+   0
+  ],
+  [
+   475.0,
+   1227.28,
+   1.0,
+   -788.25,
+   4.6,
+   208.0,
+   0
+  ],
+  [
+   475.5,
+   1229.08,
+   1.0,
+   -785.37,
+   5.2,
+   208.0,
+   0
+  ],
+  [
+   476.0,
+   1226.27,
+   1.0,
+   -786.09,
+   5.8,
+   208.0,
+   0
+  ],
+  [
+   476.5,
+   1224.61,
+   1.0,
+   -785.81,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   477.0,
+   1222.72,
+   1.0,
+   -786.81,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   477.5,
+   1219.95,
+   1.0,
+   -787.7,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   478.0,
+   1218.21,
+   1.0,
+   -786.77,
+   2.8,
+   208.0,
+   0
+  ],
+  [
+   478.5,
+   1215.65,
+   1.0,
+   -786.83,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   479.0,
+   1218.13,
+   1.0,
+   -788.62,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   479.5,
+   1216.95,
+   1.0,
+   -788.12,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   480.0,
+   1215.15,
+   1.0,
+   -788.3,
+   2.8,
+   208.0,
+   0
+  ],
+  [
+   480.5,
+   1216.74,
+   1.0,
+   -785.87,
+   3.4,
+   208.0,
+   0
+  ],
+  [
+   481.0,
+   1215.54,
+   1.0,
+   -785.39,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   481.5,
+   1218.21,
+   1.0,
+   -784.45,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   482.0,
+   1218.1,
+   1.0,
+   -785.47,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   482.5,
+   1215.75,
+   1.0,
+   -783.48,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   483.0,
+   1217.1,
+   1.0,
+   -783.75,
+   2.8,
+   208.0,
+   0
+  ],
+  [
+   483.5,
+   1214.77,
+   1.0,
+   -785.78,
+   3.4,
+   208.0,
+   0
+  ],
+  [
+   484.0,
+   1211.99,
+   1.0,
+   -788.55,
+   4.0,
+   208.0,
+   0
+  ],
+  [
+   484.5,
+   1211.47,
+   1.0,
+   -787.37,
+   4.6,
+   208.0,
+   0
+  ],
+  [
+   485.0,
+   1213.49,
+   1.0,
+   -789.91,
+   5.2,
+   208.0,
+   0
+  ],
+  [
+   485.5,
+   1214.9,
+   1.0,
+   -790.75,
+   5.8,
+   208.0,
+   0
+  ],
+  [
+   486.0,
+   1212.44,
+   1.0,
+   -793.72,
+   6.4,
+   208.0,
+   0
+  ],
+  [
+   486.5,
+   1214.46,
+   1.0,
+   -794.9,
+   7.0,
+   208.0,
+   0
+  ],
+  [
+   487.0,
+   1212.1,
+   1.0,
+   -796.47,
+   7.6,
+   208.0,
+   0
+  ],
+  [
+   487.5,
+   1210.72,
+   1.0,
+   -796.22,
+   8.2,
+   208.0,
+   0
+  ],
+  [
+   488.0,
+   1209.19,
+   1.0,
+   -795.81,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   488.5,
+   1207.38,
+   1.0,
+   -796.39,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   489.0,
+   1205.14,
+   1.0,
+   -797.95,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   489.5,
+   1205.15,
+   1.0,
+   -795.61,
+   1.0,
+   208.0,
+   0
+  ],
+  [
+   490.0,
+   1206.9,
+   1.0,
+   -795.19,
+   1.6,
+   208.0,
+   0
+  ],
+  [
+   490.5,
+   1205.28,
+   1.0,
+   -793.69,
+   2.2,
+   208.0,
+   0
+  ],
+  [
+   491.0,
+   1205,
+   1.0,
+   -796.5,
+   2.8,
+   208.0,
+   0
+  ],
+  [
+   491.5,
+   1205.11,
+   1.0,
+   -797.75,
+   3.4,
+   208.0,
+   0
+  ],
+  [
+   492.0,
+   1205,
+   1.0,
+   -797.28,
+   4.0,
+   208.0,
+   0
+  ],
+  [
+   492.5,
+   1205.57,
+   1.0,
+   -795.57,
+   4.6,
+   208.0,
+   0
+  ],
+  [
+   493.0,
+   1205,
+   1.0,
+   -797.1,
+   5.2,
+   208.0,
+   0
+  ],
+  [
+   493.5,
+   1207.9,
+   1.0,
+   -799.85,
+   5.8,
+   208.0,
+   0
+  ],
+  [
+   494.0,
+   1209.05,
+   1.0,
+   -797.96,
+   6.4,
+   208.0,
+   0
+  ],
+  [
+   494.5,
+   1210.91,
+   1.0,
+   -798.19,
+   7.0,
+   208.0,
+   0
+  ]
+ ],
+ "events": [
+  {
+   "t": 61.2,
+   "type": "blacklist",
+   "detail": "54"
+  },
+  {
+   "t": 61.2,
+   "type": "stuck",
+   "detail": "54"
+  }
+ ],
+ "blacklisted_points": [
+  6,
+  54
+ ]
+}

@@ -1,0 +1,51 @@
+# Build output and package caches
+EndlessMode/build/
+EndlessMode/vcpkg_installed/
+tools/toctool/vcpkg_installed/
+*.obj
+*.exp
+*.lib
+*.pdb
+*.map
+*.ilk
+*.exe
+*.dll
+*.script
+__pycache__/
+*.pyc
+
+# Third-party clones: get them from upstream (see docs/GETTING_STARTED.md)
+MSMR-Scripting/
+tools/ALERT/
+
+# Game-derived material: NEVER commit. Regenerate locally with the scripts in tools/.
+tools/assets/cubes/
+tools/assets/mapactors/
+tools/assets/mapitems/
+tools/assets/out/
+tools/assets/perks/
+tools/assets/ui/
+tools/assets/glyph/
+tools/assets/perk_text.json
+tools/assets/perk_text_raw.json
+tools/roster/actors/
+recon/ui/
+
+# Crash/hang dumps and personal files
+*.dmp
+*.mdmp
+tools/sigtools/dumps/
+backups/
+CLAUDE.md
+.claude/
+
+# Runtime output if someone symlinks scripts\ into the tree
+EndlessMode_runs/
+EndlessMode.log
+EndlessMode_uilog.txt
+
+# Extracted from game files (regenerate: tools/ ... see docs/REVERSE_ENGINEERING.md) or generated
+recon/LineOfSightAwareness.config.json
+tools/roster/enemies.json
+EndlessMode/data/*.config
+EndlessMode/data/*.config.json

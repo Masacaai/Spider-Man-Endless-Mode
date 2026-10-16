@@ -1,0 +1,16 @@
+{
+    "SpawnInfos": [
+        { "ActorTypeAsset": "character/enemy/enm_meleethug/enm_prison_meleethug.actor", "MaxAlive": 8 },
+        { "ActorTypeAsset": "character/enemy/enm_meleethug/enm_prison_baton_thug.actor", "MaxAlive": 6 },
+        { "ActorTypeAsset": "character/enemy/enm_riflethug/enm_prison_pistolthug.actor", "MaxAlive": 3 },
+        { "ActorTypeAsset": "character/enemy/enm_meleethug/enm_prison_shield_thug.actor", "MaxAlive": 2 },
+        { "ActorTypeAsset": "character/enemy/enm_grenadier/enm_thug_prison_rpg.actor", "MaxAlive": 1 }
+    ],
+    "MaxAlive": 20,
+    "MinSpawnRadius": 15.0,
+    "MaxSpawnRadius": 40.0,
+    "MinDelayBetweenSpawns": 0.5,
+    "MaxDelayBetweenSpawns": 2.0,
+    "StartAggressive": true,
+    "DummyMaxValue": 6
+}

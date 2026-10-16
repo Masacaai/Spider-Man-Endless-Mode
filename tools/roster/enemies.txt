@@ -1,0 +1,222 @@
+﻿287 actors, 221 with a bot component
+  None  ThugBot                      enm_electricthug                                 
+  None  FiskBot                      enm_kingpin_boss                                 
+     0  ThugBot                      enm_melee_agent                                  
+     0  ThugBot                      enm_melee_innerdemon                             
+     0  ThugBot                      enm_melee_innerdemon_nocloth                     
+  None  ThugBot                      enm_prison_whip                                  
+     0  ThugBot                      enm_swat_kingpin_melee                           
+     0  SlayerRangedBot              enm_thug_hammerhead02_heavy_minigun              SpawnEngagedWithHero
+     0  ThugBot                      enm_thug_hammerhead02_shieldrush                 ProjectileThrower
+     0  SlayerRangedBot              enm_thug_hammerhead03_heavy_minigun              SpawnEngagedWithHero
+     0  ThugBot                      enm_thug_hammerhead03_shieldrush                 ProjectileThrower
+     0  SlayerRangedBot              enm_thug_hammerhead_heavy_minigun                SpawnEngagedWithHero
+     0  ThugBot                      enm_thug_hammerhead_shield                       ProjectileThrower
+     0  SlayerRangedBot              enm_thug_maggia_heavy_minigun                    SpawnEngagedWithHero
+  None  ThugBot                      enm_whip_hammerhead02                            
+  None  ThugBot                      enm_whip_hammerhead03                            
+     0  ThugBot                      innerdemon_follower                              
+  None  DocOck                       npc_doctoroctopus_dream                          SpawnEngagedWithHero
+     0  ThugBot                      npc_firefighter_bot                              
+  None  ThugBot                      npc_nypdhel02_questgiver                         
+  None  ThugBot                      npc_nypdhel02_questgiver_fight                   
+  None  CivilianBot                  npc_walterhardy_questgiver                       
+     0  ThugBot                      street_npc_melee_innerdemon                      
+     0  ThugBot                      bot_police_pistol                                
+     0  ThugBot                      enm_bigman                                       
+     0  ThugBot                      enm_crimemaster                                  
+     0  ThugBot                      enm_david_combatant                              ProjectileThrower
+     0  ThugBot                      enm_pistol_innerdemon                            
+     0  ThugBot                      enm_pistol_maggia                                
+     0  ThugBot                      enm_pistol_sableagent                            
+     0  ThugBot                      enm_pistolthug                                   
+     0  ThugBot                      enm_prison_pistolthug                            
+     0  ThugBot                      enm_prison_super_pistolthug                      
+     0  ThugBot                      enm_rifle_agent                                  
+     0  ThugBot                      enm_rifle_corrupted_sableagent                   ProjectileThrower
+     0  ThugBot                      enm_rifle_fakecop                                
+     0  ThugBot                      enm_rifle_innerdemon                             ProjectileThrower
+     0  ThugBot                      enm_rifle_innerdemon_nocloth                     
+     0  ThugBot                      enm_rifle_innerdemon_nogrenade                   
+     0  ThugBot                      enm_rifle_maggia                                 
+     0  ThugBot                      enm_rifle_sableagent                             ProjectileThrower
+     0  ThugBot                      enm_riflethug                                    
+     0  ThugBot                      enm_rocket_hammerhead                            
+     0  ThugBot                      enm_rocket_hammerhead02                          
+     0  ThugBot                      enm_rocket_hammerhead03                          
+     0  ThugBot                      enm_rocket_innerdemon                            
+     0  ThugBot                      enm_rocket_kingpin                               
+     0  ThugBot                      enm_rocket_maggia                                
+     0  ThugBot                      enm_rocket_sableagent                            
+     0  ThugBot                      enm_rocket_thug                                  
+     0  SwordsmanBot                 enm_shadow_swordsman                             
+     0  SilverSable                  enm_silver_sable                                 ProjectileThrower
+     0  ThugBot                      enm_swat_dmn_bomb_building                       ProjectileThrower
+     0  ThugBot                      enm_swat_kingpin_pistol                          
+     0  ThugBot                      enm_swat_kingpin_ranged_nogrenade                
+     0  ThugBot                      enm_swat_kingpin_rifle                           ProjectileThrower
+     0  SwordsmanBot                 enm_swordsman                                    
+     0  SwordsmanBot                 enm_swordsman_construction                       
+     0  ThugBot                      enm_taskmaster_pistol                            
+     0  ThugBot                      enm_taskmaster_rocket                            
+     0  ThugBot                      enm_temp_rocket_innerdemon                       
+     0  ThugBot                      enm_test_sniperthug                              
+     0  ThugBot                      enm_thug_hammerhead02_pistol                     
+     0  ThugBot                      enm_thug_hammerhead02_ranged                     
+     0  ThugBot                      enm_thug_hammerhead03_pistol                     
+     0  ThugBot                      enm_thug_hammerhead03_ranged                     
+     0  ThugBot                      enm_thug_hammerhead_pistol                       
+     0  ThugBot                      enm_thug_hammerhead_ranged                       
+     0  ThugBot                      enm_thug_kingpin_construction                    
+     0  ThugBot                      enm_thug_kingpin_pistol                          
+     0  ThugBot                      enm_thug_kingpin_ranged                          ProjectileThrower
+     0  ThugBot                      enm_thug_kingpin_ranged_nogrenade                
+     0  ThugBot                      enm_thug_prison_rifle                            
+     0  ThugBot                      enm_thug_super_prison_rifle                      
+     0  ThugBot                      enm_thug_tombstone_pistol                        
+     0  ThugBot                      enm_thug_tombstone_rifle                         
+     0  ThugBot                      npc_rifle_sableagent                             
+  None  ElectroController            jhill_electro_hover_test                         
+     1  ThugBot                      enm_shadow_melee                                 
+     1  ThugBot                      enm_thug_pedestrian_pistol                       
+     3  CorruptedBot                 enm_melee_fighting_inmate                        
+     4  ThugBot                      npc_police_qte_target                            
+     4  ThugBot                      npc_police_rifle_01                              
+     4  ThugBot                      npc_police_rifle_cheap                           
+     4  ThugBot                      npc_secuirtyguard_qte_target                     
+     4  ThugBot                      npc_securityguard_01                             
+     4  ThugBot                      npc_securityguard_norman_apt                     
+     6  ThugBot                      bmath_punk_thug                                  
+     6  ThugBot                      e3_enm_thug_street_melee_01                      
+     6  ThugBot                      e3_enm_thug_street_melee_02                      
+     6  ThugBot                      e3_enm_thug_street_melee_03                      
+     6  ThugBot                      npc_miles_civ_victim                             
+     6  ThugBot                      npc_nypdfin02_questgiver                         
+     6  ThugBot                      npc_police_unarmed                               
+     6  ThugBot                      npc_police_unarmed_cheap                         
+     6  ThugBot                      test_loot_thug                                   
+     6  ThugBot                      test_police_melee                                
+     6  Shocker                      electro_chase_raft                               
+    30  CorruptedBot                 enm_melee_corrupted                              
+    30  CorruptedBot                 enm_melee_corrupted_blind                        
+    30  CorruptedBot                 enm_melee_corrupted_pedestrian                   
+    30  CorruptedBot                 enm_melee_corrupted_steve                        
+    30  CorruptedBot                 enm_melee_corrupted_student                      
+    30  CorruptedBot                 enm_police_melee_corrupted                       
+    40  ThugBot                      enm_kingpin_construction_melee                   
+    40  SlayerBot                    npc_rhino_halloween                              
+    50  ThugBot                      enm_baton_corrupted                              
+    50  ThugBot                      enm_baton_maggia                                 
+    50  ThugBot                      enm_baton_thug                                   
+    50  ThugBot                      enm_baton_thug_breakin                           
+    50  ThugBot                      enm_maggia_don_npc                               
+    50  ThugBot                      enm_melee_maggia                                 
+    50  ThugBot                      enm_meleethug                                    
+    50  ThugBot                      enm_thug_kingpin_baton                           
+    50  ThugBot                      enm_thug_kingpin_melee                           
+    50  ThugBot                      enm_thug_kingpin_melee_shipyard_cine             
+    50  ThugBot                      enm_thug_kingpin_shield                          ProjectileThrower
+    50  TombstoneDosedThugBot        enm_thug_tombstone_dosed_melee                   
+    50  ThugBot                      enm_thug_tombstone_melee                         
+    50  ThugBot                      npc_demontail_heistboss                          
+    50  ThugBot                      npc_demontail_heistman                           
+    50  ThugBot                      npc_har01_cuffeddrugthug                         
+    50  ThugBot                      npc_police_01                                    
+    50  ThugBot                      npc_police_cheap                                 
+    50  ThugBot                      npc_police_electrofight                          
+    50  ThugBot                      npc_tombstone_rick                               
+    50  ThugBot                      nps_police_cine_noanimsets                       
+    60  ThugBot                      enm_baton_innerdemon                             
+    60  ThugBot                      enm_kingpin_construction_pistol                  
+    60  ThugBot                      enm_prison_super_baton_thug                      
+    60  ThugBot                      enm_prison_super_meleethug                       
+    60  ThugBot                      enm_shield_innerdemon                            ProjectileThrower
+    60  ThugBot                      enm_swat_kingpin_baton                           
+    60  ThugBot                      enm_swat_kingpin_shield                          ProjectileThrower
+    60  ThugBot                      enm_swat_kingpin_shield_nogrenade                
+    60  ThugBot                      enm_thug_bc_01_intro_crowbarthug                 
+    60  ThugBot                      enm_thug_bc_01_intro_thug_03                     
+    60  ThugBot                      enm_thug_bc_02_investigate_finalclue_boss        
+    60  ThugBot                      enm_thug_civilianbot_waiter                      
+    60  ThugBot                      enm_thug_civilianbot_waiter_female               
+    60  ThugBot                      enm_thug_civilianbot_waiter_female_02            
+    60  ThugBot                      enm_thug_hammerhead02_baton                      
+    60  ThugBot                      enm_thug_hammerhead02_informant                  
+    60  ThugBot                      enm_thug_hammerhead02_melee                      
+    60  ThugBot                      enm_thug_hammerhead03_baton                      
+    60  ThugBot                      enm_thug_hammerhead03_melee                      
+    60  ThugBot                      enm_thug_hammerhead_baton                        
+    60  ThugBot                      enm_thug_hammerhead_chef                         
+    60  ThugBot                      enm_thug_hammerhead_chef_02                      
+    60  ThugBot                      enm_thug_hammerhead_melee                        
+    60  ThugBot                      enm_thug_hammerhead_molotov                      ProjectileThrower
+    60  ThugBot                      enm_thug_webbed_up                               
+    60  ThugBot                      npc_gallery_curator                              
+    60  ThugBot                      npc_imposter_spiderman                           
+    60  ThugBot                      npc_imposter_spiderman_fight                     
+    60  ThugBot                      npc_thug_hammerhead_lieutenant                   
+    60  ThugBot                      enm_sniper_innerdemon                            ShareAwarenessWithSkirmishGroup
+    60  ThugBot                      enm_sniper_prison                                ShareAwarenessWithSkirmishGroup
+    60  ThugBot                      enm_sniper_super_prison                          ShareAwarenessWithSkirmishGroup
+    60  ThugBot                      enm_thug_kingpin_sniper                          ShareAwarenessWithSkirmishGroup
+    70  ThugBot                      enm_thug_prison_rpg                              
+    70  ThugBot                      enm_thug_super_prison_rpg                        
+    70  ThugBot                      enm_prison_baton_thug                            
+    70  ThugBot                      enm_prison_meleethug                             ProjectileThrower
+    70  ThugBot                      enm_prison_meleethug_headless                    ProjectileThrower
+    70  ThugBot                      enm_prison_shield_thug                           ProjectileThrower
+    70  ThugBot                      enm_prison_super_shield_thug                     ProjectileThrower
+    70  ThugBot                      enm_prison_super_shield_thug_nogrenade           
+    70  ThugBot                      enm_shadow_whip                                  
+    70  ThugBot                      enm_shield_maggia                                ProjectileThrower
+    80  ThugBot                      enm_baton_corrupted_sableagent                   
+    80  ThugBot                      enm_baton_sableagent                             
+    80  ThugBot                      enm_meleethug_sableagent                         
+    80  ThugBot                      enm_shield_corrupted_sableagent                  ProjectileThrower
+    80  ThugBot                      enm_shield_sableagent                            ProjectileThrower
+    80  ThugBot                      enm_taskmaster_baton                             
+    80  ThugBot                      enm_taskmaster_meleethug                         
+    80  ThugBot                      enm_taskmaster_shield                            ProjectileThrower
+    80  ThugBot                      enm_jetpack_corrupted_sableagent                 ProjectileThrower
+    80  ThugBot                      enm_jetpack_hammerhead03                         ProjectileThrower
+    80  ThugBot                      enm_jetpack_hammerhead_03_norocket               ProjectileThrower
+    80  ThugBot                      enm_jetpack_sableagent                           ProjectileThrower
+    80  ThugBot                      enm_sniper_corrupted_sableagent                  ShareAwarenessWithSkirmishGroup
+    80  ThugBot                      enm_sniper_hammerhead                            ShareAwarenessWithSkirmishGroup
+    80  ThugBot                      enm_sniper_hammerhead02                          ShareAwarenessWithSkirmishGroup
+    80  ThugBot                      enm_sniper_hammerhead03                          ShareAwarenessWithSkirmishGroup
+    80  ThugBot                      enm_sniper_sableagent                            ShareAwarenessWithSkirmishGroup
+    80  ThugBot                      enm_taskmaster_rifle                             ProjectileThrower
+    80  ThugBot                      enm_taskmaster_sniper                            ShareAwarenessWithSkirmishGroup
+   100  GrenadierBot                 enm_grenadierthug                                
+   100  SlayerBot                    enm_heavy_maggia                                 
+   100  SlayerBot                    enm_slayer                                       
+   100  SlayerBot                    enm_slayer_corrupted                             
+   100  MrNegative                   npc_mrnegative                                   SpawnEngagedWithHero,StayEngaged
+   100  MrNegative                   npc_mrnegative_hallucination                     SpawnEngagedWithHero,StayEngaged
+   100  BlackCatBot                  enm_blackcat_chase                               
+   100  Shocker                      shocker_chase                                    
+   120  SlayerBot                    enm_slayer_innerdemon                            
+   120  SlayerBot                    enm_taskmaster_heavy                             
+   120  SlayerBot                    enm_thug_hammerhead02_heavy                      
+   120  SlayerBot                    enm_thug_hammerhead03_heavy                      
+   120  SlayerBot                    enm_thug_hammerhead_heavy                        
+   140  SlayerBot                    enm_thug_prison_heavy                            
+   140  SlayerBot                    enm_thug_prison_super_heavy                      
+   150  SlayerBot                    npc_rhino_halloween_corrupted                    
+   200  SilverSable                  ally_silver_sable                                ProjectileThrower
+   300  MrNegativeSwordsman          enm_mrnegative_swordsman                         ProjectileThrower,SetModelInstAsHero
+   300  MrNegativeSwordsman          enm_mrnegative_truckchase_combat                 ProjectileThrower
+   400  SlayerBot                    coop_bc_08_enm_heavy                             
+   400  ThugBot                      enm_baton_thug_bounty                            
+   400  SilverSable                  enm_silver_sable_ctns                            ProjectileThrower
+   440  MechaHammerhead              enm_mechahammerhead                              SpawnEngagedWithHero
+   450  ScorpionBot                  npc_scorpion_dream                               SpawnEngagedWithHero
+   450  ScorpionBot                  scorpion                                         SpawnEngagedWithHero
+   500  TaskmasterBot                npc_taskmaster                                   SpawnEngagedWithHero
+   600  RhinoBot                     rhino                                            
+   600  Shocker                      shocker                                          
+   900  HammerheadBot                enm_hammerhead_boss_rough                        
+  1000  SlayerBot                    enm_tombstone                                    
+  1000  SlayerBot                    enm_tombstone_chain                              
+  1700  DocOck                       docock                                           SpawnEngagedWithHero
