@@ -26,6 +26,11 @@ more than usual.
 By contributing you agree your work is released under the project's license, GPL-3.0-or-later (see `LICENSE`). Only submit work you wrote or
 that is under a compatible license, and say where anything else came from.
 
+## AI-assisted contributions
+
+Welcome. Read [AGENTS.md](AGENTS.md) (it applies to humans too), say in the PR when an AI wrote a substantial part, and make sure a person has read the
+diff, built it, and tested what can be tested. Do not paste code you can't license under GPL-3.0-or-later.
+
 ## Workflow
 
 1. Fork, branch from `main`.

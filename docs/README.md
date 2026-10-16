@@ -20,6 +20,8 @@ If you are new, read these in order:
 | [SCORING.md](SCORING.md) | Horde style meter, ranks and scoring: design |
 | [NEXT_SESSION_TESTS.md](NEXT_SESSION_TESTS.md) | Test checklists written after each batch of changes (also a model for how to write a test plan) |
 | [issues/](issues/) | Drafted GitHub issues |
+| [RELEASING.md](RELEASING.md) | How to cut a release |
+| [../AGENTS.md](../AGENTS.md) | Rules and commands for AI coding agents |
 | [`../recon/M1_natives_4.0630.md`](../recon/M1_natives_4.0630.md) | The first reverse-engineering pass: how the natives were decoded |
 
 ## Conventions in these docs

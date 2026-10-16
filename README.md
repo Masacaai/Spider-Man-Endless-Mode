@@ -31,11 +31,13 @@ never extra enemy health), boons never touch Spider-Man's skills, every curse ha
 
 ## Install (players)
 
+**Download:** [Releases](https://github.com/Masacaai/Spider-Man-Endless-Mode/releases) (latest: alpha; grab `EndlessMode.script`).
+
 1. Install [Overstrike](https://www.nexusmods.com/marvelsspidermanremastered/mods/4199) 1.8.1 and enable
    **"Enable .script support"** and **"Add '-scripts' to commandline.txt"** in its settings.
 2. Overstrike's scripts proxy has a known issue where it can start game scanning inside helper processes; see
    [docs/GETTING_STARTED.md](docs/GETTING_STARTED.md#2-overstrike-and-the-scripts-proxy) for the options.
-3. Add `EndlessMode.script` (from a release, or built with `build.cmd`) in Overstrike and press **Install mods**.
+3. Add `EndlessMode.script` (from the Releases page, or built with `build.cmd`) in Overstrike and press **Install mods**.
 4. Launch the game through Steam, load a save, and go to a Manhattan dock circle.
 
 Back up your saves first. The mod changes your suit loadout during Campaign runs and restores it afterwards; if the game
@@ -66,6 +68,12 @@ Full walkthrough: **[docs/GETTING_STARTED.md](docs/GETTING_STARTED.md)**.
 | `tools/assets/` | Extracts item/dependency data from the game's archives (run locally; output is never committed) |
 | `tools/toctool/` | Searches the game's asset archive table of contents |
 | `tools/runviewer/` | Browser viewer for the telemetry JSON each run writes |
+
+## AI-friendly
+
+This project was built with an AI coding assistant (Claude Code) and is set up for AI-assisted work. [AGENTS.md](AGENTS.md) tells coding agents
+how to work here (rules, commands, what they can and can't verify), and the documentation is written so an agent, or a person, can pick it up cold.
+AI-assisted contributions are welcome; say so in the PR, and make sure a human has built and tested the result.
 
 ## Contributing
 
