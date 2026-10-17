@@ -16,3 +16,6 @@ We currently send tier thresholds as doubles and `awardedRewards` listing the re
 3. Candidate fixes: send the Taskmaster fields; send `rewardTiers` as the same type the game uses; find the panel step that waits on an award animation.
 
 **Done when** the results panel always shows Continue and Retry and the three tiers show our thresholds.
+
+
+**Resolved 2026-10-16.** Root cause: `rewards` must be an array of arrays (the panel reads `rewards[tier][0].value`); see GAME_INTERNALS, "Results panel data shape".
